@@ -1,0 +1,306 @@
+/* Специфікація */
+
+body {
+    font-family: 'Ubuntu', Arial, sans-serif;
+    /* line-height: 36px; */
+    font-size: 16px;
+    color: #848484;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #222222;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+p {
+    color: #848484;
+}
+
+ul,
+li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 58px 0;
+}
+
+
+/* Перший екран */
+
+header {
+    background: url("../img/background_top.png") no-repeat center top;
+    color: #fff;
+    border-top: 10px solid #2ecc71;
+}
+
+.offer {
+    width: 460px;
+    margin-left: 100px;
+    margin-top: 160px;
+}
+
+.offer_img {
+    margin-bottom: 35px;
+}
+
+.offer_intro {
+    font-size: 24px;
+    color: #fff;
+}
+
+.offer_links-item {
+    margin-right: 15px;
+}
+
+.offer_links-item a {
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.links-item_apple a {
+    background: #2f1e18 url('../img/icon_apple.png') no-repeat center center;
+}
+
+.links-item_android a {
+    background: #2f1e18 url('../img/icon-android.png') no-repeat center center;
+}
+
+.links-item_win a {
+    background: #2f1e18 url('../img/icon_win.png') no-repeat center center;
+}
+
+.offer_links-item a:hover {
+    background-color: #2ecc71;
+}
+
+.iphone {
+    margin-top: 80px;
+    display: block;
+    width: 100%;
+}
+
+
+
+/* Другий екран */
+
+.trigger {
+    text-align: center;
+}
+
+.trigger_icon {
+    width: 98px;
+    height: 98px;
+    border-radius: 50%;
+    margin: 0 auto 25px auto;
+}
+
+.trigger_icon_theme {
+    background: #2ecc71 url('../img/icon_theme.png') no-repeat center center;
+}
+
+.trigger_icon_desing {
+    background: #2ecc71 url('../img/icon_desing.png') no-repeat center center;
+}
+
+.trigger_icon_audience {
+    background: #2ecc71 url('../img/icon_audience.png') no-repeat center center;
+}
+
+.trigger_title {
+    margin-bottom: 20px;
+
+}
+
+
+/* Третий екран */
+
+
+
+#subscribe {
+    background: #e3e3e3;
+}
+
+.subscribe_text {
+    margin: 34px 0;
+    text-align: justify;
+}
+
+.subscribe_input {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #c8c8c8;
+    font-size: 18px;
+    widows: 347px;
+    padding: 12px 22px 10px 22px;
+    outline: none;
+}
+
+.subscribe_act {
+    background: #2ecc71;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 0 12px 12px 0;
+    color: #fff;
+    margin-left: -30px;
+    padding: 9px 35px;
+    cursor: pointer;
+    border: unset;
+}
+
+.subscribe_act:hover {
+    background: #2ab365;
+}
+
+.video {
+    height: 300px;
+    display: block;
+    -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+    /*ios 7 border-radius-bug */
+    -webkit-transform: rotate(0.000001deg);
+    /*mac os 10.6 safari 5 border-radius-bug */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Четвертий екран */
+
+#people {
+    text-align: center;
+}
+
+.quote {
+    font-size: 18px;
+    padding: 0 100px;
+}
+
+.quote_text {
+    font-style: italic;
+    margin-bottom: 18px;
+}
+
+.quote_author {
+    font-weight: 700;
+    color: #2e2e2e;
+}
+
+.faces_item img:hover,
+.faces_item img:active {
+    -webkit-filter: hue-rotate(105deg); 
+}
+
+.faces_item img {
+    display: block;
+    -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+
+}
+
+.faces {
+    margin: 27px 0 52px;
+}
+
+.contact_text,
+.contact_title,
+.social-media {
+    margin-bottom: 25px;
+}
+
+.contact_title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.social-media {
+    width: 460px;
+    margin-left: 100px;
+    margin-top: 160px;
+}
+
+.social-media_img {
+    margin-bottom: 35px;
+}
+
+.social-media_links-item {
+    margin-right: 8px;
+}
+
+.social-media_links-item a {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.links-item_twitter a {
+    background: #d3d3d3 url('../img/icon_twitter.png') no-repeat center center;
+}
+
+.links-item_facebook a {
+    background: #d3d3d3 url('../img/icon_facebook.png') no-repeat center center;
+}
+
+.links-item_pinterest a {
+    background: #d3d3d3 url('../img/icon_pinterest.png') no-repeat center center;
+}
+
+.links-item_google a {
+    background: #d3d3d3 url('../img/icon_google+.png') no-repeat center center;
+}
+
+.links-item_linkedin a {
+    background: #d3d3d3 url('../img/icon_linkedin.png') no-repeat center center;
+}
+
+.links-item_youtube a {
+    background: #d3d3d3 url('../img/icon_youtube.png') no-repeat center center;
+}
+
+
+.social-media_links-item a:hover {
+    background-color: #2ecc71;
+}
+
+
+/* Футер */
+
+footer {
+    background-color: #e3e3e3;
+    padding: 58px 0;
+}
+
+.menu_link {
+    color: #8a8a8a;
+    margin-right: 30px;
+}
+
+.menu_link:last-child {
+    margin-right: 0;
+}
+
+.menu_link:hover,
+.menu_link:active {
+    color: #2ecc71;
+    text-decoration: none;
+}

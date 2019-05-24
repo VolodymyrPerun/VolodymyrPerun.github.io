@@ -1,0 +1,259 @@
+@media screen and (min-width: 1600px) {
+    #fname {
+        width: 24%;
+    }
+
+    #email,
+    .label-email {
+        margin-left: 28vw;
+        width: 24%;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .offer {
+        height: 25vw;
+        width: 100%;
+    }
+
+    .offer_icon {
+        width: 100%;
+        height: 75%;
+        margin: 15px 0;
+    }
+
+
+    #fname {
+        width: 42.5%;
+    }
+
+    #email,
+    .label-email {
+        margin-left: 350px;
+        width: 42.5%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .brands_icon {
+        margin: 40px auto;
+    }
+
+    #email {
+        margin-left: 275px;
+    }
+
+    .label-email {
+        margin-left: 275px;
+    }
+
+    .button_message {
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .brad_contact {
+        margin-top: 0;
+    }
+
+    .main {
+        margin-top: 150px;
+    }
+
+    .main_intro {
+        font-size: 48px;
+    }
+
+    .get-started {
+        width: 250px;
+        height: 70px;
+        margin-top: 75px;
+    }
+
+    .get-started a {
+        font-size: 22px;
+    }
+
+    .portfolio_menu_link {
+        margin-right: 30px !important;
+        padding-bottom: 10px;
+        padding-top: 27px;
+    }
+
+    .fname {
+        margin-top: 90px;
+    }
+
+    #fname {
+        width: 75%;
+        margin-bottom: 0;
+    }
+
+    #email {
+        width: 35% !important;
+    }
+
+    .email_address {
+        margin-left: -275px;
+        margin-top: 10px;
+    }
+
+    .your_message {
+        margin-top: 10px;
+    }
+
+    textarea.wmd-input,
+    textarea#wmd-input {
+        height: 75px;
+        width: 75%;
+    }
+
+    .address_contacts_links-last_child:last-child {
+        padding-bottom: 0;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .brad_contact {
+        margin-left: 10%;
+        font-size: 28px;
+    }
+
+    .menu_item {
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .main_obligation {
+        height: 26px;
+        font-size: 15px !important;
+    }
+
+    .main_intro {
+        font-size: 28px !important;
+
+    }
+
+    .get-started {
+        font-size: 18px;
+    }
+
+    .offer {
+        height: 70vw;
+        width: 90%;
+    }
+
+    .offer_icon {
+        width: 100%;
+        height: 80%;
+        margin: 13px auto 20px auto;
+    }
+
+    .portfolio_menu_link {
+        padding-bottom: 10px;
+        padding-top: 27px;
+        margin: 0 50%;
+
+    }
+
+    .testimonia {
+        margin: 0 100%;
+    }
+
+    .testimonia img {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+
+    .testimonia img:first-child,
+    .testimonia img:last-child {
+        display: none;
+    }
+
+    h2.text-center {
+        font-size: 25px;
+    }
+
+    .review h3 {
+        margin: 0 12.5%
+    }
+
+    .message {
+        margin: 500px 0 0 -50%;
+    }
+
+    #fname {
+        width: 100%;
+    }
+
+    #email {
+        width: 48%;
+    }
+
+    textarea.wmd-input,
+    textarea#wmd-input {
+        width: 100%;
+    }
+
+    .address_main_links,
+    .address_contacts_links {
+        margin-left: 15%;
+        font-size: 17px;
+        width: 100%;
+    }
+
+    .nav_contact-link {
+        font-size: 20px !important;
+    }
+
+    .label-fname,
+    .label-email,
+    .label_your_message,
+    .your_message,
+    input[type=text] {
+        margin-top: 5px;
+        margin-bottom: 0;
+        font-size: 17px
+    }
+
+    .message {
+        margin-top: 450px;
+    }
+
+    .brands_icon {
+        margin: 10px auto;
+    }
+
+    .social-media_links-item {
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .main_intro {
+        font-size: 22px !important;
+
+    }
+
+    .main_obligation {
+        font-size: 12px !important;
+    }
+
+    .social-media_links-item {
+        margin: 30px auto;
+    }
+}
