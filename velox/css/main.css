@@ -55,7 +55,7 @@ h2.text-center {
 /* Хедер */
 
 header {
-    background: url("../img/BG.png") no-repeat center top;
+    background: url("../img/BG.png") no-repeat center top/cover;
     height: 694px;
     background-color: #3b404c;
     color: #ffffff;
