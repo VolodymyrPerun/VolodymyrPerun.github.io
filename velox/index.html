@@ -27,19 +27,19 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Services</a>
+                            <a href="#services" class="nav-link">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Portfolio</a>
+                            <a href="#portfolio" class="nav-link">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Testimonials</a>
+                            <a href="#reviwes" class="nav-link">Testimonials</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">About</a>
+                            <a href="#about" class="nav-link">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Contact</a>
+                            <a href="#contact" class="nav-link">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -50,10 +50,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="main">
-                        <p
+                        <h1
                             class="main_intro d-flex justify-content-center col-md-8 col-sm-6 text-nowrap ml-auto mr-auto">
                             Velox One Page Template
-                        </p>
+                        </h1>
                         <p
                             class="main_obligation d-flex justify-content-center col-md-8 col-sm-6  text-nowrap ml-auto mr-auto">
                             Clean, Responsive, customizable one page template
@@ -122,7 +122,7 @@
 
     <!-- Другий екран -->
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col ml-auto mr-auto">
@@ -370,7 +370,7 @@
 
     <!-- П'ятий екран  -->
 
-    <section class="contact_us">
+    <section id="contact" class="contact_us">
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a href="#" class="navbar-brad mr-auto brad_contact active">Contact Us</a>
@@ -428,29 +428,32 @@
                                     </h3>
                                 </li>
                             </ul>
-                            <div class="message">
-                                <div class="row">
-                                    <div class="col-10 col-sm-12 col-md-12">
-                                        <div class="fname">
-                                            <label class="label-fname" for="fname"><i class="fa-user"></i>Name :</label>
-                                            <input type="text" id="fname"  name="firstname" placeholder="">
-                                        </div>
-                                        <div class="email_address">
-                                            <label class="label-email" for="email"><i class="fa-envelope"></i>
-                                                Subject :</label>
+                            <form action="">
+                                <div class="message">
+                                    <div class="row">
+                                        <div class="col-10 col-sm-12 col-md-12">
+                                            <div class="fname">
+                                                <label class="label-fname" for="fname"><i class="fa-user"></i>Name
+                                                    :</label>
+                                                <input type="text" id="fname" name="firstname" placeholder="">
+                                            </div>
+                                            <div class="email_address">
+                                                <label class="label-email" for="email"><i class="fa-envelope"></i>
+                                                    Subject :</label>
                                                 <input type="text" id="email" name="email" placeholder="">
-                                        </div>
-                                        <div class="your_message">
-                                            <label class="label_your_message" for="wmd-input"><i
-                                                    class="fa-envelope"></i>Your Message :</label>
-                                            <textarea id="wmd-input"
-                                                class="wmd-input js-wz-element s-input bar0 processed" name="post-text"
-                                                cols="92" rows="15" tabindex="101" data-wz-state="256"
-                                                data-min-length=""></textarea>
+                                            </div>
+                                            <div class="your_message">
+                                                <label class="label_your_message" for="wmd-input"><i
+                                                        class="fa-envelope"></i>Your Message :</label>
+                                                <textarea id="wmd-input"
+                                                    class="wmd-input js-wz-element s-input bar0 processed"
+                                                    name="post-text" cols="92" rows="15" tabindex="101"
+                                                    data-wz-state="256" data-min-length=""></textarea>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
