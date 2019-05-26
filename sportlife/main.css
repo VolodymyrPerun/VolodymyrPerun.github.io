@@ -1,0 +1,1289 @@
+body {
+    background-image: url(../img/imgonline-com-ua-Resize-fjI9OZ5KREVhE.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: 1;
+    background-color: #464646;
+    margin: 0 15%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+    body {
+        width: 1200px;
+        /* background-position: center; */
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    body {
+        width: 1024px;
+        /* background-position: center; */
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        width: 970px;
+        /* background-position: center; */
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        width: 600px;
+        background-image: url(../img/woman-wall-small-Resize-2.png);
+        margin: 0 auto;
+        background-position: center;
+    }
+}
+
+.heading {
+    background-color: silver;
+    opacity: 0.7;
+    filter: alpha(Opacity=70);
+    max-width: 100%;
+    height: 120px;
+    border: groove 15px;
+    border-radius: 40px;
+    margin: 5px;
+    position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+    .heading {
+        height: 140px;
+        border: ridge 5px;
+        border-radius: 20px;
+        margin: 1px auto;
+    }
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.logo-frame {
+    width: 190px;
+    height: 50px;
+}
+
+.logo {
+    max-width: 100%;
+    margin: 21px 0 0 10px;
+}
+
+.container {
+    width: 930px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+.h-phone-frame {
+    width: 120px;
+    height: 62px;
+    display: block;
+}
+
+.h-phone {
+    max-width: auto;
+    height: auto;
+    position: absolute;
+    left: 245px;
+    bottom: 17px;
+    border-radius: 14px;
+    border: solid rgb(26, 13, 148);
+}
+
+.change-lang {
+    width: 57px;
+    margin: -100px 0 0 450px;
+    list-style: none;
+    position: absolute;
+}
+
+.change-item {
+    display: inline-block;
+    margin-left: 1px;
+}
+
+.lang-link {
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-color: rgba(190, 13, 13, 0.466);
+    text-align: center;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 70%;
+    color: rgb(249, 252, 252);
+    font-family: sans-serif;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px rgb(8, 5, 5);
+    transition: 1s;
+    /* text-shadow: 3px 2px hsl(260, 16%, 96%); */
+}
+
+.lang-link:hover {
+    background-color: rgb(249, 252, 252);
+    color: rgb(233, 69, 36);
+    transform: rotate(360deg);
+}
+
+.member-account {
+    width: 309px;
+    margin: -102px 0 0 550px;
+    list-style: none;
+    position: relative;
+}
+
+.member-item {
+    display: inline-block;
+    margin-left: 1px;
+}
+
+.account-link {
+    display: block;
+    height: 20px;
+    width: 150px;
+    background-color: rgb(43, 39, 38);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 75%;
+    line-height: 22px;
+    text-decoration: none;
+    color: rgb(248, 250, 250);
+    font-family: sans-serif;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px black;
+    transition: 0.1s;
+}
+
+.account-link:active {
+    background-color: red;
+    color: rgb(248, 247, 247);
+    transform: rotate(1deg);
+}
+
+.search {
+    position: relative;
+}
+
+.search-button {
+    position: absolute;
+    left: 593px;
+    top: 10px;
+}
+
+.form-search {
+    /* форма с boxtuffs.com */
+    position: relative;
+    display: inline-block;
+    border: 1px solid #747474;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 1px #575555, 0 1px 0 #FFF;
+    background-image: linear-gradient(#BCBCBC, #EBEBEB);
+}
+
+.form-search:before {
+    /* рамка вокруг формы */
+    position: absolute;
+    content: "";
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: -1;
+    border-radius: 10px;
+    background: linear-gradient(#D3D3D3, #CACACA 50%, #A9A9A9 50%, #9B9B9B);
+}
+
+.form-search:focus-within {
+    /* изменение формы при фокусе */
+    box-shadow: inset 0 1px 1px #46575b, 0 1px 0 #FFF;
+    background: linear-gradient(#9CC2CA, #DFECEF);
+}
+
+.form-search input[type="search"] {
+    /* поле поиска */
+    width: 90px;
+    height: 20px;
+    line-height: 32px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0 0 0 6px;
+    background: transparent;
+    font: 13px Helvetica, Arial, sans-serif;
+    color: #6E7074;
+    text-shadow: 0 1px 0 #FFF;
+    transition: all .2s ease-out;
+}
+
+.form-search:focus-within input[type="search"],
+/* изменение поля поиска при фокусе */
+
+.form-search input[type="search"]:focus {
+    width: 260px;
+    color: #25464D;
+}
+
+.form-search input[type="image"] {
+    /* картинка лупы */
+    padding: 0;
+    vertical-align: bottom;
+}
+
+@media only screen and (max-width: 767px) {
+    .logo-frame {
+        margin-top: 20px;
+    }
+
+    .h-phone-frame img {
+        height: 9vh;
+        left: 200px;
+        bottom: 25px;
+    }
+
+    .change-lang {
+        right: 380px;
+        top: 110px;
+        display: inline;
+    }
+
+    .lang-link {
+        height: 45px;
+        width: 65px;
+        background-color: rgba(190, 13, 13, 0.815);
+        line-height: 46px;
+        font-size: 90%;
+        border-radius: 50% 50%;
+        margin: 5px;
+    }
+
+    .lang-link:hover {
+        transform: rotate(10deg);
+        transition: 0.1s;
+    }
+
+    .account-link {
+        height: 50px;
+        width: 150px;
+        font-size: 85%;
+        line-height: 52px;
+    }
+
+    .search-button {
+        position: absolute;
+        top: 75px;
+    }
+
+    .form-search input[type="search"] {
+        /* поле поиска */
+        width: 250px;
+        height: 75px;
+    }
+
+    .form-search:focus-within input[type="search"],
+    /* изменение поля поиска при фокусе */
+    .form-search input[type="search"]:focus {
+        width: 300px;
+        color: #25464D;
+    }
+}
+
+#nnavv {
+    /* По левому краю выравниваю! */
+    float: left;
+    /* Отступ. */
+    margin: 10px 0 0 0px;
+    /* Задаю ширину. */
+    width: 880px;
+    /* Убираю маркеры*/
+    list-style: none;
+    /* Шрифт — жирным*/
+    font-weight: bold;
+}
+
+#nnavv li {
+    /* Выравнивание! */
+    float: left;
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Отступ. */
+    margin-right: 1px;
+    /* Позиционирование относительно исходного места! */
+    position: relative;
+    /* width: 115px; */
+    z-index: 3;
+}
+
+#nnavv li a {
+    /* Цвет бэкграунда. */
+    background: #333;
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Отступы. */
+    padding: 7px;
+    width: max-content;
+    /* Цвет ссылки. */
+    color: #fff;
+    /* Форматирование текста*/
+    text-decoration: none;
+    /* Задаю скругленные углы на 2 пиксела*/
+    -moz-border-radius: 2;
+    -webkit-border-radius: 2;
+    border-radius: 2;
+    /* Тень для визуальной приподнятости текста*/
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.74);
+    text-align: initial;
+}
+
+#nnavv li a:hover {
+    /* Подчеркну ссылку при наведении*/
+    text-decoration: underline;
+    /* Задам фон. */
+    background: #6b0c33;
+    /* Цвет ссылки остается прежним*/
+    color: #fff;
+    background: rgba(108, 13, 53, 0.74);
+    /* Заставляю выглядеть полупрозрачным! */
+}
+
+/* НАСТРАИВАЕМ ВЫПАДАЮЩИЕ ЭЛЕМЕНТЫ!!! */
+
+#nnavv ul {
+    /* Убираю маркеры у выпадающего списка*/
+    list-style: none;
+    left: -9999px;
+    /* Убираю ненужно за пределы экрана (говорят, это на 95% лучше чем «display:none;», т.к. дисплей нон некоторые программы игнорируют). */
+    opacity: 0;
+    /* При помощи прозрачности, скрываем <ul>. */
+    /* Делаем так, чтобы Webkit плавно показывал нам всплывающие элементы выпадающего списка при наведении мышки. */
+    -webkit-transition: 0.24s linear opacity;
+    position: absolute;
+}
+
+#nnavv ul li {
+    /* Здесь я задаю отступ между элементами &lt;li&gt;. Это необходимо для разделения пунктов меню*/
+    padding-top: 1px;
+    float: none;
+}
+
+#nnavv ul a {
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Запрещаю перенос строк текста на новую строку, чтобы создавался многострочный выпадающий элемент списка. */
+    white-space: nowrap;
+    width: initial;
+}
+
+#nnavv li:hover ul {
+    /* Создаю выпадающий пункт, который появится при наведении. */
+    left: 0;
+    /* Возвращаю его обратно на экран пользователя, — когда нужно. */
+    opacity: 1;
+    /* Убираю прозрачность*/
+}
+
+#nnavv li:hover a {
+    /* В этом стиле я устанавливаю свойства для элементов верхнего уровня, — в то время, когда показывается выпадающий список. */
+    /* Подчеркну*/
+    text-decoration: underline;
+    /* Сделаю полупрозрачным. */
+    background: rgba(109, 15, 15, 0.74);
+    background: #a5051a;
+}
+
+#nnavv li:hover ul a {
+    /* Поменял некоторые стили первого уровня при появлении выпадающего элемента. */
+    /* Уберу форматирование*/
+    text-decoration: none;
+    -webkit-transition: -webkit-transform 0.077s linear;
+}
+
+#nnavv li:hover ul li a:hover {
+    /* Здесь я задаю стили для конкретных выпадающих пунктов, при наведении на них курсора — чтобы они отличались от тех элементов, куда курсор не попадает*/
+    -moz-transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    /* Задам цвет фона выпадающего элемента*/
+    background: #334;
+    background: rgba(50, 50, 50, 0.74);
+    /* Сделаю полупрозрачным. */
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+    #nnavv {
+        transform: scale(2.5);
+        position: relative;
+        left: 150px;
+        top: 200px;
+        max-width: 145px;
+        float: left;
+        z-index: 20;
+    }
+
+    #nnavv li {
+        float: right;
+        z-index: 24;
+        margin-left: 125px;
+        margin-top: 5px;
+    }
+
+    #nnavv li:hover {
+        z-index: 25;
+    }
+
+    #nnavv ul a,
+    #nnavv li a,
+    #nnavv ul li a,
+    #nnavv ul a:hover,
+    #nnavv li a:hover,
+    #nnavv ul li a:hover {
+        width: 145px;
+        text-align: center;
+        display: block;
+        white-space: pre-wrap;
+        /* техт в обмеженому вікні робить абзац, no-wrap навпаки йде лінійно і може вийти за межі */
+    }
+}
+
+/* Источник: https: //blogwork.ru/vypadayushhij-spisok-html/ */
+
+div.banner {
+    margin: 0;
+    width: auto;
+}
+
+.banner-big img {
+    width: 31em;
+    height: auto;
+    position: absolute;
+    right: 392px;
+    top: 50px;
+}
+
+.banner-second img:hover,
+.banner-big img:hover:hover,
+.banner-third img:hover {
+    filter: alpha(Opacity=75);
+    opacity: 0.75;
+}
+
+.banner-second img {
+    height: 13.7em;
+    width: 17em;
+    position: absolute;
+    right: 108px;
+    top: 50px;
+}
+
+.banner-third img {
+    display: none;
+    position: absolute;
+}
+
+@media only screen and (max-width: 767px) {
+    div.banner {
+        margin: 0;
+        width: auto;
+        top: 200%;
+    }
+
+    .banner-big img {
+        left: 220px;
+        top: 800px;
+        transform: scale(1.6);
+        position: absolute;
+    }
+
+    .banner-second img {
+        left: 450px;
+        top: 200px;
+        transform: scale(0.8);
+        width: 31em;
+        height: auto;
+        z-index: 4;
+        position: absolute;
+    }
+
+    .banner-third img {
+        left: 450px;
+        top: 450px;
+        transform: scale(0.8);
+        width: 31em;
+        height: auto;
+        z-index: 4;
+        position: absolute;
+        display: block;
+    }
+}
+
+div.proposition {
+    margin: 230px 0 0 0;
+    position: relative;
+    width: auto;
+}
+
+.proposition-first img {
+    height: 13.7em;
+    width: 15em;
+    position: relative;
+    margin: 47px 1px 1px 42px;
+}
+
+.proposition-second img {
+    height: 13.7em;
+    width: 15em;
+    margin: 1px 1px 1px 10px;
+    position: relative;
+}
+
+.proposition-first img:hover,
+.proposition-second img:hover {
+    filter: alpha(Opacity=75);
+    opacity: 0.75;
+}
+
+@media only screen and (max-width: 767px) {
+    .proposition-container {
+        position: relative;
+    }
+
+    .proposition-first img,
+    .proposition-second img {
+        height: 12.5em;
+        width: 14.5em;
+        position: absolute;
+        transform: scale(2.58);
+    }
+
+    .proposition-first img {
+        left: 325px;
+        top: 1060px;
+    }
+
+    .proposition-second img {
+        left: 355px;
+        top: 1710px;
+    }
+}
+
+.main-menu {
+    width: 150px;
+    margin: -225px 0 0 510px;
+    list-style-type: none;
+    position: relative;
+}
+
+.main-item {
+    margin-top: 3px;
+}
+
+.menu-link {
+    display: block;
+    height: 34px;
+    width: 15.5em;
+    background-color: hsla(236, 75%, 22%, 0.726);
+    text-align: center;
+    font-size: 110%;
+    line-height: 32px;
+    text-decoration: none;
+    font: bolder;
+    color: rgb(248, 7, 7);
+    font-family: sans-serif;
+    -moz-border-radius: 2;
+    -webkit-border-radius: 2;
+    border-radius: 2;
+    box-shadow: 0 2px 2px black;
+    transition: 0.1s;
+}
+
+.menu-link:hover {
+    background-color: red;
+    color: rgb(248, 247, 247);
+    transform: rotate(-1deg);
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+    .main-menu {
+        display: none;
+    }
+}
+
+.toggle {
+    color: white;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav {
+    /*  ширна произвольная, не стесняйтесь экспериментировать */
+    width: 320px;
+    min-width: 320px;
+    /* фиксируем и выставляем высоту панели на максимум */
+    height: 45.2%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin-top: 164px;
+    /* сдвигаем (прячем) панель относительно левого края страницы */
+    left: -320px;
+    /* внутренние отступы */
+    padding: 15px 20px;
+    /* плавный переход смещения панели */
+    -webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    transition: left 0.3s;
+    /* определяем цвет фона панели */
+    background: rgba(50, 50, 50, 0.94);
+    /* поверх других элементов */
+    z-index: 2000;
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .nav {
+        display: block;
+    }
+}
+
+/**
+ * Кнопка переключения панели
+ * тег <label>
+ */
+
+.nav-toggle {
+    /* абсолютно позиционируем */
+    position: absolute;
+    /* относительно левого края панели */
+    left: 320px;
+    /* отступ от верхнего края панели */
+    top: 10em;
+    /* внутренние отступы */
+    padding: 0.5em;
+    /* определяем цвет фона переключателя
+     * чаще вчего в соответствии с цветом фона панели
+    */
+    background: inherit;
+    /* цвет текста */
+    color: #dadada;
+    /* вид курсора */
+    cursor: pointer;
+    /* размер шрифта */
+    font-size: 1.2em;
+    line-height: 1;
+    /* всегда поверх других элементов страницы */
+    z-index: 2001;
+    /* анимируем цвет текста при наведении */
+    -webkit-transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    transition: color .25s ease-in-out;
+}
+
+/* определяем текст кнопки 
+ * символ Unicode (TRIGRAM FOR HEAVEN)
+*/
+
+.nav-toggle:after {
+    content: '\2630';
+    text-decoration: none;
+}
+
+/* цвет текста при наведении */
+
+.nav-toggle:hover {
+    color: #f4f4f4;
+}
+
+/**
+ * Скрытый чекбокс (флажок)
+ * невидим и недоступен :)
+ * имя селектора атрибут флажка
+ */
+
+[id='nav-toggle'] {
+    position: absolute;
+    display: none;
+}
+
+/**
+ * изменение положения переключателя 
+ * при просмотре на мобильных устройствах
+ * когда навигация раскрыта, распологаем внутри панели
+*/
+
+[id='nav-toggle']:checked~.nav>.nav-toggle {
+    left: auto;
+    right: 2px;
+    top: 1em;
+}
+
+/**
+ * Когда флажок установлен, открывается панель
+ * используем псевдокласс:checked
+ */
+
+[id='nav-toggle']:checked~.nav {
+    left: 0;
+    box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+}
+
+/* 
+ * смещение контента страницы
+ * на размер ширины панели,
+ * фишка необязательная, на любителя
+*/
+
+[id='nav-toggle']:checked~main>article {
+    -webkit-transform: translateX(320px);
+    -moz-transform: translateX(320px);
+    transform: translateX(320px);
+}
+
+/*
+ * изменение символа переключателя,
+ * привычный крестик (MULTIPLICATION X), 
+ * вы можете испльзовать любой другой значок
+*/
+
+[id='nav-toggle']:checked~.nav>.nav-toggle:after {
+    content: '\2715';
+}
+
+/**
+ * профиксим баг в Android <= 4.1.2
+ * см: http://timpietrusky.com/advanced-checkbox-hack
+ */
+
+body {
+    -webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfix {
+    to {
+        padding: 0;
+    }
+}
+
+/**
+ * Формируем стиль заголовка (логотип) панели 
+*/
+
+.nav h2 {
+    width: 90%;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+    text-shadow: rgba(255, 255, 255, .1) -1px -1px 1px, rgba(0, 0, 0, .5) 1px 1px 1px;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    opacity: 0;
+    transform: scale(0.1, 0.1);
+    -ms-transform: scale(0.1, 0.1);
+    -moz-transform: scale(0.1, 0.1);
+    -webkit-transform: scale(0.1, 0.1);
+    transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+    transition: opacity 0.8s, transform 0.8s;
+    -ms-transition: opacity 0.8s, -ms-transform 0.8s;
+    -moz-transition: opacity 0.8s, -moz-transform 0.8s;
+    -webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
+}
+
+.nav h2 a {
+    color: #dadada;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*плавное появление заголовка (логотипа) при раскрытии панели */
+
+[id='nav-toggle']:checked~.nav h2 {
+    opacity: 1;
+    transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+}
+
+/**
+ * формируем непосредственно само меню
+ * используем неупорядоченный список для пунктов меню
+ * прикрутим трансфомации и плавные переходы
+ */
+
+.nav>ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav>ul>li {
+    line-height: 2.5;
+    opacity: 0;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: opacity .5s .1s, -webkit-transform .5s .1s;
+    -moz-transition: opacity .5s .1s, -moz-transform .5s .1s;
+    -ms-transition: opacity .5s .1s, -ms-transform .5s .1s;
+    transition: opacity .5s .1s, transform .5s .1s;
+}
+
+[id='nav-toggle']:checked~.nav>ul>li {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+
+/* определяем интервалы появления пунктов меню */
+
+.nav>ul>li:nth-child(2) {
+    -webkit-transition: opacity .5s .2s, -webkit-transform .5s .2s;
+    transition: opacity .5s .2s, transform .5s .2s;
+}
+
+.nav>ul>li:nth-child(3) {
+    -webkit-transition: opacity .5s .3s, -webkit-transform .5s .3s;
+    transition: opacity .5s .3s, transform .5s .3s;
+}
+
+.nav>ul>li:nth-child(4) {
+    -webkit-transition: opacity .5s .4s, -webkit-transform .5s .4s;
+    transition: opacity .5s .4s, transform .5s .4s;
+}
+
+.nav>ul>li:nth-child(5) {
+    -webkit-transition: opacity .5s .5s, -webkit-transform .5s .5s;
+    transition: opacity .5s .5s, transform .5s .5s;
+}
+
+.nav>ul>li:nth-child(6) {
+    -webkit-transition: opacity .5s .6s, -webkit-transform .5s .6s;
+    transition: opacity .5s .6s, transform .5s .6s;
+}
+
+.nav>ul>li:nth-child(7) {
+    -webkit-transition: opacity .5s .7s, -webkit-transform .5s .7s;
+    transition: opacity .5s .7s, transform .5s .7s;
+}
+
+/**
+ * оформление ссылок пунктов меню
+ */
+
+.nav>ul>li>a {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    color: #dadada;
+    width: 100%;
+    text-decoration: none;
+    /* плавный переход */
+    -webkit-transition: color .5s ease, padding .5s ease;
+    -moz-transition: color .5s ease, padding .5s ease;
+    transition: color .5s ease, padding .5s ease;
+}
+
+/**
+ * состояние ссылок меню при наведении
+ */
+
+.nav>ul>li>a:hover,
+.nav>ul>li>a:focus {
+    color: white;
+    padding-left: 15px;
+}
+
+/**
+ * линия подчеркивания ссылок меню
+ */
+
+.nav>ul>li>a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    -webkit-transition: width 0s ease;
+    transition: width 0s ease;
+}
+
+.nav>ul>li>a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background: #3bc1a0;
+    -webkit-transition: width .5s ease;
+    transition: width .5s ease;
+}
+
+/**
+ * анимируем линию подчеркивания 
+ * ссылок при наведении
+ */
+
+.nav>ul>li>a:hover:before {
+    width: 0%;
+    background: #3bc1a0;
+    -webkit-transition: width .5s ease;
+    transition: width .5s ease;
+}
+
+.nav>ul>li>a:hover:after {
+    width: 0%;
+    background: transparent;
+    -webkit-transition: width 0s ease;
+    transition: width 0s ease;
+}
+
+.pb-img {
+    background: no-repeat 50% 50%;
+    position: fixed;
+    right: 0;
+    top: 35%;
+    filter: alpha(Opacity=75);
+    opacity: 0.75;
+}
+
+.pb-img:hover {
+    filter: alpha(Opacity=35);
+    opacity: 0.55;
+}
+
+@media only screen and (max-width: 767px) {
+    .pb-img {
+        transform: scale(0.7);
+    }
+}
+
+.news {
+    position: relative;
+    z-index: 12;
+    display: block;
+}
+
+.news-left,
+.news-center,
+.news-right {
+    width: 251px;
+    display: block;
+    background: url(../img/home-press-bg.gif) repeat-x 0 0;
+    min-height: 200px;
+    position: absolute;
+}
+
+.news-left {
+    left: 42px;
+    top: 55px;
+}
+
+.news-left-link p {
+    width: 135px;
+    position: absolute;
+    left: 105px;
+    bottom: 0;
+}
+
+.title {
+    margin: 11px 11px 13px 20px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.block-left-title-link,
+.block-center-title-link,
+.block-right-title-link {
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #26303a;
+    margin: 12px 0 0 0;
+    width: 75px;
+    height: 75px;
+}
+
+.left-top-link,
+.center-top-link,
+.right-top-link {
+    position: absolute;
+    display: block;
+    width: auto;
+}
+
+.left-top-link {
+    top: 50px;
+    left: 105px;
+    color: rgb(6, 132, 250);
+}
+
+.left-top-link:active,
+.center-top-link:active,
+.right-top-link:active {
+    color: rgb(248, 20, 20);
+    text-decoration: none;
+}
+
+.news-center {
+    left: 306px;
+    top: 55px;
+}
+
+.news-center-link p {
+    width: 230px;
+    position: absolute;
+    left: 25px;
+    bottom: -7px;
+}
+
+.center-top-link {
+    top: 50px;
+    left: 105px;
+    color: rgb(6, 132, 250);
+}
+
+.center-link-img,
+.right-link-img,
+.left-link-img {
+    margin-left: 20px;
+}
+
+.news-right {
+    left: 570px;
+    top: 55px;
+    position: absolute;
+}
+
+.news-right-link p {
+    width: auto;
+    position: absolute;
+    left: 3px;
+    top: 109px;
+}
+
+.right-top-link {
+    top: 40px;
+    left: 115px;
+    color: rgb(6, 132, 250);
+}
+
+@media only screen and (max-width: 767px) {
+    .news {
+        transform: scale(2.5);
+        position: relative;
+        display: block;
+        width: min-content;
+    }
+
+    .news-left {
+        left: 67px;
+        top: 865px;
+    }
+
+    .news-center {
+        left: 67px;
+        top: 1105px;
+    }
+
+    .news-right {
+        left: 67px;
+        top: 1345px;
+    }
+}
+
+.cities-left,
+.cities-center,
+.cities-right {
+    width: 251px;
+    display: block;
+    background: url(../img/home-press-bg.gif) repeat-x 0 0;
+    min-height: 200px;
+    position: relative;
+}
+
+.cities-left {
+    top: 300px;
+    left: 4.5%;
+}
+
+.cities-left ul,
+.cities-center ul,
+.cities-right ul {
+    position: absolute;
+    display: block;
+    width: auto;
+    top: 20%;
+    left: -7%;
+    color: rgb(93, 95, 97);
+    list-style-type: none;
+}
+
+.cities-center {
+    top: 100px;
+    left: 32.9%;
+}
+
+.cities-right {
+    top: -100px;
+    left: 61.5%;
+}
+
+@media only screen and (max-width: 767px) {
+    .cities-left {
+        width: 355px;
+        top: 4080px;
+        left: 35.0%;
+        transform: scale(2.2);
+        margin: 0;
+        padding: 0;
+    }
+
+    .cities-left ul {
+        top: 5%;
+        left: -3.5%;
+        font-size: 145%;
+        font-weight: bolder;
+    }
+
+    .cities-center {
+        width: 355px;
+        top: 4420px;
+        left: 35.0%;
+        transform: scale(2.2);
+    }
+
+    .cities-center ul {
+        top: 5%;
+        left: -3.5%;
+        font-size: 145%;
+        font-weight: bolder;
+    }
+
+    .cities-right {
+        width: 355px;
+        top: 4760px;
+        left: 35.0%;
+        transform: scale(2.2);
+    }
+
+    .cities-right ul {
+        top: 5%;
+        left: -3.5%;
+        font-size: 145%;
+        font-weight: bolder;
+    }
+}
+
+.footer {
+    width: 775px;
+    display: block;
+    background: url(../img/home-press-bg.gif) repeat-x 0 0;
+    height: 100px;
+    position: relative;
+    top: 100px;
+    left: 5%;
+}
+
+.footer-left,
+.footer-right {
+    position: absolute;
+    bottom: 125%;
+}
+
+.footer-left {
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    margin-left: 4.3%;
+}
+
+.footer-left a {
+    position: absolute;
+    bottom: 35%;
+    left: 97%;
+    display: inline-block;
+    width: 50%;
+    color: rgb(83, 135, 247);
+}
+
+.footer-left a:hover {
+    color: rgb(243, 6, 6);
+}
+
+.footer-right {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    margin: 20% 0 0 32%;
+}
+
+.footer-right img {
+    width: 32.1%;
+}
+
+.facebook {
+    position: absolute;
+    bottom: 20%;
+    left: 115%;
+}
+
+.instagram {
+    position: absolute;
+    bottom: 20%;
+    left: 150%;
+}
+
+@media only screen and (max-width: 767px) {
+    .footer {
+        top: 4990px;
+        left: 12.5%;
+        font-size: 177%;
+        transform: scale(1.1);
+    }
+
+    .footer-left {
+        margin-top: 14.5%;
+    }
+
+    .footer-left a {
+        bottom: 25%;
+        left: 70%;
+    }
+
+    .footer-right {
+        margin: 5% 0 0 12%;
+    }
+}
+
+/*!!!!!!!! THE END !!!!!!!!*/
