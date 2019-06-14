@@ -120,15 +120,20 @@ header {
     border-radius: 36px;
     background-color: #00a5ff;
     margin-top: 120px;
+    cursor: pointer;
 }
 
-.get-started a {
+.get-started:hover,
+.get-started:focus {
+    transform: scale(0.9)
+}
+
+.get-started span {
     color: #ffffff;
     font-family: "Open Sans";
     font-size: 25px;
     font-weight: 400;
     margin: auto 0;
-    padding: 4% 0;
 }
 
 .navbar-toggler-icon {
@@ -299,12 +304,14 @@ header {
     height: 63px;
     -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 32px;
+    border-radius: 33px;
     background-color: #00a5ff;
     margin: 45px auto 80px auto;
+    cursor: pointer;
 }
 
-.show-more a {
+
+.show-more span {
     color: #ffffff;
     font-family: "Open Sans";
     font-size: 25px;
@@ -312,8 +319,21 @@ header {
     line-height: 23px;
     text-transform: uppercase;
     margin: auto 0;
-    padding: 7% 0;
 }
+
+.show-more:hover,
+.show-more:focus {
+    transform: scale(0.9)
+}
+
+.get-started span {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 25px;
+    font-weight: 400;
+    margin: auto 0;
+}
+
 
 /* Третій екран */
 
@@ -690,6 +710,7 @@ footer {
     background-color: #00a5ff;
     border-radius: 50%;
     margin-top: -65px;
+    cursor: pointer;
 }
 
 .arrow a {
@@ -742,4 +763,3 @@ footer {
 .social-media_links-item a:hover {
     background-color: #00a5ff;
 }
-
