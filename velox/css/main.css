@@ -128,7 +128,7 @@ header {
     transform: scale(0.9)
 }
 
-.get-started span {
+.get-started p {
     color: #ffffff;
     font-family: "Open Sans";
     font-size: 25px;
@@ -311,7 +311,7 @@ header {
 }
 
 
-.show-more span {
+.show-more p {
     color: #ffffff;
     font-family: "Open Sans";
     font-size: 25px;
