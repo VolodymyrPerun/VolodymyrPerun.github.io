@@ -74,7 +74,7 @@
 // });
 
 var owl = $(".home-demo .owl-carousel").owlCarousel({
-	autoplayTimeout:60000,
+	autoplayTimeout:6000,
 	autoplay: true,
 	items: 1,            
 	loop: true,
@@ -82,6 +82,7 @@ var owl = $(".home-demo .owl-carousel").owlCarousel({
 	nav: true,
 	onDragged: setDelay,
 	rtl: true,
+	navText : ["",""],
 });
 
 owl.on('initialized.owl.carousel translated.owl.carousel', function () {
@@ -91,7 +92,7 @@ setDelay();
 function setDelay(){
 owl.trigger('stop.owl.autoplay'); 
 
-var defaultTiming = 5000;
+var defaultTiming = 10000;
 var carouselTiming = $('.home-demo .owl-item.active .item').data('timing') ? $('.home-banner .owl-item.active .item').data('timing') : defaultTiming;
 
 setTimeout(function () {
