@@ -1,0 +1,95 @@
+// @charset "UTF-8";
+
+// @media screen and (max-width: 992px) {
+//     section.top {
+
+//         &>.container {
+
+//             header {
+
+//                 .logo {
+//                     margin: 100px auto 0 auto;
+//                 }
+
+//                 nav {
+
+//                     ul {
+//                         flex-direction: column;
+
+//                         li {
+//                             margin-bottom: 30px;
+
+//                             a {
+//                                 font-size: 18px;
+//                                 background: #f0f0f0;
+//                                 border-radius: 25px;
+//                                 padding: 7px;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     section.main_content {
+//         &>.container {
+
+//             &>.main_content_item {
+//                 width: 100%;
+
+//                 &:first-of-type {
+
+//                     img {
+//                         max-width: 90%;
+//                         margin-left: 3.5%;
+//                         margin-right: 5%;
+//                         padding: 0;
+//                     }
+//                 }
+
+//                 .btn_bottom {
+//                     margin: 0 32.5%;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+
+
+// @media screen and (max-width: 576px) {
+
+//     section.strategyCont {
+
+//         &>.container {
+
+//             .strategyCont_snippets {
+//                 flex-direction: column;
+//                 justify-content: center;
+//                 width: 100%;
+//                 margin: 0 25%;
+
+//                 .strategyCont_snippets_item {
+//                     flex-wrap: nowrap;
+
+//                     .strategyCont_snippets_item_image {
+//                         width: 55px;
+//                         height: 55px;
+//                         padding-right: 45px;
+//                     }
+
+//                     .strategyCont_snippets_item_title {
+
+//                         margin-bottom: 20px;
+
+//                         h5 {
+//                             width: 70%;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

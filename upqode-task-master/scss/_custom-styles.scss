@@ -1,0 +1,382 @@
+// Your custom styles
+@charset "UTF-8";
+@import "settings";
+
+.menu-area {
+    background: #ffffff;
+}
+
+.navbar {
+    max-height: 100%;
+    // min-height: 70px;
+
+    .logo {
+        width: 135px;
+        height: 24px;
+        color: $violetText;
+        font-family: BEYNO;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+
+    .navbar-toggler-icon {
+        width: 23px;
+        height: 16px;
+    }
+
+    .navbar-nav>li:not(last-child) {
+        margin-right: 60px;
+    }
+}
+
+.blue_color {
+    color: $blueText
+}
+
+.dropdown-menu {
+    padding: 0;
+    margin: 0;
+    border: 0 solid transition !important;
+    border: 0 solid rgba(250, 247, 247, 0.15);
+    border-radius: 0;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.mainmenu a,
+.navbar-default .navbar-nav>li>a,
+.mainmenu ul li a,
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #232323;
+    font-family: Lato Regular;
+    font-weight: 400;
+    letter-spacing: 0.64px;
+    text-transform: capitalize;
+    padding: 16px 15px;
+    display: block !important;
+}
+
+.mainmenu .active a,
+.mainmenu .active a:focus,
+.mainmenu .active a:hover,
+.mainmenu li a:hover,
+.mainmenu li a:focus,
+.navbar-default .navbar-nav>.show>a,
+.navbar-default .navbar-nav>.show>a:focus,
+.navbar-default .navbar-nav>.show>a:hover {
+    font-family: Lato Bold;
+    font-weight: 700;
+    outline: 0;
+}
+
+/*==========Sub Menu=v==========*/
+
+.mainmenu .collapse ul>li:hover>a {
+    font-family: Lato Bold;
+    font-weight: 700;
+
+}
+
+.mainmenu .collapse ul ul>li>a,
+.navbar-default .navbar-nav .show .croydon-menu>li>a,
+.navbar-default .navbar-nav .show .dropdown-menu>li>a {
+    color: #fdfdfd;
+    font-family: Lato Light;
+    text-transform: capitalize;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 1.05px;
+    position: relative;
+    left: 15px;
+}
+
+.mainmenu .collapse ul ul>li:hover>a,
+.navbar-default .navbar-nav .show .croydon-menu>li>a:focus,
+.navbar-default .navbar-nav .show .dropdown-menu>li>a:hover,
+.mainmenu .collapse ul ul>li:active>a,
+.navbar-default .navbar-nav .show .croydon-menu>li>a:active,
+.navbar-default .navbar-nav .show .dropdown-menu>li>a:active {
+    color: $yellowText;
+    font-family: Lato Light;
+    font-weight: 300;
+    letter-spacing: 1.05px;
+}
+
+.mainmenu .collapse ul ul,
+.mainmenu .collapse ul ul.dropdown-menu {
+    background-color: #000000;
+    opacity: 0.65;
+    border-top: 2px solid $yellowText;
+    width: 183px;
+    height: max-content;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-top: -0.001px;
+}
+
+.mainmenu .collapse ul ul ul,
+.mainmenu .collapse ul ul ul.dropdown-menu {
+    opacity: 1;
+}
+
+.fa-stack {
+    border: none;
+    background: url("../img/angle_right.png") no-repeat top/cover;
+    height: 1em;
+    width: 1em;
+    position: relative;
+}
+
+.nav_text {
+    position: relative;
+    bottom: 7px;
+    left: 19px;
+    width: 123px;
+}
+
+.fa-stack:hover {
+    background: url("../img/2leftarrow.ico") no-repeat top/cover;
+}
+
+/******************************Drop-down menu work on hover**********************************/
+.mainmenu {
+    background: none;
+    border: 0 solid;
+    margin: 0;
+    padding: 0;
+    min-height: 20px;
+    width: 100%;
+}
+
+
+
+
+@media only screen and (min-width: 767px) {
+    .mainmenu .collapse ul li:hover>ul {
+        display: block
+    }
+
+    .mainmenu .collapse ul ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 200px;
+        display: none;
+        margin-top: 5px;
+    }
+
+    /*******/
+    .mainmenu .collapse ul ul li {
+        position: relative
+    }
+
+    .mainmenu .collapse ul ul li:hover>ul {
+        display: block
+    }
+
+    .mainmenu .collapse ul ul ul {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        min-width: 200px;
+        display: none
+    }
+
+    /*******/
+    .mainmenu .collapse ul ul ul li {
+        position: relative
+    }
+
+    .mainmenu .collapse ul ul ul li:hover ul {
+        display: block
+    }
+
+    .mainmenu .collapse ul ul ul ul {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        min-width: 250px;
+        display: none;
+        z-index: 1
+    }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav .show .dropdown-menu .dropdown-menu>li>a {
+        padding: 16px 15px 16px 35px
+    }
+
+    .navbar-nav .show .dropdown-menu .dropdown-menu .dropdown-menu>li>a {
+        padding: 16px 15px 16px 45px
+    }
+}
+
+.header_search {
+    padding-bottom: 14px;
+    padding-top: 14px;
+}
+
+.header_search form {
+    color: #5b5b5b;
+    background: #e8e4f1;
+    position: relative;
+}
+
+.header_search input,
+.header_search button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.header_search input {
+    width: 180px;
+    height: 31px;
+    opacity: 1;
+    padding-left: 15px;
+    color: #5b5b5b;
+}
+
+.header_search button {
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    right: 10px;
+    bottom: -5.5px;
+    cursor: pointer;
+    opacity: 1;
+
+}
+
+.header_search button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #5b5b5b;
+}
+
+
+
+
+.main_section {
+    position: relative;
+    // bottom: -500px;
+    margin: 60px 0 0 0;
+    padding: 0;
+}
+
+.home-demo {
+    // height: 790px;
+    // width: 100%;
+    .item {
+        height: 790px;
+        width: 100%;
+    }
+
+    .item_first {
+        background: url("../img/bg_img.png") center no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+    }
+
+    .item_first:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+        background: linear-gradient(-71deg, #503392 0%, #673ab7 49%, #00bff3 100%);
+        opacity: 0.8;
+    }
+
+    .item_second {
+        background: url("../img/above-black-black-and-white_bg.jpg") center no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+    }
+
+
+    .item_second:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+        background: linear-gradient(-71deg, #503392 0%, #673ab7 49%, #00bff3 100%);
+        opacity: 0.8;
+    }
+
+    .item_third {
+        background: url("../img/black-black-and-white-black-white_bg.jpg") center no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+    }
+
+    .item_third:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+        background: linear-gradient(-71deg, #503392 0%, #673ab7 49%, #00bff3 100%);
+        opacity: 0.8;
+    }
+
+    .item>h1 {
+        // width: 894px;
+        // height: 48px;
+        font-family: Lato;
+        font-size: 64px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+        position: absolute;
+        top: 358px;
+        z-index: 3;
+        text-align: center;
+        letter-spacing: 4.26px;
+        margin: 0 15%;
+    }
+
+    .item>h1>span {
+        color: $yellowText;
+    }
+
+
+
+    .item>h2 {
+        color: #fff;
+        text-align: center;
+        padding: 5rem 0;
+        margin: 0 50%;
+        font-style: italic;
+        font-weight: 300;
+        position: absolute;
+        top: 180px;
+        z-index: 3;
+        text-align: center;
+        //    margin-left: -130px;
+    }
+}
