@@ -81,6 +81,7 @@ var owl = $(".home-demo .owl-carousel").owlCarousel({
 	dots: true,			
 	nav: true,
 	onDragged: setDelay,
+	rtl: true,
 });
 
 owl.on('initialized.owl.carousel translated.owl.carousel', function () {
