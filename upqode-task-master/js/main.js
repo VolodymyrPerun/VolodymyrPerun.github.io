@@ -73,7 +73,8 @@
 
 // });
 
-var owl = $(".home-demo .owl-carousel").owlCarousel({
+/*==========Owl Carousel=========*/
+var owl = $(".main-demo .owl-carousel").owlCarousel({
 	autoplayTimeout:6000,
 	autoplay: true,
 	items: 1,            
@@ -93,7 +94,7 @@ function setDelay(){
 owl.trigger('stop.owl.autoplay'); 
 
 var defaultTiming = 10000;
-var carouselTiming = $('.home-demo .owl-item.active .item').data('timing') ? $('.home-banner .owl-item.active .item').data('timing') : defaultTiming;
+var carouselTiming = $('.main-demo .owl-item.active .item').data('timing') ? $('.home-banner .owl-item.active .item').data('timing') : defaultTiming;
 
 setTimeout(function () {
 	owl.trigger('next.owl.carousel',[carouselTiming]); 
