@@ -75,28 +75,59 @@
 
 /*==========Owl Carousel=========*/
 var owl = $(".main-demo .owl-carousel").owlCarousel({
-	autoplayTimeout:6000,
+	autoplayTimeout: 6000,
 	autoplay: true,
-	items: 1,            
+	items: 1,
 	loop: true,
-	dots: true,			
+	dots: true,
 	nav: true,
 	onDragged: setDelay,
 	rtl: true,
-	navText : ["",""],
+	navText: ["", ""],
 });
 
 owl.on('initialized.owl.carousel translated.owl.carousel', function () {
-setDelay();
+	setDelay();
 });
 
-function setDelay(){
-owl.trigger('stop.owl.autoplay'); 
+function setDelay() {
+	owl.trigger('stop.owl.autoplay');
 
-var defaultTiming = 10000;
-var carouselTiming = $('.main-demo .owl-item.active .item').data('timing') ? $('.home-banner .owl-item.active .item').data('timing') : defaultTiming;
+	var defaultTiming = 10000;
+	var carouselTiming = $('.main-demo .owl-item.active .item').data('timing') ? $('.home-banner .owl-item.active .item').data('timing') : defaultTiming;
 
-setTimeout(function () {
-	owl.trigger('next.owl.carousel',[carouselTiming]); 
-},carouselTiming);
-} 
+	setTimeout(function () {
+		owl.trigger('next.owl.carousel', [carouselTiming]);
+	}, carouselTiming);
+}
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  
+	var progressBar = document.querySelectorAll(".progress-bar");
+	var time = 1500;
+	
+  
+	progressBar.forEach(function(i) {
+	  let label = i.children[0];
+	  let line = i.children[1];
+	  let count = 0;
+	  let dataCount = label.getAttribute("data-count");
+	  let lineCount = line.children[0];
+   
+	  let runTime = time/dataCount;
+	  
+	  let animationLineCount = setInterval(function(){
+		if(count < dataCount){
+		  count++;
+		  label.innerHTML = count + '%';
+		  lineCount.style.width = count + '%';
+		}
+	  },runTime);
+	});
+  });
+  
