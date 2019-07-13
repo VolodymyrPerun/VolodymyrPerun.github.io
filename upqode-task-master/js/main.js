@@ -87,11 +87,11 @@ $(function () {
 		items: 1,
 		nav: false,
 		autoplay: true,
-		
-		margin: 100,
+		loop: true,
+		margin: 10,
 		dots: false,
 		rtl:true,
-		autoplay: 10000, // time for slides changes
-		smartSpeed: 30000, // duration of change of 1 slide
+		autoplay: 100000, // time for slides changes
+		smartSpeed: 1000, // duration of change of 1 slide
 	});
 });
