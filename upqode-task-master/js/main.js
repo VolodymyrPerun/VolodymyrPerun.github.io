@@ -87,7 +87,7 @@ $(function () {
 		items: 1,
 		nav: false,
 		autoplay: true,
-		loop: true,
+		
 		margin: 100,
 		dots: false,
 		rtl:true,
