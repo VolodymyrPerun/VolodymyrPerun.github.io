@@ -109,7 +109,7 @@ function setDelay() {
 document.addEventListener("DOMContentLoaded", function() {
   
 	var progressBar = document.querySelectorAll(".progress-bar");
-	var time = 1500;
+	var time = 5000;
 	
   
 	progressBar.forEach(function(i) {
