@@ -16,64 +16,9 @@
 })(jQuery)
 
 
-// owlCarousel
-// $(function () {
-// 	// Owl Carousel
-// 	var owl = $(".owl-carousel");
-// 	owl.owlCarousel({
-// 		items: 1,
 
-// 		nav: true,
 
-// 		autoplay: true,
-
-// 		animateOut: "slideOutDown",
-
-// 		animateIn: "slideInDown",
-
-// 		rtl: false,
-
-// 		loop: true,
-
-// 		margin: 10,
-
-// 		dots: true,
-
-// 		autoplay: 3000, // time for slides changes
-
-// 		smartSpeed: 1000, // duration of change of 1 slide
-
-// 		responsiveClass: true,
-
-// 		responsive: {
-
-// 			0: {
-
-// 				items: 1
-
-// 			},
-
-// 			600: {
-
-// 				items: 1
-
-// 			},
-
-// 			2000: {
-
-// 				items: 1,
-
-// 				loop: true
-
-// 			}
-
-// 		}
-
-// 	});
-
-// });
-
-/*==========Owl Carousel=========*/
+/*==========Owl Carousel Banners=========*/
 var owl = $(".main-demo .owl-carousel").owlCarousel({
 	autoplayTimeout: 6000,
 	autoplay: true,
@@ -106,28 +51,48 @@ function setDelay() {
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  
+document.addEventListener("DOMContentLoaded", function () {
+
 	var progressBar = document.querySelectorAll(".progress-bar");
 	var time = 5000;
-	
-  
-	progressBar.forEach(function(i) {
-	  let label = i.children[0];
-	  let line = i.children[1];
-	  let count = 0;
-	  let dataCount = label.getAttribute("data-count");
-	  let lineCount = line.children[0];
-   
-	  let runTime = time/dataCount;
-	  
-	  let animationLineCount = setInterval(function(){
-		if(count < dataCount){
-		  count++;
-		  label.innerHTML = count + '%';
-		  lineCount.style.width = count + '%';
-		}
-	  },runTime);
+
+
+	progressBar.forEach(function (i) {
+		let label = i.children[0];
+		let line = i.children[1];
+		let count = 0;
+		let dataCount = label.getAttribute("data-count");
+		let lineCount = line.children[0];
+
+		let runTime = time / dataCount;
+
+		let animationLineCount = setInterval(function () {
+			if (count < dataCount) {
+				count++;
+				label.innerHTML = count + '%';
+				lineCount.style.width = count + '%';
+			}
+		}, runTime);
 	});
-  });
-  
+});
+
+
+// owlCarousel iPads
+
+		 
+$(function () {
+	// Owl Carousel
+	var owl = $(".ipads-demo .owl-carousel");
+	owl.owlCarousel({
+		items: 1,
+		nav: false,
+		autoplay: true,
+		animateOut: "slideOutDown",
+		animateIn: "slideInDown",
+		loop: true,
+		margin: 10,
+		dots: false,
+		autoplay: 10000, // time for slides changes
+		smartSpeed: 15000, // duration of change of 1 slide
+	});
+});
