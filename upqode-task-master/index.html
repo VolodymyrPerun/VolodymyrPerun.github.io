@@ -927,8 +927,7 @@
             Nullam at scelerisque tellus mattis volutpat rhoncus,</p>
         </div>
 
-        <div class="col-12">
-
+        <div class="col-12 pr-0 pl-0">
           <!--Google map-->
           <div id="map-container-google" class="z-depth-1-half map-container" style="height: 100%; width:100%">
             <iframe
@@ -937,67 +936,68 @@
           </div>
           <!--Google Maps-->
 
-          <div class="forms-container col-lg-8 d-flex justify-content-around offset-lg-4 ml-auto mr-auto">
+          <div class="forms-container col-10 col-lg-7 col-md-7 d-flex justify-content-around  ml-auto mr-auto">
             <div class="row">
-              <div class="col-md-6">
-                <div class="row">
-                  <!--Grid column-->
-                  <div class="col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="text" id="name" name="name" class="form-control">
-                      <label for="name" class="">Full Name</label>
+              <div class="col-lg-8 col-md-10 ml-0">
+                <form id="contact-form" action="#!" class="needs-validation" novalidate>
+                  <div class="row">
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0 mr-0">
+                        <input type="text" id="name" name="name" class="form-control" required>
+                        <label for="name" class="text-nowrap">Full Name</label>
+                      </div>
                     </div>
-                  </div>
-                  <!--Grid column-->
+                    <!--Grid column-->
 
-                  <!--Grid column-->
-                  <div class="col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="text" id="email" name="email" class="form-control">
-                      <label for="email" class="">E-mail Address</label>
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="email" name="email" class="form-control" required>
+                        <label for="email" class="text-nowrap">E-mail Address</label>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid row-->
+                    <!--Grid row-->
+                    <!--Grid column-->
+                    <div class="col-md-12">
+                      <div class="md-form">
+                        <textarea type="text" id="message" name="message" rows="2"
+                          class="form-control md-textarea"></textarea>
+                        <label for="message" class="text-nowrap">Message</label>
+                      </div>
                     </div>
                   </div>
-                  <!--Grid column-->
                   <!--Grid row-->
-                  <!--Grid row-->
-                  <!--Grid column-->
-                  <div class="col-md-12">
-                    <div class="md-form">
-                      <textarea type="text" id="message" name="message" rows="2"
-                        class="form-control md-textarea"></textarea>
-                      <label for="message">Your message</label>
-                    </div>
-                  </div>
-                </div>
-                <!--Grid row-->
                 </form>
 
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
-                  <label class="custom-control-label" for="defaultRegisterFormNewsletter">I like your company</label>
+                  <input type="checkbox" class="custom-control-input d-none " id="defaultRegisterFormNewsletter">
+                  <label class="custom-control-label text-nowrap" for="defaultRegisterFormNewsletter">I like your company</label>
                 </div>
 
-                <div class="text-center text-md-right">
+                <div class="text-center text-md-right text-sm-right mt-0">
                   <a class="btn btn-yellow" onclick="document.getElementById('contact-form').submit();">Send</a>
                 </div>
                 <div class="status"></div>
               </div>
               <!--Grid column-->
-
+              </form>
               <!--Grid column-->
-              <div class="col-md-2 text-center mt-4">
+              <div class="col-lg-3 col-md-10 text-md-left text-sm-center mt-4 ml-auto mr-auto">
                 <ul class="list-unstyled mb-0">
                   <li>
-                    <p>69/A, Some Street Name
+                    <p class="contact_information">69/A, Some Street Name
                       Your City, code 01234
                       Country Name</p>
                   </li>
                   <li>
-                    <p>+880 123 456 78 98
+                    <p class="contact_information">+880 123 456 78 98
                       +860 987 648 74 95</p>
                   </li>
                   <li>
-                    <p>company@mail.com
+                    <p class="contact_information">company@mail.com
                       sales@mail.com</p>
                   </li>
                 </ul>
@@ -1018,21 +1018,21 @@
     <div class="container-fluid fixed-bottom">
       <div class="row">
         <div class="col">
-          <div class="footer_content d-flex justify-content-around align-content-baseline pt-3 pb-3">
-            <p class="copyright_text">
-           Copyright © Company. All Rights Reserved 2016 </p>
-            <ul class="social-media_links col ml-auto d-flex justify-content-end">
+          <div class="footer_content d-flex d-sm-column justify-content-around align-content-baseline pt-3 pb-3">
+            <p class="copyright_text text-center d-flex justify-content-start mr-lg-right mr-sm-auto ml-sm-auto">
+              Copyright © Company. All Rights Reserved 2016 </p>
+            <ul class="social-media_links col ml-lg-auto d-flex justify-content-end mr-sm-auto ml-sm-auto">
               <li class="social-media_links-item">
-                <a href="#" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-f"></i></a>
               </li>
               <li class="social-media_links-item">
-                <a href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
+                <a href="https://aboutme.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a>
               </li>
               <li class="social-media_links-item">
-                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
               </li>
               <li class="social-media_links-item">
-                <a href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
+                <a href="https://dribbble.com/" target="_blank"><i class="fa fa-dribbble"></i></a>
               </li>
             </ul>
           </div>
