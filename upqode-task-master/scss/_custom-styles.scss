@@ -835,8 +835,8 @@ p.text-center-subtitle {
 
 
 footer {
-    height: 64px;
-    // margin-bottom: -99999px;
+    // height: 64px;
+    margin-bottom: -99999px;
     background-color: #1a1a1a;
     // padding-top: 30px;
     max-height: 100%;
@@ -847,15 +847,31 @@ footer {
         font-family: Lato Regular;
         font-size: 16px;
         font-weight: 400;
-        line-height: 42px;
-        letter-spacing: 0.4px;
+        margin-bottom: 0;
     }
 
-    .social-media_links-item {
-        width: 11px;
-        height: 21px;
-        color: rgb(251, 250, 250);
-        margin:0 10px;
-        
+    .social-media_links-item a {
+        // background-color: transparent;
+        padding: 0 15px;
+        // color: white;
+        font-size: 16px;
+        z-index: 11;
+        // margin-top: -25px;
+    }
+
+    .fa-facebook-f {
+        color: #6782b8 !important;
+    }
+
+    .fa-google-plus {
+        color: #cc5f4b !important;
+    }
+
+    .fa-twitter {
+        color: #71d6fa !important;
+    }
+
+    .fa-dribbble {
+        color: #e9779d !important;
     }
 }
