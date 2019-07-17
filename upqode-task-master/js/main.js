@@ -1,39 +1,37 @@
-
 $('a[href*="#"]')
-// Remove links that don't actually link to anything
-.not('[href="#"]')
-.not('[href="#0"]')
-.click(function(event) {
-  // On-page links
-  if (
-	location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-	&& 
-	location.hostname == this.hostname
-  ) {
-	// Figure out element to scroll to
-	var target = $(this.hash);
-	target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-	// Does a scroll target exist?
-	if (target.length) {
-	  // Only prevent default if animation is actually gonna happen
-	  event.preventDefault();
-	  $('html, body').animate({
-		scrollTop: target.offset().top
-	  }, 2000, function() {
-		// Callback after animation
-		// Must change focus!
-		var $target = $(target);
-		$target.focus();
-		if ($target.is(":focus")) { // Checking if the target was focused
-		  return false;
-		} else {
-		  $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-		  $target.focus(); // Set focus again
-		};
-	  });
-	}
-  }
-});
+	// Remove links that don't actually link to anything
+	.not('[href="#"]')
+	.not('[href="#0"]')
+	.click(function (event) {
+		// On-page links
+		if (
+			location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+			location.hostname == this.hostname
+		) {
+			// Figure out element to scroll to
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			// Does a scroll target exist?
+			if (target.length) {
+				// Only prevent default if animation is actually gonna happen
+				event.preventDefault();
+				$('html, body').animate({
+					scrollTop: target.offset().top
+				}, 2000, function () {
+					// Callback after animation
+					// Must change focus!
+					var $target = $(target);
+					$target.focus();
+					if ($target.is(":focus")) { // Checking if the target was focused
+						return false;
+					} else {
+						$target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+						$target.focus(); // Set focus again
+					};
+				});
+			}
+		}
+	});
 
 
 // navMenu
@@ -86,16 +84,15 @@ function setDelay() {
 }
 
 
-
-
-
-$(document).ready(function() {
-	$('.level').waypoint(function() {
-	$('.level').css({
-	animation: "animate-positive 7s",
-	opacity: "1"
+$(document).ready(function () {
+	$('.level').waypoint(function () {
+		$('.level').css({
+			animation: "animate-positive 7s",
+			opacity: "1"
+		});
+	}, {
+		offset: '75%'
 	});
-	}, { offset: '75%' });
 
 });
 
@@ -125,16 +122,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
-
-
-
-
-
-
-
 // owlCarousel iPads
 
-		 
+
 $(function () {
 	// Owl Carousel
 	var owl = $(".ipads-demo .owl-carousel");
@@ -145,7 +135,7 @@ $(function () {
 		loop: true,
 		margin: 10,
 		dots: false,
-		rtl:true,
+		rtl: true,
 		autoplay: 100000, // time for slides changes
 		smartSpeed: 1000, // duration of change of 1 slide
 	});
@@ -153,56 +143,66 @@ $(function () {
 
 
 
-
-
-$(function() {
+$(function () {
 	// при нажатии на кнопку scrollup
-	$('.scrollup').click(function() {
-	  // переместиться в верхнюю часть страницы
-	  $("html, body").animate({
-		scrollTop:0
-	  },2000);
+	$('.scrollup').click(function () {
+		// переместиться в верхнюю часть страницы
+		$("html, body").animate({
+			scrollTop: 0
+		}, 2000);
 	})
-  })
-  // при прокрутке окна (window)
-  $(window).scroll(function() {
+})
+// при прокрутке окна (window)
+$(window).scroll(function () {
 	// если пользователь прокрутил страницу более чем на 200px
-	if ($(this).scrollTop()>200) {
-	  // то сделать кнопку scrollup видимой
-	  $('.scrollup').fadeIn();
+	if ($(this).scrollTop() > 200) {
+		// то сделать кнопку scrollup видимой
+		$('.scrollup').fadeIn();
 	}
 	// иначе скрыть кнопку scrollup
 	else {
-	  $('.scrollup').fadeOut();
+		$('.scrollup').fadeOut();
 	}
-  });
+});
 
-  $('html, body').animate({
-    scrollTop: $("#target-element").offset().top
+$('html, body').animate({
+	scrollTop: $("#target-element").offset().top
 }, 2000);
 
 
 
 
-$('body').scrollspy({ target: '#navbar-example' })
+$('body').scrollspy({
+	target: '#navbar-example'
+})
 
 
 
 
-formData = {
-	'name'     : $('input[name=name]').val(),
-	'email'    : $('input[name=email]').val(),
-	'subject'  : $('input[name=subject]').val(),
-	'message'  : $('textarea[name=message]').val(),
-	'cmethod'  : $('input:radio[name=cmethod]:checked').val()
-  };
+// Tooltips Initialization
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip()
+})
 
+(function () {
+	'use strict';
+	window.addEventListener('load', function () {
+		// Fetch all the forms we want to apply custom Bootstrap validation styles to
+		var forms = document.getElementsByClassName('needs-validation');
+		// Loop over them and prevent submission
+		var validation = Array.prototype.filter.call(forms, function (form) {
+			form.addEventListener('submit', function (event) {
+				if (form.checkValidity() === false) {
+					event.preventDefault();
+					event.stopPropagation();
+				}
+				form.classList.add('was-validated');
+			}, false);
+		});
+	}, false);
+})();
 
-
-
-
-
-
-
-
-
+$(document).ready(function () {
+	$('.datepicker').pickadate();
+	$('.datepicker').removeAttr('readonly');
+});
