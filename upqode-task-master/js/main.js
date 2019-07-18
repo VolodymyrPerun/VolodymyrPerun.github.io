@@ -206,3 +206,5 @@ $(document).ready(function () {
 	$('.datepicker').pickadate();
 	$('.datepicker').removeAttr('readonly');
 });
+
+new WOW().init();
