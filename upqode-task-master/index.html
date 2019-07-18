@@ -17,7 +17,7 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- My custom styles (optional) -->
   <link href="css/style.min.css" rel="stylesheet">
-   <!--FavIcons-->
+  <!--FavIcons-->
   <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
- </head>
+</head>
 
 <body data-spy="scroll" data-target="#navbar-example">
   <div class="scrollup animated wow bounce">
@@ -849,7 +849,7 @@
       <div class="row">
 
         <aside class="about_content col-12 col-xl-6 col-lg-10 col-md-12 col-sm-12">
-          <h1 class="about_title text-xl-left text-lg-center"><span class="blue_color">About </span>us</h1>
+          <h2 class="about_title text-xl-left text-lg-center"><span class="blue_color">About </span>us</h2>
           <p class="about_subtitle_first">Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut
             euism
             Nullam at scelerisque tellus mattis volutpat rhoncus,
@@ -861,8 +861,6 @@
           </p>
 
           <div id="skills">
-
-
 
             <p class="skill-title">PHOTOSHOP</p>
             <div class=" skill-bar">
@@ -895,7 +893,7 @@
                 <span class="level"></span>
               </div>
             </div>
-
+          </div>
         </aside>
 
         <acide class="ipads col-12 col-xl-4 col-lg-12 col-md-12 col-sm-12 offset-xl-1">
@@ -911,7 +909,7 @@
     </div>
   </section>
 
-  <!---------------------------------Contact Section------------------------------->
+  <!--------------------------------Contact Section-------------------------------->
 
   <section id="contact">
     <div class="container-fluid">
@@ -959,28 +957,28 @@
                     <!--Grid column-->
                     <div class="col-md-12">
                       <div class="md-form">
-                        <textarea type="text" id="message" name="message" rows="2"
+                        <textarea id="message" name="message" rows="2"
                           class="form-control md-textarea"></textarea>
                         <label for="message" class="text-nowrap">Message</label>
                       </div>
                     </div>
                   </div>
                   <!--Grid row-->
+
+
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox d-none" id="defaultRegisterFormNewsletter" required>
+                    <label class="checkbox-label text-nowrap" for="defaultRegisterFormNewsletter">I like your
+                      company</label>
+                  </div>
+
+                  <div class="text-center text-md-right text-sm-right mt-0">
+                    <a class="btn btn-yellow" onclick="document.getElementById('contact-form').submit();">Send</a>
+                  </div>
+                  <div class="status"></div>
                 </form>
-
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-checkbox d-none" id="defaultRegisterFormNewsletter" required>
-                  <label class="checkbox-label text-nowrap" for="defaultRegisterFormNewsletter">I like your company</label>
-                </div>
-
-                <div class="text-center text-md-right text-sm-right mt-0">
-                  <a class="btn btn-yellow" onclick="document.getElementById('contact-form').submit();">Send</a>
-                </div>
-                <div class="status"></div>
               </div>
-              <!--Grid column-->
-              </form>
-              <!--Grid column-->
+             <!--Grid column-->
               <div class="col-lg-3 col-md-10 text-md-left text-sm-center mt-4 ml-auto mr-auto">
                 <ul class="list-unstyled mb-0">
                   <li>
@@ -1006,8 +1004,8 @@
     </div>
   </section>
 
+  <!--------------------------------Footer-------------------------------->
 
-  <!---------------------------------Footer------------------------------->
   <footer class="page-footer">
     <div class="container-fluid fixed-bottom">
       <div class="row">
@@ -1039,13 +1037,13 @@
   <!-- SCRIPTS -->
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script src="js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script src="js/mdb.min.js"></script>
   <!--owlCarousel-->
   <script src="libs/owl.carousel.min.js"></script>
   <!--waypointsl-->
@@ -1056,6 +1054,6 @@
   <script src="libs/scroll-startstop.events.jquery.js" type="text/javascript"></script>
   <!--My Custom JS-->
   <script src="js/main.js"></script>
-    </body>
+</body>
 
 </html>
