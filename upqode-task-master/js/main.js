@@ -209,15 +209,5 @@ $(document).ready(function () {
 
 new WOW().init();
 
-// // Get the modal
-// var modal = document.getElementById('contact-form');
-
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-// 		modal.style.display = "none";
-		
-//     }
-// }
 
 
