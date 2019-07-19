@@ -901,7 +901,7 @@
           <div class="row">
             <div class="col-lg-8 col-md-10 ml-0">
 
-              <form id="contact-form" action="#!" class="needs-validation" method="get">
+              <form id="contact-form" action="#!" target="_blank" onsubmit="return checkformufinforum(this)" method="post">
                 <div class="row">
                   <!--Grid column-->
                   <div class="col-md-6">
@@ -927,7 +927,7 @@
                   <!--Grid column-->
                   <div class="col-md-12">
                     <div class="md-form">
-                      <textarea id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                      <textarea id="message" type="message" name="message" rows="2" class="form-control md-textarea" required></textarea>
                       <label for="message" class="text-nowrap">Message</label>
                     </div>
                   </div>
@@ -940,11 +940,10 @@
                     company</label>
                 </div>
 
-                <div class="text-center text-md-right text-sm-right mt-0">
-                  <a class="btn btn-yellow text-nowrap"
-                    onclick="document.getElementById('contact-form').submit();">Send</a>
+                <div class="text-center text-md-right text-sm-right">
+                  <input class="btn btn-yellow text-nowrap" type="submit"
+                    value='Send'>
                 </div>
-                <div class="status"></div>
               </form>
 
             </div>

@@ -1,3 +1,29 @@
+// Validation Form
+
+
+function checkForm(form) {
+	var text = document.getElementById('name').value; //создаем переменную по данным Имя пользователя
+	var name = document.getElementById('email').value; //создаем переменную по номеру телефона пользователя
+	var msg = document.getElementById('message').value;
+	if (text == '') //проверяем не пустое ли поле Имя
+	{
+		alert('Вы забыли ввести имя.'); //и выводим сообщение если пустое поле Имя
+		return false;
+	}
+	if (name == '') { //проверяем пустое ли поле телефон
+		alert('Вы забыли ввести телефон.'); // и если таки да, оно пустое, то выводим сообщение об этом
+		return false;
+	}
+
+	if (msg == '') {
+		alert('Вы забыли ввести текст.');
+		return false;
+	}
+	return true;
+}
+
+
+// Menu Scroll
 $('a[href*="#"]')
 	// Remove links that don't actually link to anything
 	.not('[href="#"]')
@@ -83,7 +109,7 @@ function setDelay() {
 	}, carouselTiming);
 }
 
-
+//Skill Barr Animation
 $(document).ready(function () {
 	$('.level').waypoint(function () {
 		$('.level').css({
@@ -96,12 +122,10 @@ $(document).ready(function () {
 
 });
 
-
 document.addEventListener("DOMContentLoaded", function () {
 
 	var progressBar = document.querySelectorAll(".skill-bar");
 	var time = 7000;
-
 
 	progressBar.forEach(function (i) {
 		let label = i.children[0];
@@ -169,42 +193,11 @@ $('html, body').animate({
 	scrollTop: $("#target-element").offset().top
 }, 2000);
 
-
+//Scroll Spy
 $('body').scrollspy({
 	target: '#navbar-example'
 })
 
 
-// Tooltips Initialization
-$(function () {
-	$('[data-toggle="tooltip"]').tooltip()
-})
-
-(function () {
-	'use strict';
-	window.addEventListener('load', function () {
-		// Fetch all the forms we want to apply custom Bootstrap validation styles to
-		var forms = document.getElementsByClassName('needs-validation');
-		// Loop over them and prevent submission
-		var validation = Array.prototype.filter.call(forms, function (form) {
-			form.addEventListener('submit', function (event) {
-				if (form.checkValidity() === false) {
-					event.preventDefault();
-					event.stopPropagation();
-				}
-				form.classList.add('was-validated');
-			}, false);
-		});
-	}, false);
-})();
-
-$(document).ready(function () {
-	$('.datepicker').pickadate();
-	$('.datepicker').removeAttr('readonly');
-});
-
 // MDB Bootstrap Animation
 new WOW().init();
-
-
-
