@@ -53,9 +53,7 @@ $('a[href*="#"]')
 })(jQuery)
 
 
-
-
-/*==========Owl Carousel Banners=========*/
+/*==========Owl Carousel Banners Main Section=========*/
 var owl = $(".main-demo .owl-carousel").owlCarousel({
 	autoplayTimeout: 6000,
 	autoplay: true,
@@ -72,6 +70,8 @@ owl.on('initialized.owl.carousel translated.owl.carousel', function () {
 	setDelay();
 });
 
+
+/*==========Owl Carousel Banners =========*/
 function setDelay() {
 	owl.trigger('stop.owl.autoplay');
 
@@ -142,7 +142,7 @@ $(function () {
 });
 
 
-
+/*==========Scrollup btn=========*/
 $(function () {
 	// при нажатии на кнопку scrollup
 	$('.scrollup').click(function () {
@@ -170,13 +170,9 @@ $('html, body').animate({
 }, 2000);
 
 
-
-
 $('body').scrollspy({
 	target: '#navbar-example'
 })
-
-
 
 
 // Tooltips Initialization
@@ -207,6 +203,7 @@ $(document).ready(function () {
 	$('.datepicker').removeAttr('readonly');
 });
 
+// MDB Bootstrap Animation
 new WOW().init();
 
 
