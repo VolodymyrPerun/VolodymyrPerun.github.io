@@ -897,8 +897,78 @@
             Nullam at scelerisque tellus mattis volutpat rhoncus,</p>
         </div>
 
+        <div class="forms-container col-10 col-lg-7 col-md-7 d-flex justify-content-around  ml-auto mr-auto">
+          <div class="row">
+            <div class="col-lg-8 col-md-10 ml-0">
+              <form id="contact-form" action="#!" class="needs-validation" novalidate>
+                <div class="row">
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                    <div class="md-form mb-0 mr-0">
+                      <input type="text" id="name" name="name" class="form-control" required>
+                      <label for="name" class="text-nowrap">Full Name</label>
+                    </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                    <div class="md-form mb-0">
+                      <input type="text" id="email" name="email" class="form-control" required>
+                      <label for="email" class="text-nowrap">E-mail Address</label>
+                    </div>
+                  </div>
+                  <!--Grid column-->
+                  <!--Grid row-->
+                  <!--Grid row-->
+                  <!--Grid column-->
+                  <div class="col-md-12">
+                    <div class="md-form">
+                      <textarea id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                      <label for="message" class="text-nowrap">Message</label>
+                    </div>
+                  </div>
+                </div>
+                <!--Grid row-->
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-checkbox d-none" id="defaultRegisterFormNewsletter" required>
+                  <label class="checkbox-label text-nowrap" for="defaultRegisterFormNewsletter">I like your
+                    company</label>
+                </div>
+
+                <div class="text-center text-md-right text-sm-right mt-0">
+                  <a class="btn btn-yellow" onclick="document.getElementById('contact-form').submit();">Send</a>
+                </div>
+                <div class="status"></div>
+              </form>
+
+            </div>
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-10 text-md-left text-sm-center mt-4 ml-auto mr-auto">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <p class="contact_information">69/A, Some Street Name
+                    Your City, code 01234
+                    Country Name</p>
+                </li>
+                <li>
+                  <p class="contact_information">+880 123 456 78 98
+                    +860 987 648 74 95</p>
+                </li>
+                <li>
+                  <p class="contact_information">company@mail.com
+                    sales@mail.com</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          
+        </div>
+        
+        <!--Google map-->
         <div class="col-12 pr-0 pl-0">
-          <!--Google map-->
           <div id="map-container-google" class="z-depth-1-half map-container" style="height: 100%; width:100%">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2572.4635883430337!2d24.0258649!3d49.8525358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add09702dc32f%3A0xdcb5a91a6100da!2sLemkivska+St%2C+9%2C+L&#39;viv%2C+L&#39;vivs&#39;ka+oblast%2C+79000!5e0!3m2!1sen!2sua!4v1563278152955!5m2!1sen!2sua"
@@ -906,74 +976,7 @@
           </div>
           <!--Google Maps-->
 
-          <div class="forms-container col-10 col-lg-7 col-md-7 d-flex justify-content-around  ml-auto mr-auto">
-            <div class="row">
-              <div class="col-lg-8 col-md-10 ml-0">
-                <form id="contact-form" action="#!" class="needs-validation" novalidate>
-                  <div class="row">
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                      <div class="md-form mb-0 mr-0">
-                        <input type="text" id="name" name="name" class="form-control" required>
-                        <label for="name" class="text-nowrap">Full Name</label>
-                      </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                      <div class="md-form mb-0">
-                        <input type="text" id="email" name="email" class="form-control" required>
-                        <label for="email" class="text-nowrap">E-mail Address</label>
-                      </div>
-                    </div>
-                    <!--Grid column-->
-                    <!--Grid row-->
-                    <!--Grid row-->
-                    <!--Grid column-->
-                    <div class="col-md-12">
-                      <div class="md-form">
-                        <textarea id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                        <label for="message" class="text-nowrap">Message</label>
-                      </div>
-                    </div>
-                  </div>
-                  <!--Grid row-->
-
-
-                  <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-checkbox d-none" id="defaultRegisterFormNewsletter" required>
-                    <label class="checkbox-label text-nowrap" for="defaultRegisterFormNewsletter">I like your
-                      company</label>
-                  </div>
-
-                  <div class="text-center text-md-right text-sm-right mt-0">
-                    <a class="btn btn-yellow" onclick="document.getElementById('contact-form').submit();">Send</a>
-                  </div>
-                  <div class="status"></div>
-                </form>
-              </div>
-              <!--Grid column-->
-              <div class="col-lg-3 col-md-10 text-md-left text-sm-center mt-4 ml-auto mr-auto">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <p class="contact_information">69/A, Some Street Name
-                      Your City, code 01234
-                      Country Name</p>
-                  </li>
-                  <li>
-                    <p class="contact_information">+880 123 456 78 98
-                      +860 987 648 74 95</p>
-                  </li>
-                  <li>
-                    <p class="contact_information">company@mail.com
-                      sales@mail.com</p>
-                  </li>
-                </ul>
-              </div>
-              <!--Grid column-->
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
