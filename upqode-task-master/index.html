@@ -900,12 +900,14 @@
         <div class="forms-container col-10 col-lg-7 col-md-7 d-flex justify-content-around  ml-auto mr-auto">
           <div class="row">
             <div class="col-lg-8 col-md-10 ml-0">
-              <form id="contact-form" action="#!" class="needs-validation" novalidate>
+
+              <form id="contact-form" action="#!" class="needs-validation" method="get">
                 <div class="row">
                   <!--Grid column-->
                   <div class="col-md-6">
                     <div class="md-form mb-0 mr-0">
-                      <input type="text" id="name" name="name" class="form-control" required>
+                      <input type="text" id="name" name="name" class="form-control" autocorrect="off"
+                        autocomplete="name" required>
                       <label for="name" class="text-nowrap">Full Name</label>
                     </div>
                   </div>
@@ -914,7 +916,8 @@
                   <!--Grid column-->
                   <div class="col-md-6">
                     <div class="md-form mb-0">
-                      <input type="text" id="email" name="email" class="form-control" required>
+                      <input type="email" id="email" name="email" class="form-control" autocomplete="email"
+                        autocapitalize="off" autocorrect="off" required>
                       <label for="email" class="text-nowrap">E-mail Address</label>
                     </div>
                   </div>
@@ -938,7 +941,8 @@
                 </div>
 
                 <div class="text-center text-md-right text-sm-right mt-0">
-                  <a class="btn btn-yellow" onclick="document.getElementById('contact-form').submit();">Send</a>
+                  <a class="btn btn-yellow text-nowrap"
+                    onclick="document.getElementById('contact-form').submit();">Send</a>
                 </div>
                 <div class="status"></div>
               </form>
@@ -964,9 +968,9 @@
             </div>
             <!--Grid column-->
           </div>
-          
+
         </div>
-        
+
         <!--Google map-->
         <div class="col-12 pr-0 pl-0">
           <div id="map-container-google" class="z-depth-1-half map-container" style="height: 100%; width:100%">
@@ -976,7 +980,6 @@
           </div>
           <!--Google Maps-->
 
-          
         </div>
       </div>
     </div>
@@ -1011,6 +1014,7 @@
     </div>
   </footer>
 
+  
 
   <!-- SCRIPTS -->
   <!-- JQuery -->
