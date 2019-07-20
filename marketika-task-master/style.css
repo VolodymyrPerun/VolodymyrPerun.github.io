@@ -3,13 +3,13 @@
 body {
     background: url('images/bg.jpg') no-repeat center top /cover;
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
 .container {
     width: 80%;
-    height: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
@@ -17,10 +17,27 @@ body {
 
 /* Header */
 
+.header{
+    margin: 0 auto;
+    padding: 0;
+}
+
 #navbar {
     display: flex;
     justify-content: space-between;
     justify-items: baseline;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    height: auto;
+    width: 150px;
+    margin-top: 20px;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
 }
 
 .logo p {
@@ -28,16 +45,14 @@ body {
     border: 2px double rgb(231, 14, 14);
     display: block;
     text-align: center;
-    height: 50px;
-    width: 150px;
+    height: auto;
+    width: 100%;
     font-size: 24px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     color: azure;
     background: black;
-    padding-top: 15px;
-    margin-top: 20px;
-    margin-right: auto;
+    padding: 15px 5px;
     text-transform: uppercase;
     opacity: 0.65
 }
