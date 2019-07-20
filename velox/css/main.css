@@ -2,7 +2,6 @@
 
 body {
     font-family: 'Lora', serif;
-    /* line-height: 36px; */
     font-size: 16px;
     color: #848484;
 }
@@ -121,19 +120,17 @@ header {
     background-color: #00a5ff;
     margin-top: 120px;
     cursor: pointer;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 .get-started:hover,
 .get-started:focus {
     transform: scale(0.9)
-}
-
-.get-started p {
-    color: #ffffff;
-    font-family: "Open Sans";
-    font-size: 25px;
-    font-weight: 400;
-    margin: auto 0;
 }
 
 .navbar-toggler-icon {
@@ -308,17 +305,14 @@ header {
     background-color: #00a5ff;
     margin: 45px auto 80px auto;
     cursor: pointer;
-}
-
-
-.show-more p {
     color: #ffffff;
     font-family: "Open Sans";
     font-size: 25px;
     font-weight: 400;
     line-height: 23px;
     text-transform: uppercase;
-    margin: auto 0;
+    text-align: center;
+    margin-top: 80px !important;
 }
 
 .show-more:hover,
@@ -487,7 +481,7 @@ h2.text-center_reviwes {
 .review-author a {
     cursor: pointer;
     text-decoration: underline;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
 }
 
 .review-author h4 {
@@ -507,16 +501,16 @@ h2.text-center_reviwes {
     font-family: 'Lora';
     font-size: 33px;
     font-weight: 700;
-    margin-top: 55px;
+    margin-top: 50px;
 }
 
 .navbar {
-    padding-top: 23px;
+    padding-top: 15px;
 }
 
 .contact_navbar-ul li {
     margin-right: 26px;
-    margin-top: 55px;
+    margin-top: 70px;
 }
 
 .contact_navbar-ul li:last-child {
@@ -574,7 +568,7 @@ h2.text-center_reviwes {
 }
 
 .address_contacts_links-last_child:last-child {
-    padding-bottom: 95px;
+    padding-bottom: 40px;
 }
 
 .message {
@@ -604,6 +598,7 @@ h2.text-center_reviwes {
     margin-top: 75px;
 }
 
+input[type=email]:focus,
 input[type="text"]:focus {
     border-bottom: 2px solid #00a5ff !important;
 }
@@ -618,11 +613,12 @@ label {
     display: block;
 }
 
-input[type=text] {
+input[type=text],
+input[type=email] {
     width: 26vw !important;
     margin-bottom: 50px;
     padding: 12px 0;
-    background-color: #3b404c !important;
+    background: #3b404c !important;
     border: 0 none;
     cursor: text;
     color: #00a5ff !important;
@@ -662,7 +658,6 @@ textarea {
     text-shadow: none;
     display: inline-block;
     text-align: start;
-    -webkit-writing-mode: horizontal-tb !important;
     background-color: #3b404c !important;
     -webkit-rtl-ordering: logical;
     -webkit-box-orient: vertical;
@@ -681,15 +676,19 @@ textarea:focus {
     border-bottom: 2px solid #00a5ff !important;
 }
 
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+    background: #3b404c !important;
+}
+
 .button_message {
     width: 280px;
     height: 63px;
-    margin-top: -195px;
+    margin-top: -90px;
     margin-right: 40% !important;
-}
-
-.button {
-    padding-bottom: 70px !important;
+    padding-bottom: 0 !important;
 }
 
 /* Футер  */
@@ -702,7 +701,7 @@ footer {
     width: 100%;
 }
 
-.arrow {
+.scrollup {
     width: 67px;
     height: 67px;
     -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
@@ -713,11 +712,13 @@ footer {
     cursor: pointer;
 }
 
-.arrow a {
-    margin: 50% 0;
+.scrollup img {
+    width: 19px;
+    height: 12px;
+    margin: 27px auto 0 auto;
 }
 
-.contacts h4 {
+.contacts p {
     color: #999999;
     font-family: 'Montserrat';
     font-size: 13px;

@@ -17,10 +17,10 @@
 
     <!-- Хедер -->
 
-    <header>
-        <nav class="navbar navbar-expand-md navbar-light sticky-top">
+    <header id="home">
+        <nav id="navbar-example" class="navbar navbar-expand-md navbar-light sticky-top">
             <div class="container">
-                <a href="#" class="navbar-brad"><img src="img/Logo.png" alt="Logo" class="logo_img"></a>
+                <a href="#home" class="navbar-brad"><img src="img/Logo.png" alt="Logo" class="logo_img"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -33,10 +33,10 @@
                             <a href="#portfolio" class="nav-link">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#reviwes" class="nav-link">Testimonials</a>
+                            <a href="#testimonials" class="nav-link">Testimonials</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#about" class="nav-link">About</a>
+                            <a href="#reviwes" class="nav-link">About</a>
                         </li>
                         <li class="nav-item">
                             <a href="#contact" class="nav-link">Contact</a>
@@ -45,7 +45,7 @@
                 </div>
             </div>
         </nav>
-        <p><a name="top"></a></p>
+        <p><a id="top"></a></p>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -59,7 +59,7 @@
                             Clean, Responsive, customizable one page template
                         </p>
                         <button class="get-started d-flex justify-content-center ml-auto mr-auto" type="button">
-                            <p> Get Started Now</p>
+                            Get Started Now
                         </button>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                     <div class="services">
                         <div class="services_icon services_icon_logo"></div>
                         <h3 class="services_title">Logo DESIGN</h3>
-                        <img src="img/line.png" class="services_line">
+                        <img src="img/line.png" class="services_line" alt="img_line">
                         <p class="services_text">Lorem Ipsum is simply dummy text of the printing and typesetting
                             let.
                             Lorem Ipsum has been the industry.</p>
@@ -100,7 +100,7 @@
                     <div class="services">
                         <div class="services_icon services_icon_branding"></div>
                         <h3 class="services_title">Branding</h3>
-                        <img src="img/line.png" class="services_line">
+                        <img src="img/line.png" class="services_line" alt="img_line">
                         <p class="services_text">Lorem Ipsum is simply dummy text of the printing and typesetting
                             let.
                             Lorem Ipsum has been the industry.</p>
@@ -110,7 +110,7 @@
                     <div class="services">
                         <div class="services_icon services_icon_illustrations"></div>
                         <h3 class="services_title">illustrations</h3>
-                        <img src="img/line.png" class="services_line">
+                        <img src="img/line.png" class="services_line" alt="img_line">
                         <p class="services_text">Lorem Ipsum is simply dummy text of the printing and typesetting
                             let.
                             Lorem Ipsum has been the industry..</p>
@@ -131,11 +131,11 @@
                     <div class="portfolio_menu">
                         <nav class="col-8 col-sm-12 col-md-12">
                             <ul class="portfolio_menu_item  d-flex justify-content-center flex-column flex-sm-row">
-                                <a href="#" class="portfolio_menu_link text-center">ALL</a>
-                                <a href="#" class="portfolio_menu_link text-center">ILLUSTRATIONS</a>
-                                <a href="#" class="portfolio_menu_link text-center">LOGO</a>
-                                <a href="#" class="portfolio_menu_link text-center">Branding</a>
-                                <a href="#" class="portfolio_menu_link text-center">WEB DESIGN</a>
+                                <li><a href="#" class="portfolio_menu_link text-center">ALL</a></li>
+                                <li><a href="#" class="portfolio_menu_link text-center">ILLUSTRATIONS</a></li>
+                                <li><a href="#" class="portfolio_menu_link text-center">LOGO</a></li>
+                                <li><a href="#" class="portfolio_menu_link text-center">Branding</a></li>
+                                <li><a href="#" class="portfolio_menu_link text-center">WEB DESIGN</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -190,7 +190,7 @@
                         </div>
                     </div>
                     <button class="show-more col-md-8 col-sm-12 col-12 d-flex justify-content-center" type="button">
-                        <p>SHOW MORE</p>
+                        SHOW MORE
                     </button>
                 </div>
             </div>
@@ -199,7 +199,7 @@
 
     <!-- Третій екран -->
 
-    <section class="brands">
+    <section id="testimonials" class="brands">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -374,10 +374,11 @@
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a href="#" class="navbar-brad mr-auto brad_contact active">Contact Us</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive_contact">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <div class="collapse navbar-collapse" id="navbarResponsive_contact">
                     <ul class="navbar-nav ml-auto contact_navbar-ul">
                         <li class="nav-item">
                             <a href="#" class="nav_contact-link">Home</a>
@@ -430,16 +431,19 @@
                             </ul>
                             <div class="message">
                                 <div class="row">
-                                    <div class="col-10 col-sm-12 col-md-12">
+                                    <form id="contact-form" class="col-10 col-sm-12 col-md-12" action="#!"
+                                        target="_blank" method="POST">
                                         <div class="fname">
                                             <label class="label-fname" for="fname"><i class="fa-user"></i>Name
                                                 :</label>
-                                            <input type="text" id="fname" name="firstname" placeholder="">
+                                            <input type="text" id="fname" name="name" placeholder="" autocomplete="name"
+                                                required>
                                         </div>
                                         <div class="email_address">
                                             <label class="label-email" for="email"><i class="fa-envelope"></i>
                                                 Subject :</label>
-                                            <input type="text" id="email" name="email" placeholder="">
+                                            <input type="email" id="email" name="email" placeholder=""
+                                                autocomplete="email" autocapitalize="off" required>
                                         </div>
                                         <div class="your_message">
                                             <label class="label_your_message" for="wmd-input"><i
@@ -447,20 +451,19 @@
                                             <textarea id="wmd-input"
                                                 class="wmd-input js-wz-element s-input bar0 processed" name="post-text"
                                                 cols="92" rows="15" tabindex="101" data-wz-state="256"
-                                                data-min-length=""></textarea>
+                                                data-min-length="" required></textarea>
                                         </div>
-                                    </div>
+                                        <div class="button_message">
+                                            <input
+                                                class="get-started  col col-md-12 d-flex justify-content-center ml-auto mr-auto"
+                                                type="submit" value='Send Message'>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="button">
-                <button class="get-started button_message col col-md-12 d-flex justify-content-center ml-auto mr-auto"
-                    type="button">
-                    <span>Send message</span>
-                </button>
             </div>
         </div>
     </section>
@@ -469,14 +472,13 @@
 
     <footer>
         <div class="container">
-            <button class="arrow col col-md-1 d-flex justify-content-center ml-auto mr-auto" type="button">
-                <a href="#top"><img src="img/arrow.png" class="arrow_img"></a>
-            </button>
+            <a class="scrollup col col-md-1 d-flex justify-content-center ml-auto mr-auto" href="#top"><img
+                    src="img/arrow.png" class="scrollup_img"></a>
             <div class="row">
                 <div class="col">
                     <div class="contacts">
                         <p class="contacts_text">
-                            <h4>© 2016 Nishant Bazzad</h4>
+                            © 2016 Nishant Bazzad
                         </p>
                         <ul class="social-media_links col ml-auto d-flex justify-content-end">
                             <li class="social-media_links-item links-item_facebook">
@@ -497,12 +499,17 @@
             </div>
         </div>
     </footer>
+
+    <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <!--My Custom JS-->
+  <script src="js/main.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
-</script>
 
 </html>
