@@ -1,0 +1,77 @@
+/* You Responsive Styles */
+
+@media screen and (max-width: 1040px) {
+
+    form {
+        display: flex !important;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column !important;
+    }
+
+    input[type=text],
+    input[type=email] {
+        margin-bottom: 20px;
+        width: 50%;
+        margin-left: 0;
+    }
+
+    input[type=submit] {
+        width: 25%;
+        margin-left: 0;
+        padding: 5px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    .container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .navbar_link {
+        display: flex !important;
+        justify-content: space-around;
+        align-items: left;
+        flex-direction: column !important;
+        margin-top: 5px;
+    }
+
+    .nav_link_item {
+        margin-right: 0;
+        font-size: 19px;
+
+    }
+
+    .nav_link_item:hover,
+    .nav_link_item:active,
+    .nav_link_item:focus {
+        border-bottom: none;
+    }
+
+    .contact {
+        padding: 20px 0;
+    }
+
+    input[type=text],
+    input[type=email] {
+        margin-bottom: 20px;
+        width: 80%;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    input[type=submit] {
+        width: 25%;
+    }
+
+}
+
+@media screen and (min-width: 320px) {
+    input {
+        width: 100%
+    }
+}
