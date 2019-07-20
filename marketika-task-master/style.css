@@ -2,6 +2,9 @@
 
 body {
     background: url('images/bg.jpg') no-repeat center top /cover;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
