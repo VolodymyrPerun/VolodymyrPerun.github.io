@@ -277,8 +277,8 @@ nav {
     color: #777777;
 }
 
-.container1 {
-    font-size: 8px;
+.container1 p {
+    font-size: 12px;
     text-align: center;
     display: block;
     margin: 1182px 0 170px 30px;
