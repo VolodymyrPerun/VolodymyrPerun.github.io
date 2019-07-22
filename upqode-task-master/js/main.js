@@ -1,28 +1,3 @@
-// Validation Form
-
-
-function checkForm(form) {
-	var text = document.getElementById('name').value; //создаем переменную по данным Имя пользователя
-	var name = document.getElementById('email').value; //создаем переменную по номеру телефона пользователя
-	var msg = document.getElementById('message').value;
-	if (text == '') //проверяем не пустое ли поле Имя
-	{
-		alert('Вы забыли ввести имя.'); //и выводим сообщение если пустое поле Имя
-		return false;
-	}
-	if (name == '') { //проверяем пустое ли поле телефон
-		alert('Вы забыли ввести телефон.'); // и если таки да, оно пустое, то выводим сообщение об этом
-		return false;
-	}
-
-	if (msg == '') {
-		alert('Вы забыли ввести текст.');
-		return false;
-	}
-	return true;
-}
-
-
 // Menu Scroll
 $('a[href*="#"]')
 	// Remove links that don't actually link to anything
