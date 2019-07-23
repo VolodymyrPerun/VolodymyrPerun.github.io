@@ -25,7 +25,7 @@
     }
 
     ul.menu-nav,
-    div.menu-branding{
+    div.menu-branding {
         float: none;
         width: 100%;
         min-height: 0;
@@ -48,16 +48,16 @@
         .portrait {
             width: 150px;
             height: 150px;
-        } 
+        }
     }
 
     .about-info {
-        grid-template-areas: 
-        'bioimage'
-        'bio'
-        'job1'
-        'job2'
-        'job3';
+        grid-template-areas:
+            'bioimage'
+            'bio'
+            'job1'
+            'job2'
+            'job3';
 
         grid-template-columns: 1fr;
     }
@@ -65,11 +65,23 @@
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .boxes {
+
+        div {
+            font-size: 2rem;
+            border: 3px #fff solid;
+            padding: 1rem 1rem;
+            margin-bottom: 3rem;
+            @include easeOut;
+        }
+    }
 }
 
 //Smartphones
 @include mediaSm {
-    main#home h1{
+
+    main#home h1 {
         margin-top: 10vh;
     }
 
@@ -81,5 +93,33 @@
             height: 40vw;
             border: 3px #fff solid;
         }
+    }
+
+    .boxes {
+
+        div {
+            font-size: 1rem;
+            border: 3px #fff solid;
+            padding: 0.5rem 0.5rem;
+            margin-bottom: 3rem;
+            @include easeOut;
+        }
+    }
+
+    main {
+        .lg-heading {
+            font-size: 3.2rem;
+        }
+    }
+
+    #home>.lg-heading,
+    #contact>.lg-heading {
+        margin-top: 150px;
+        margin-bottom: 90px;
+    }
+
+    #home>.sm-heading,
+    #contact>.sm-heading {
+        margin-bottom: 50px;
     }
 }
