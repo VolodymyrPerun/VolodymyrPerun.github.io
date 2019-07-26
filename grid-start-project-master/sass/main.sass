@@ -144,6 +144,7 @@
 
 .container
     max-width: 1200px
+    margin: auto
     padding: 0 $gutter
 
 .landing-section
@@ -152,6 +153,30 @@
         font-size: 34px
         font-weight: 800
         color: $dark
-        line-height: 1.2      
+        line-height: 1.2
+
+.section-ready
+    background-color: #fbfbfb
+    .container
+        grid-template-columns: 1fr 1fr
+
+.ready-left
+    border-right: 1px solid #dadada 
+    font-size: 18px
+    padding:
+        top: 60px
+        bottom: 60px
+        right: 60px
+    h2
+        margin-top: 0
+        margin-bottom: 40px
+    p
+        color: $gray
+
+        
+
+
+.ready-right
+    padding-left: 40px
 
 @import "media" // Всегда в конце
