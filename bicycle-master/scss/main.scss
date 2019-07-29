@@ -1,0 +1,92 @@
+@import "fonts";
+@import "libs";
+@import "base";
+@import "vars";
+
+.work {
+    margin: auto;
+
+    .work-item {
+        min-height: 32vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        padding: 0;
+        color: #fff;
+        position: relative;
+        transition: color .5s ease;
+        cursor: pointer;
+
+        .bike-icon {
+            margin: 60px auto 0 auto;
+            margin-top: 180px;
+        }
+
+        .bike-title {
+            color: #353738;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3.6px;
+            margin-bottom: 0;
+        }
+
+        .bike-subtitle {
+            text-align: justify;
+            color: #848789;
+            font-size: 16px;
+            font-weight: 400;
+            // line-height: 30px;
+        }
+
+        .work-item-line {
+            width: 50px;
+            height: 1px;
+            background-color: #353738;
+            margin: 30px auto 0 auto ;
+        }
+
+    }
+
+    .bike-1 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        max-height: 100vh;
+
+        .work-item {
+
+            .bike1-logo {
+                background: url(../img/Logo_bike1.png) center / cover;
+                width: 113px;
+                height: 118px;
+            }
+
+            .bike-icon {
+                background: url(../img/bike1-icon.png) center / cover;
+                width: 41px;
+                height: 30px;
+            }
+
+            &:nth-child(1) {
+                grid-column: 1 / 3;
+                grid-row: 1 / 4
+            }
+
+            &:nth-child(2) {
+                background-color: #ffffff;
+                grid-column: 3 / 5;
+                padding: 0 60px;
+            }
+
+            &:nth-child(3) {
+                grid-column: 3/ 5;
+                grid-row: 3 / 4
+            }
+        }
+
+    }
+
+}

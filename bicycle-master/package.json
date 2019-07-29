@@ -1,0 +1,16 @@
+{
+  "name": "bicycle-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node": "^12.7.0",
+    "sass": "^1.22.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Volodymyr Perun",
+  "license": "ISC"
+}
