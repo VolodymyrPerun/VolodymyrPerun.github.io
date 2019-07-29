@@ -37,7 +37,41 @@
             &:hover {
                 color: #64c29e;
             }
+
         }
+
+
+        &:nth-child(1)::before,
+        &:nth-child(3)::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #282f35;
+            opacity: .35;
+            transition: opacity .5s ease;
+
+        }
+
+        &:nth-child(1):hover::before,
+        &:nth-child(3):hover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: opacity .5s ease;
+            opacity: .75 !important;
+            background-color: #282f35;
+        }
+
+        * {
+            z-index: 1;
+        }
+
 
         .bike-subtitle {
             text-align: justify;
