@@ -102,13 +102,13 @@
         .work-item {
 
             .bike1-logo {
-                background: url(../img/Logo_bike1.png) center / cover;
+                background: url(../img/Logo_bike1.png) no-repeat center / cover;
                 width: 113px;
                 height: 118px;
             }
 
             .bike-icon {
-                background: url(../img/bike1-icon.png) center / cover;
+                background: url(../img/bike1-icon.png) no-repeat center / cover;
                 width: 41px;
                 height: 30px;
             }
@@ -139,13 +139,13 @@
         .work-item {
 
             .bike2-logo {
-                background: url(../img/Logo_bike2.png) center / cover;
+                background: url(../img/Logo_bike2.png) no-repeat center / cover;
                 width: 177px;
                 height: 152px;
             }
 
             .bike-icon {
-                background: url(../img/bike2-icon.png) center / cover;
+                background: url(../img/bike2-icon.png) no-repeat center / cover;
                 width: 32px;
                 height: 32px
             }
@@ -258,7 +258,7 @@
         }
 
         .shop-logo {
-            background: url(../img/shop_logo.png) center / cover;
+            background: url(../img/shop_logo.png) no-repeat center / cover;
             width: 51px;
             height: 30px;
             margin-left: auto;
@@ -349,5 +349,42 @@
 
         }
 
+    }
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    text-align: center;
+
+    .menu {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 1fr;
+        grid-column: 2 / 3;
+        align-items: baseline;
+
+        .menu-logo {
+            position: relative;
+            width: 94px;
+            height: 85px;
+            top: 40px;
+            margin: 0 20px;
+        }
+
+        span,
+        .menu-link {
+            color: #4d4959;
+            font-family: Lato;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: color 0.33s ease;
+
+            &:hover {
+                color: #64c29e;
+            }
+        }
     }
 }
