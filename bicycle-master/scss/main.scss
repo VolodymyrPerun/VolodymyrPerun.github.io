@@ -32,6 +32,11 @@
             text-transform: uppercase;
             letter-spacing: 3.6px;
             margin-bottom: 0;
+            transition: color 0.33s ease;
+
+            &:hover {
+                color: #64c29e;
+            }
         }
 
         .bike-subtitle {
@@ -46,7 +51,7 @@
             width: 50px;
             height: 1px;
             background-color: #353738;
-            margin: 30px auto 0 auto ;
+            margin: 30px auto 0 auto;
         }
 
     }
@@ -83,6 +88,44 @@
 
             &:nth-child(3) {
                 grid-column: 3/ 5;
+                grid-row: 3 / 4
+            }
+        }
+
+    }
+
+    .bike-2 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        max-height: 100vh;
+
+        .work-item {
+
+            .bike2-logo {
+                background: url(../img/Logo_bike2.png) center / cover;
+                width: 177px;
+                height: 152px;
+            }
+
+            .bike-icon {
+                background: url(../img/bike2-icon.png) center / cover;
+                width: 32px;
+                height: 32px
+            }
+
+            &:nth-child(1) {
+                grid-column: 2 / 4;
+                grid-row: 1 / 4
+            }
+
+            &:nth-child(2) {
+                background-color: #ffffff;
+                grid-column: 1 / 2;
+                padding: 0 60px;
+            }
+
+            &:nth-child(3) {
+                grid-column: 1/ 2;
                 grid-row: 3 / 4
             }
         }

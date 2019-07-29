@@ -1,6 +1,4 @@
-
-
-*{
+* {
     // border: 1px solid red;
     box-sizing: border-box;
 
@@ -8,6 +6,12 @@
     &:after {
         box-sizing: border-box
     }
+}
+
+a,
+ul,
+ol {
+    text-decoration: none;
 }
 
 .grid {
