@@ -40,6 +40,9 @@
 
         }
 
+        &:nth-child(2) {
+            padding: 0 60px;
+        }
 
         &:nth-child(1)::before,
         &:nth-child(3)::before {
@@ -116,8 +119,7 @@
 
             &:nth-child(2) {
                 background-color: #ffffff;
-                grid-column: 3 / 5;
-                padding: 0 60px;
+                grid-column: 3 / 5
             }
 
             &:nth-child(3) {
@@ -155,12 +157,61 @@
             &:nth-child(2) {
                 background-color: #ffffff;
                 grid-column: 1 / 2;
-                padding: 0 60px;
             }
 
             &:nth-child(3) {
                 grid-column: 1/ 2;
                 grid-row: 3 / 4
+            }
+        }
+
+    }
+
+    .bike-3 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        max-height: 100vh;
+
+        .work-item {
+
+            .bike3-logo {
+                background: url(../img/Logo_bike3.png) center / cover;
+                width: 208px;
+                height: 67px;
+            }
+
+            .bike-icon {
+                background: url(../img/bike3-icon.png) center / cover;
+                width: 23px;
+                height: 41px;
+            }
+
+            &:nth-child(1) {
+                grid-column: 1;
+                grid-row: 1 / 4
+            }
+
+            &:nth-child(2) {
+                background-color: #ffffff;
+                grid-column: 2;
+            }
+
+            &:nth-child(3) {
+                grid-column: 3;
+                grid-row: 1 / 4
+            }
+
+            &:nth-child(4) {
+                grid-column: 2;
+                grid-row: 3 / 4;
+
+                &:after {
+                    content: ''; 
+                    position: absolute; /* Абсолютное позиционирование */
+                    left: 47.7%; top: 0; /* Положение треугольника */
+                    border: 10px solid transparent; /* Прозрачные границы */
+                    border-top: 10px solid #fff; /* Добавляем треугольник */
+                   }
             }
         }
 
