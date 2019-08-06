@@ -427,18 +427,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .twitter {
     position: relative;
     margin: 0;
@@ -505,9 +493,7 @@
 
     }
 
-
     /*==========Carousel==========*/
-
 
     .carousel.owl-loaded {
         position: relative;
@@ -532,4 +518,29 @@
         background: #a9afb3 !important;
     }
 
+}
+
+.discover {
+    background-color: #282f35;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        padding: 20px 60px;
+        margin: 75px 10px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        background-color: transparent;
+        color: #ffffff;
+        font-family: Lato, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2.8px;
+        transition: .3s all;
+    }
+
+    a:hover,
+    a:active {
+        transform: scale(1.2)
+    }
 }
