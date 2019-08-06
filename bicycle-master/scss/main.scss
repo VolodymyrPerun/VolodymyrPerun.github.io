@@ -589,3 +589,49 @@
         }
     }
 }
+
+footer {
+
+    .address {
+        color: #848789;
+        font-family: Lato, sans-serif;
+        font-size: 14px;
+        line-height: 17.87px;
+
+        span {
+            font-size: 16px;
+            font-weight: 700;
+            font-family: Lato Bold, sans-serif;
+        }
+    }
+
+    .social {
+
+        i {
+            color: #ffffff !important;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 22px;
+            transition: 0.33 ease;
+            margin-right: 15px;
+        }
+
+        i:last-child {
+            margin-right: 0;
+        }
+
+        .fa-twitter {
+            background-color: #78cdf0
+        }
+
+        .fa-facebook-f {
+            padding: 10px 14px;
+            background-color: #537bbd
+        }
+
+        .fa-pinterest {
+            background-color: #eb5755
+        }
+    }
+
+}
