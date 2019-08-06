@@ -447,18 +447,17 @@
 }
 
 .main-demo {
-    height: 100vh;
+    min-height: 60vh;
 
     .owl-carousel {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
 
         .slider {
-            height: 100vh;
+            height: auto;
             width: 80%;
             padding-top: 120px;
             z-index: 1;
+            margin-left: auto;
+            margin-right: auto;
 
             i {
                 display: flex;
@@ -501,11 +500,14 @@
             line-height: 34px;
             z-index: 3;
             text-align: center;
+            margin-bottom: 100px;
         }
 
     }
 
+
     /*==========Carousel==========*/
+
 
     .carousel.owl-loaded {
         position: relative;
@@ -513,20 +515,21 @@
 
     .owl-carousel button.owl-dot {
         padding: 0 !important;
-        margin: 7px !important;
-        margin-right: auto !important;
-        margin-left: auto !important;
+        margin: 10px !important;
     }
 
     .owl-theme .owl-dots .owl-dot span {
-        width: 6px;
-        height: 6px;
+        width: 11px;
+        height: 11px;
         margin: 5px -5px 5px 12px !important;
         position: absolute !important;
         bottom: 8.5% !important;
-       
+        border: 1px solid #c8c8c8;
+        background-color: #f7f7f7;
     }
 
-
+    .owl-carousel .active span {
+        background: #a9afb3 !important;
+    }
 
 }
