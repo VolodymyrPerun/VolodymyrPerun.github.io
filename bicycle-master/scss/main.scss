@@ -439,45 +439,116 @@
 
 
 
-.ipads {
-
-    .ipads-demo {
-
-        .slider {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: max-content;
-            width: 334px;
-            height: 557px;
-            // margin-top: 150px;
-            margin-left: auto;
-            margin-right: auto;
-            position: relative;
-            z-index: 1;
-        }
-
-        /*==========First banner=========*/
-        .slider_first {
-            background: url("../img/bike2_img-1.png") center no-repeat;
-            -webkit-background-size: cover;
-            background-size: cover;
-        }
-
-        // /*==========Second banner=========*/
-        .slider_second {
-            background: url("../img/bike2_img-1.png") center no-repeat;
-            -webkit-background-size: cover;
-            background-size: cover;
-        }
-
-        /*==========Third banner=========*/
-        .slider_third {
-            background: url("../img/bike2_img-1.png") center no-repeat;
-            -webkit-background-size: cover;
-            background-size: cover;
-        }
-
-    }
+.twitter {
+    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
+.main-demo {
+    height: 100vh;
+
+    .slider {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*==========First banner=========*/
+    .slider_first {
+        background-color: #f7f7f7;
+        // position: relative;
+        z-index: 1;
+    }
+
+    /*==========Second banner=========*/
+    .slider_second {
+        background-color: #f7f7f7;
+        // position: relative;
+        z-index: 1;
+    }
+
+    /*==========Third banner=========*/
+    .slider_third {
+        background-color: #f7f7f7;
+        // position: relative;
+        z-index: 1;
+    }
+
+    /*==========Title=========*/
+    .slider>h3.main_title {
+        color: #353738;
+        font-family: Lato Bold;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 1.8px;
+        text-align: center;
+    }
+
+    .slider>h3>span {
+        color: #848789;
+        font-family: Lato Light;
+        font-weight: 300;
+        letter-spacing: 1.8px;
+    }
+
+    /*==========Subtitle=========*/
+    .slider>p {
+        color: #848789;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: italic;
+        line-height: 34px;
+        z-index: 3;
+        text-align: center;
+    }
+
+    /*==========Carousel==========*/
+    button.owl-prev {
+        background-image: url("../img/left_arrow.png") !important;
+        background-size: cover;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 47.5%;
+        right: 93.5%;
+        margin: 0;
+        padding: 0;
+    }
+
+    button.owl-next {
+        background-image: url("../img/right_arrow.png") !important;
+        background-size: cover;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 47.5%;
+        left: 93.5%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .carousel.owl-loaded {
+        position: relative;
+    }
+
+    .owl-carousel button.owl-dot {
+        padding: 0 !important;
+        margin: 7px !important;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        width: 6px;
+        height: 6px;
+        margin: 5px -5px 5px 12px !important;
+        position: absolute !important;
+        bottom: 8.5% !important;
+    }
+
+    .owl-carousel {
+        padding-bottom: 5px;
+    }
+
+}
