@@ -4,6 +4,41 @@
 
 /* Large Devices, Wide Screens */
 @media screen and (max-width : 1200px){
+	
+	.header {
+		grid-template-columns: 1fr 4fr 1fr;
+		padding: 10px;
+	
+		.menu {
+			grid-template-columns: repeat(5, 1fr);
+			grid-template-rows: 1fr;
+			grid-column: 1 / 5;
+			align-items: baseline;
+	
+			.logo {
+				position: relative;
+				width: 94px;
+				height: 85px;
+				top: 40px;
+				margin: 0 10px;
+			}
+	
+			span,
+			.menu-link {
+				color: #4d4959;
+				font-family: Lato;
+				font-size: 13px;
+				font-weight: 700;
+				text-transform: uppercase;
+				transition: color 0.33s ease;
+			}
+
+			.dot {
+				display: none;
+			}
+		}
+	}
+	
 }
 
 
