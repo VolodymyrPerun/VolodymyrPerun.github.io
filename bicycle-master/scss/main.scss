@@ -443,92 +443,69 @@
     position: relative;
     margin: 0;
     padding: 0;
+    background-color: #f7f7f7;
 }
 
 .main-demo {
     height: 100vh;
 
-    .slider {
-        height: 100vh;
-        width: 100%;
+    .owl-carousel {
         display: flex;
         align-items: center;
-        justify-content: center;
-    }
+        justify-content: space-around;
 
-    /*==========First banner=========*/
-    .slider_first {
-        background-color: #f7f7f7;
-        // position: relative;
-        z-index: 1;
-    }
+        .slider {
+            height: 100vh;
+            width: 80%;
+            padding-top: 120px;
+            z-index: 1;
 
-    /*==========Second banner=========*/
-    .slider_second {
-        background-color: #f7f7f7;
-        // position: relative;
-        z-index: 1;
-    }
+            i {
+                display: flex;
+                justify-content: center;
+                color: #56c7ee;
+                font-size: 30px;
+            }
 
-    /*==========Third banner=========*/
-    .slider_third {
-        background-color: #f7f7f7;
-        // position: relative;
-        z-index: 1;
-    }
+            .fa-twitter:before {
+                content: "\f099";
+                margin-left: auto;
+                margin-right: auto;
+            }
 
-    /*==========Title=========*/
-    .slider>h3.main_title {
-        color: #353738;
-        font-family: Lato Bold;
-        font-size: 18px;
-        font-weight: 700;
-        letter-spacing: 1.8px;
-        text-align: center;
-    }
+        }
 
-    .slider>h3>span {
-        color: #848789;
-        font-family: Lato Light;
-        font-weight: 300;
-        letter-spacing: 1.8px;
-    }
+        /*==========Title=========*/
+        .slider>h3.main_title {
+            color: #353738;
+            font-family: Lato Bold, sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 1.8px;
+            text-align: center;
+        }
 
-    /*==========Subtitle=========*/
-    .slider>p {
-        color: #848789;
-        font-family: Lato;
-        font-size: 24px;
-        font-style: italic;
-        line-height: 34px;
-        z-index: 3;
-        text-align: center;
+        .slider>h3>span {
+            color: #848789;
+            font-family: Lato Light, sans-serif;
+            font-weight: 300;
+            letter-spacing: 1.8px;
+        }
+
+        /*==========Subtitle=========*/
+        .slider>p {
+            color: #848789;
+            font-family: Lato, sans-serif;
+            font-size: 24px;
+            font-style: italic;
+            line-height: 34px;
+            z-index: 3;
+            text-align: center;
+        }
+
     }
 
     /*==========Carousel==========*/
-    button.owl-prev {
-        background-image: url("../img/left_arrow.png") !important;
-        background-size: cover;
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        top: 47.5%;
-        right: 93.5%;
-        margin: 0;
-        padding: 0;
-    }
-
-    button.owl-next {
-        background-image: url("../img/right_arrow.png") !important;
-        background-size: cover;
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        top: 47.5%;
-        left: 93.5%;
-        margin: 0;
-        padding: 0;
-    }
 
     .carousel.owl-loaded {
         position: relative;
@@ -537,6 +514,8 @@
     .owl-carousel button.owl-dot {
         padding: 0 !important;
         margin: 7px !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
     }
 
     .owl-theme .owl-dots .owl-dot span {
@@ -545,10 +524,9 @@
         margin: 5px -5px 5px 12px !important;
         position: absolute !important;
         bottom: 8.5% !important;
+       
     }
 
-    .owl-carousel {
-        padding-bottom: 5px;
-    }
+
 
 }
