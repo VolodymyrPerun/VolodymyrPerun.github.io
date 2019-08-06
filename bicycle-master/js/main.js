@@ -1,3 +1,5 @@
+
+
 // Menu Scroll
 $('a[href*="#"]')
 	// Remove links that don't actually link to anything
@@ -54,6 +56,9 @@ $('a[href*="#"]')
 })(jQuery)
 
 
+
+
+
 /*==========Owl Carousel Banners Main Section=========*/
 var owl = $(".main-demo .owl-carousel").owlCarousel({
 	autoplayTimeout: 6000,
@@ -83,62 +88,6 @@ function setDelay() {
 		owl.trigger('next.owl.carousel', [carouselTiming]);
 	}, carouselTiming);
 }
-
-//Skill Barr Animation
-$(document).ready(function () {
-	$('.level').waypoint(function () {
-		$('.level').css({
-			animation: "animate-positive 7s",
-			opacity: "1"
-		});
-	}, {
-		offset: '75%'
-	});
-
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-
-	var progressBar = document.querySelectorAll(".skill-bar");
-	var time = 7000;
-
-	progressBar.forEach(function (i) {
-		let label = i.children[0];
-		let line = i.children[1];
-		let count = 0;
-		let dataCount = label.getAttribute("data-count");
-		let lineCount = line.children[0];
-
-		let runTime = time / dataCount;
-
-		let animationLineCount = setInterval(function () {
-			if (count < dataCount) {
-				count++;
-				label.innerHTML = count + '%';
-				lineCount.style.width = count + '%';
-			}
-		}, runTime);
-	});
-});
-
-// owlCarousel iPads
-
-
-$(function () {
-	// Owl Carousel
-	var owl = $(".ipads-demo .owl-carousel");
-	owl.owlCarousel({
-		items: 1,
-		nav: false,
-		autoplay: true,
-		loop: true,
-		margin: 10,
-		dots: false,
-		rtl: true,
-		autoplay: 100000, // time for slides changes
-		smartSpeed: 1000, // duration of change of 1 slide
-	});
-});
 
 
 /*==========Scrollup btn=========*/

@@ -52,6 +52,7 @@
     * {
         grid-column: 2 / 6;
     }
+
     .about-icon {
         grid-gap: 100px;
         margin-left: auto;
@@ -424,3 +425,59 @@
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ipads {
+
+    .ipads-demo {
+
+        .slider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: max-content;
+            width: 334px;
+            height: 557px;
+            // margin-top: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        /*==========First banner=========*/
+        .slider_first {
+            background: url("../img/bike2_img-1.png") center no-repeat;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+
+        // /*==========Second banner=========*/
+        .slider_second {
+            background: url("../img/bike2_img-1.png") center no-repeat;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+
+        /*==========Third banner=========*/
+        .slider_third {
+            background: url("../img/bike2_img-1.png") center no-repeat;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+
+    }
+}
+
