@@ -16,7 +16,7 @@
         grid-column: 2 / 3;
         align-items: baseline;
 
-        .menu-logo {
+        .logo {
             position: relative;
             width: 94px;
             height: 85px;
@@ -542,5 +542,50 @@
     a:hover,
     a:active {
         transform: scale(1.2)
+    }
+}
+
+.mailing {
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+
+    .logo {
+        margin: 110px auto 40px auto;
+    }
+
+    .discover-title {
+        color: #848789;
+        font-family: Lato, sans-serif;
+        font-size: 24px;
+        font-style: italic;
+        line-height: 34px;
+        text-align: center;
+    }
+
+    .mailing-form {
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 105px;
+
+        input {
+            grid-column: 1 /3;
+            border: 1px solid #d3d7d9;
+            background-color: #ffffff;
+            padding: 15px;
+            outline: none;
+        }
+
+        button {
+            grid-column: 3;
+            padding: 15px;
+            margin-left: 5px;
+            background-color: #64c29e;
+            color: #ffffff;
+            font-family: Lato, sans-serif;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 24px;
+            text-transform: uppercase;
+        }
     }
 }
