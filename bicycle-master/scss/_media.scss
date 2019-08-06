@@ -24,6 +24,15 @@
 		}
 	}
 
+	.work {
+		.work-item {
+
+			.bike-subtitle {
+				font-size: 12px;
+			}
+		}
+	}
+
 }
 
 
@@ -37,6 +46,7 @@
 			.bike-icon {
 				margin-top: 50px;
 			}
+
 		}
 
 		.bike-1 {
@@ -159,7 +169,7 @@
 		.bike-1 {
 			grid-template-columns: 1fr;
 			grid-template-rows: repeat(3, 1fr);
-			
+
 			.work-item {
 
 				&:nth-child(1) {
@@ -248,10 +258,11 @@
 		}
 
 	}
-	
+
 	.twitter {
 		margin-top: 0;
 	}
+
 	.about {
 		padding-bottom: 20px;
 		padding-top: 40px;
