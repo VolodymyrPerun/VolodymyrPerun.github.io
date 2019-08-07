@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
 <body>
@@ -20,13 +21,14 @@
                 <div class="header-logo-title">Panakeia</div>
                 <div class="header-logo-discription">Free PSD template</div>
             </div>
-            <div class="burger-menu">
-                <div class="burger-line burger-line-top"></div>
-                <div class="burger-line burger-line-center"></div>
-                <div class="burger-line burger-line-bottom"></div>
-            </div>
+
             <nav>
-                <ul class="nav-ul">
+                <span id="trigger" class="trigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+                <ul id="nav-ul" class="nav-ul">
                     <li class="nav-li"><a class="nav-a" href=""> Fusce at</a></li>
                     <li class="nav-li"><a class="nav-a" href="">Facilisis</a></li>
                     <li class="nav-li"><a class="nav-a" href="">Ante donec </a></li>
@@ -178,12 +180,12 @@
 
 
             </div>
-        </div>    
+        </div>
     </section>
     <!-- details -->
 
     <!-- footer -->
-     <footer>
+    <footer>
         <div class="footer-container">
             <div class="footer-list">
                 <ul class="footer-ul">
@@ -218,8 +220,17 @@
                     Try awsome tool for desgners <a href="" class="footer-description-ref">symu.co</a></p>
             </div>
         </div>
-    </footer> 
+    </footer>
     <!-- footer -->
+    <script>
+        document.getElementById("trigger").onclick = function () {
+            open()
+        };
+
+        function open() {
+            document.getElementById("nav-ul").classList.toggle("show");
+        }
+    </script>
 </body>
 
 </html>
