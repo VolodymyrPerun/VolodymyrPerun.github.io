@@ -3,8 +3,8 @@
 @import "base";
 @import "vars";
 
-
-.header {
+//Header
+header {
     width: 100%;
     height: 100vh;
     grid-template-columns: 1fr 2fr 1fr;
@@ -40,8 +40,8 @@
         }
     }
 }
-
-
+//Header
+//About Section
 .about {
     background: #f7f7f7;
     text-align: center;
@@ -76,8 +76,8 @@
     }
 
 }
-
-
+//About Section
+//Work Section
 .work {
     margin: auto;
 
@@ -150,7 +150,6 @@
         * {
             z-index: 1;
         }
-
 
         .bike-subtitle {
             text-align: justify;
@@ -299,9 +298,8 @@
     }
 
 }
-
-
-
+//Work Section
+//Shop Section
 .shop {
     margin: auto;
 
@@ -423,8 +421,8 @@
 
     }
 }
-
-
+//Shop Section
+//Twitter Section
 .twitter {
     position: relative;
     margin: 0;
@@ -517,7 +515,8 @@
     }
 
 }
-
+//Twitter Section
+//Discover Section
 .discover {
     background-color: #282f35;
     justify-content: center;
@@ -542,7 +541,8 @@
         transform: scale(1.2)
     }
 }
-
+//Discover Section
+//Mailing Section
 .mailing {
     justify-content: center;
     align-items: center;
@@ -588,15 +588,15 @@
         }
     }
 }
-
-
-
+//Mailing Section
+//Footer
 footer {
     background-color: #f7f7f7;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
     padding-top: 80px;
     padding-bottom: 80px;
+    margin-bottom: -99999px;
 
     .address {
         color: #848789;
@@ -619,7 +619,6 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-
 
         i {
             color: #ffffff !important;
@@ -677,5 +676,5 @@ footer {
         }
     }
 }
-
+//Footer
 @import "media";
