@@ -342,9 +342,6 @@
             transition: visibility .53s ease-in-out;
         }
 
-
-
-
         &::before {
             content: '';
             position: absolute;
@@ -550,6 +547,7 @@
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
+    padding: 5px;
 
     .logo {
         margin: 110px auto 40px auto;
