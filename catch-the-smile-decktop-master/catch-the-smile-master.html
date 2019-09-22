@@ -170,7 +170,7 @@
 
 <div class="buttons">
     <p id="time"></p>
-    <button class="bot" id="bot" onclick="testTimer(90)">Почати гру</button>
+    <button class="bot" id="bot" onclick="testTimer(10)">Почати гру</button>
     <button class="stop" onclick="stop()"></button>
     <p id="rezult"></p>
 </div>
@@ -304,10 +304,13 @@
             rezult.innerHTML = "Час вийшов";
             text.innerText = 'Нажаль ви не впорались;(';
             clearTimeout(stopTimer);
-            bot = document.getElementById("bot");
+           let bot = document.getElementById("bot");
             bot.style.display = 'none';
-            buttons.style.bottom = '350px';
-            buttons.style.left = '800px';
+           let buttons = document.querySelector(".buttons");
+            let smiley = document.querySelector(".smiley");
+            smiley.style.display = 'none';
+            buttons.style.bottom = '320px';
+            buttons.style.left = '830px';
             // bot.removeAttribute("disabled", "disabled");
             // bot.removeChild(bot.childNodes[0]);
             // stopBtn.removeAttribute("disabled", "disabled");
