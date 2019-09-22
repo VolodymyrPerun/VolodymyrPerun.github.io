@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <audio src="sound1.mp3" autoplay="autoplay"></audio>
     <title>Events practice "Catch the smile game"</title>
 </head>
 <body>
@@ -155,9 +156,14 @@
         z-index: 2;
     }
 
+    .soundPlay {
+        color: white;
+    }
+
 </style>
 
 <div id="container">
+
     <p class="forCatch">Для того, щоб спіймати смайлик,
         наведіть на нього мишкою і зробіть подвійний клік лівою кнопкою мишки</p>
     <div class="smiley">
@@ -176,7 +182,15 @@
 </div>
 
 <h1 class="text">Спіймай смайлик!</h1>
+<a href="#" id="myLink1" onclick="playAudio();">Звук 1</a>
 <script>
+
+    function playAudio(){
+        let myAudio = new Audio;
+        myAudio.src = "sound1.wav";
+        myAudio.autoplay = false;
+        myAudio.play();
+    }
 
     let alert = function (message) {
         let div = document.createElement('div');
