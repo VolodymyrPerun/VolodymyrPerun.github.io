@@ -177,6 +177,7 @@
 
 <h1 class="text">Спіймай смайлик!</h1>
 <script>
+
     let alert = function (message) {
         let div = document.createElement('div');
         div.innerHTML = '<h1>' + message + '</h1>';
@@ -191,8 +192,6 @@
         div.style.left = '725px';
         div.style.textAlign = 'center';
         div.style.padding = '10px';
-
-
     };
 
     var buttons = document.querySelector('.buttons');
@@ -209,6 +208,8 @@
         }
         else {
             alert('Ви не досягли відповідного віку!');
+            let smiley = document.querySelector(".smiley");
+            smiley.style.display = 'none';
             bot.style.display = 'none';
             stopBtn.innerText = 'Почати нову гру';
             buttons.style.bottom = '350px';
@@ -311,16 +312,8 @@
             smiley.style.display = 'none';
             buttons.style.bottom = '320px';
             buttons.style.left = '830px';
-            // bot.removeAttribute("disabled", "disabled");
-            // bot.removeChild(bot.childNodes[0]);
-            // stopBtn.removeAttribute("disabled", "disabled");
-            // stopBtn.removeChild(stopBtn.childNodes[0]);
-            // var text2 = document.createTextNode("Начать заново");
-            // stopBtn.appendChild(text2);
             stopBtn.innerText = 'Почати нову гру'
-
         }
-
     }
 
     //Функция для остановки обратного отчета
@@ -331,7 +324,6 @@
         var bot = document.getElementById("bot");
         bot.removeAttribute("disabled", "disabled");
         location.reload()
-
     }
 
 
