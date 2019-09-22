@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <audio src="sound1.mp3" autoplay="autoplay"></audio>
+    <audio id="myAudio" src="sound1.mp3" preload="auto"></audio>
     <title>Events practice "Catch the smile game"</title>
 </head>
 <body>
@@ -126,6 +126,12 @@
         font-size: 15px;
         font-weight: bold;
         margin: 5px;
+        transition: .3s;
+    }
+
+    button:hover,
+    a img:hover{
+        transform: scale(1.05);
     }
 
     .login {
@@ -156,14 +162,23 @@
         z-index: 2;
     }
 
-    .soundPlay {
-        color: white;
+    .soundPlay img {
+        transition: .3s;
+        border-radius: 15%;
+        position: absolute;
+        left: 1175px;
+        bottom: 515px;
+        outline: hidden;
+        height: 55px;
+        width: 45px;
     }
 
 </style>
 
 <div id="container">
-
+    <a class="soundPlay" onclick="togglePlay()"><img
+            src="https://static3.depositphotos.com/1001003/140/i/450/depositphotos_1400410-stock-photo-treble-clef.jpg"
+            alt="Click To Play"></a>
     <p class="forCatch">Для того, щоб спіймати смайлик,
         наведіть на нього мишкою і зробіть подвійний клік лівою кнопкою мишки</p>
     <div class="smiley">
@@ -182,14 +197,12 @@
 </div>
 
 <h1 class="text">Спіймай смайлик!</h1>
-<a href="#" id="myLink1" onclick="playAudio();">Звук 1</a>
 <script>
 
-    function playAudio(){
-        let myAudio = new Audio;
-        myAudio.src = "sound1.wav";
-        myAudio.autoplay = false;
-        myAudio.play();
+    let myAudio = document.getElementById("myAudio");
+
+    function togglePlay() {
+        return myAudio.paused ? myAudio.play() : myAudio.pause()
     }
 
     let alert = function (message) {
@@ -219,8 +232,7 @@
             document.querySelector('.login').innerHTML = 'ГРАВЕЦЬ: ' +
                 prompt('Введіть своє ім\'я' + ', ласкаво просимо').toLocaleUpperCase();
 
-        }
-        else {
+        } else {
             alert('Ви не досягли відповідного віку!');
             let smiley = document.querySelector(".smiley");
             smiley.style.display = 'none';
@@ -232,10 +244,6 @@
     }
 
     login();
-
-
-    // if (isRoadClear == 'зелений') {
-    //     alert('иди');
 
     function getElement(element) {
         return document.querySelector(element);
@@ -319,9 +327,9 @@
             rezult.innerHTML = "Час вийшов";
             text.innerText = 'Нажаль ви не впорались;(';
             clearTimeout(stopTimer);
-           let bot = document.getElementById("bot");
+            let bot = document.getElementById("bot");
             bot.style.display = 'none';
-           let buttons = document.querySelector(".buttons");
+            let buttons = document.querySelector(".buttons");
             let smiley = document.querySelector(".smiley");
             smiley.style.display = 'none';
             buttons.style.bottom = '320px';
