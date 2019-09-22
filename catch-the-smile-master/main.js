@@ -61,8 +61,6 @@ getElement('.smiley').ondblclick = function () {
 
 //Объявим переменную
 var stopTimer;
-let smiley = document.getElementsByClassName('smiley');
-smiley.style.visibility = 'visible';
 
 //Функция для старта
 function testTimer(startTime) {
@@ -134,8 +132,10 @@ function testTimer(startTime) {
         smiley.style.display = 'none';
         buttons.style.bottom = '320px';
         buttons.style.left = '830px';
-        stopBtn.innerText = 'Почати нову гру'
+        stopBtn.innerText = 'Почати нову гру';
     }
+
+    localStorage.setItem('result', JSON.stringify('Останній найкращий результат - ' + min + ' хв ' + seconds + ' секунд'));
 }
 
 //Функция для остановки обратного отчета
@@ -147,3 +147,7 @@ function stop() {
     bot.removeAttribute("disabled", "disabled");
     location.reload()
 }
+
+let item = localStorage.getItem('result');
+console.log(JSON.parse(item));
+document.querySelector(".chronics").innerHTML = JSON.parse(item);

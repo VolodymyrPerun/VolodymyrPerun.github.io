@@ -162,3 +162,14 @@ a img:hover{
     height: 55px;
     width: 45px;
 }
+
+.chronics {
+    position: absolute;
+    left: 750px;
+    bottom: 100px;
+    color: yellow;
+    background: red;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
