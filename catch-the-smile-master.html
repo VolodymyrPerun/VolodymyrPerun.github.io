@@ -155,12 +155,11 @@
         z-index: 2;
     }
 
-
 </style>
 
 <div id="container">
-<p class="forCatch">Для того, щоб спіймати смайлик,
-    наведіть на нього мишкою і зробіть подвійний клік лівою кнопкою мишки</p>
+    <p class="forCatch">Для того, щоб спіймати смайлик,
+        наведіть на нього мишкою і зробіть подвійний клік лівою кнопкою мишки</p>
     <div class="smiley">
         <div class="left-eye"></div>
         <div class="right-eye"></div>
@@ -178,18 +177,37 @@
 
 <h1 class="text">Спіймай смайлик!</h1>
 <script>
+    let alert = function (message) {
+        var div = document.createElement('div');
+        div.innerHTML = '<h1>' + message + '</h1>';
+        document.body.appendChild(div);
+        div.style.color = 'red';
+        div.style.background = 'black';
+        div.style.border = '1px solid red';
+        div.style.display = 'block';
+        div.style.fontSize= '15px';
+        div.style.bottom= '500px';
+        div.style.position = 'absolute';
+        div.style.left = '730px';
+        div.style.textAlign = 'center';
+        div.style.padding = '10px';
+
+
+    };
+
     var buttons = document.querySelector('.buttons');
     var stopBtn = document.querySelector('.stop');
     stopBtn.innerText = 'Завершити гру / Почати нову гру';
+
     function login(name, age) {
-       let bot = document.getElementById("bot");
+        let bot = document.getElementById("bot");
         age = +prompt('Введіть свій вік');
         if (age >= 7) {
-         document.querySelector('.login').innerHTML ='ГРАВЕЦЬ: ' +
-             prompt('Введіть своє ім\'я' + ', ласкаво просимо').toLocaleUpperCase();
+            document.querySelector('.login').innerHTML = 'ГРАВЕЦЬ: ' +
+                prompt('Введіть своє ім\'я' + ', ласкаво просимо').toLocaleUpperCase();
 
         } else {
-            alert('Ви не досягли відповідного віку');
+            alert('Ви не досягли відповідного віку!');
             bot.style.display = 'none';
             stopBtn.innerText = 'Почати нову гру';
             buttons.style.bottom = '350px';
