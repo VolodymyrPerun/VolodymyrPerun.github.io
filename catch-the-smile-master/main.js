@@ -57,6 +57,14 @@ getElement('.smiley').ondblclick = function () {
     text.style.color = 'red';
     text.style.background = 'white';
     clearTimeout(stopTimer);
+    let bot = document.getElementById("bot");
+    bot.style.display = 'none';
+    let buttons = document.querySelector(".buttons");
+    let smiley = document.querySelector(".smiley");
+    smiley.style.display = 'none';
+    buttons.style.bottom = '320px';
+    buttons.style.left = '830px';
+    stopBtn.innerText = 'Почати нову гру';
 };
 
 //Объявим переменную
