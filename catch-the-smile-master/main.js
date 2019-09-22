@@ -67,7 +67,6 @@ getElement('.smiley').ondblclick = function () {
     stopBtn.innerText = 'Почати нову гру';
 };
 
-//Объявим переменную
 var stopTimer;
 
 //Функция для старта
@@ -143,7 +142,7 @@ function testTimer(startTime) {
         stopBtn.innerText = 'Почати нову гру';
     }
 
-    localStorage.setItem('result', JSON.stringify('Останній найкращий результат - ' + min + ' хв ' + seconds + ' секунд'));
+    localStorage.setItem('result', JSON.stringify('Останній результат - ' + min + ' хв ' + seconds + ' секунд'));
 }
 
 //Функция для остановки обратного отчета
