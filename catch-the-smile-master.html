@@ -178,17 +178,17 @@
 <h1 class="text">Спіймай смайлик!</h1>
 <script>
     let alert = function (message) {
-        var div = document.createElement('div');
+        let div = document.createElement('div');
         div.innerHTML = '<h1>' + message + '</h1>';
         document.body.appendChild(div);
         div.style.color = 'red';
         div.style.background = 'black';
         div.style.border = '1px solid red';
         div.style.display = 'block';
-        div.style.fontSize= '15px';
-        div.style.bottom= '500px';
+        div.style.fontSize = '15px';
+        div.style.bottom = '500px';
         div.style.position = 'absolute';
-        div.style.left = '730px';
+        div.style.left = '725px';
         div.style.textAlign = 'center';
         div.style.padding = '10px';
 
@@ -202,11 +202,12 @@
     function login(name, age) {
         let bot = document.getElementById("bot");
         age = +prompt('Введіть свій вік');
-        if (age >= 7) {
+        if (age >= 7 && typeof age === "number") {
             document.querySelector('.login').innerHTML = 'ГРАВЕЦЬ: ' +
                 prompt('Введіть своє ім\'я' + ', ласкаво просимо').toLocaleUpperCase();
 
-        } else {
+        }
+        else {
             alert('Ви не досягли відповідного віку!');
             bot.style.display = 'none';
             stopBtn.innerText = 'Почати нову гру';
