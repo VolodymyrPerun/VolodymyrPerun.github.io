@@ -5,10 +5,28 @@ html {
     background: url("https://image.shutterstock.com/image-illustration/emoji-emoticon-character-background-collection-260nw-689892409.jpg") no-repeat top center / cover;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    width: 50%;
+    height: 100vh;
+}
+
+.aside {
+    border: 1px solid brown;
+    display: flex;
+    width: 50%;
+    height: 100vh;
+}
+
 #container {
     border: 20px solid brown;
     padding: 10px;
-    width: 50vw;
+    width: 100%;
     height: 100vh;
     margin-bottom: 5px;
     box-sizing: border-box;
@@ -85,9 +103,9 @@ html {
 }
 
 .text {
-    position: absolute;
-    left: 800px;
-    bottom: 250px;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
     color: antiquewhite;
     background: black;
     padding: 5px;
@@ -96,10 +114,15 @@ html {
     text-align: center;
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .buttons {
-    position: absolute;
-    left: 740px;
-    bottom: 350px;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
     color: antiquewhite;
     background: black;
     padding: 5px;
@@ -108,6 +131,9 @@ html {
 }
 
 button {
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
     background: yellow;
     height: 40px;
     border-radius: 15px;
@@ -120,14 +146,14 @@ button {
 }
 
 button:hover,
-a img:hover{
+a img:hover {
     transform: scale(1.05);
 }
 
 .login {
-    position: absolute;
-    left: 850px;
-    bottom: 500px;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
     color: red;
     background: white;
     padding: 5px;
@@ -136,6 +162,7 @@ a img:hover{
 }
 
 .forCatch {
+    margin-top: 10vh;
     -webkit-user-select: none;
     /* user-select -- это нестандартное свойство */
 
@@ -152,21 +179,22 @@ a img:hover{
     z-index: 2;
 }
 
+
 .soundPlay img {
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
     transition: .3s;
     border-radius: 15%;
-    position: absolute;
-    left: 1175px;
-    bottom: 515px;
     outline: hidden;
     height: 55px;
     width: 45px;
 }
 
 .chronics {
-    position: absolute;
-    left: 750px;
-    bottom: 100px;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
     color: yellow;
     background: red;
     padding: 5px;
