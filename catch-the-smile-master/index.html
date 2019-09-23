@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <audio id="myAudio" src="sound1.mp3" preload="auto"></audio>
     <title>Events practice "Catch the smile game"</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-
-<div id="container">
-    <a class="soundPlay" onclick="togglePlay()"><img
-            src="https://static3.depositphotos.com/1001003/140/i/450/depositphotos_1400410-stock-photo-treble-clef.jpg"
-            alt="Click To Play"></a>
-    <p class="forCatch">Для того, щоб спіймати смайлик,
-        наведіть на нього мишкою і зробіть подвійний клік лівою кнопкою мишки</p>
-    <div class="smiley">
-        <div class="left-eye"></div>
-        <div class="right-eye"></div>
-        <div class="smile"></div>
+    <div class="main">
+        <div id="container">
+            <p class="forCatch">Для того, щоб спіймати смайлик,
+                наведіть на нього мишкою і зробіть подвійний клік лівою кнопкою мишки</p>
+            <div class="smiley">
+                <div class="left-eye"></div>
+                <div class="right-eye"></div>
+                <div class="smile"></div>
+            </div>
+        </div>
     </div>
-</div>
-<h2 class="login" unselectable="on"></h2>
 
-<div class="buttons">
-    <p id="time"></p>
-    <button class="bot" id="bot" onclick="testTimer(70)">Почати гру</button>
-    <button class="stop" onclick="stop()"></button>
-    <p id="rezult"></p>
-</div>
+    <div class="aside">
+        <div class="container">
+                <a class="soundPlay" onclick="togglePlay()"><img
+                    src="https://static3.depositphotos.com/1001003/140/i/450/depositphotos_1400410-stock-photo-treble-clef.jpg"
+                    alt="Click To Play"></a>
+            <h2 class="login" unselectable="on"></h2>
 
-<h1 class="text">Спіймай смайлик!</h1>
+            <div class="buttons">
+                <p id="time"></p>
+                <button class="bot" id="bot" onclick="testTimer(70)">Почати гру</button>
+                <button class="stop" onclick="stop()"></button>
+                <p id="rezult"></p>
+            </div>
 
-<div class="chronics"></div>
+            <h1 class="text">Спіймай смайлик!</h1>
 
-<script src="main.js"></script>
+            <div class="chronics"></div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
 </body>
+
 </html>
