@@ -1,4 +1,3 @@
-
 let myAudio = document.getElementById("myAudio");
 
 function togglePlay() {
@@ -30,7 +29,7 @@ function login(name, age) {
     age = +prompt('Введіть свій вік');
     if (age >= 7 && typeof age === "number") {
         document.querySelector('.login').innerHTML = 'ГРАВЕЦЬ: ' +
-            prompt('Введіть своє ім\'я' + ', ласкаво просимо').toLocaleUpperCase();
+            prompt('Введіть своє ім\'я').toLocaleUpperCase();
 
     } else {
         alert('Ви не досягли відповідного віку!');
