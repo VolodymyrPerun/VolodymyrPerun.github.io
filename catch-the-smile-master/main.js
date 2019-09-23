@@ -13,11 +13,11 @@ let alert = function (message) {
     div.style.border = '1px solid red';
     div.style.display = 'block';
     div.style.fontSize = '15px';
-    div.style.bottom = '500px';
-    div.style.position = 'absolute';
-    div.style.left = '725px';
+    div.style.marginLeft = 'auto';
+    div.style.marginRight = 'auto';
     div.style.textAlign = 'center';
     div.style.padding = '10px';
+    div.style.border = '20px solid brown';
 };
 
 var buttons = document.querySelector('.buttons');
@@ -34,7 +34,9 @@ function login(name, age) {
     } else {
         alert('Ви не досягли відповідного віку!');
         let smiley = document.querySelector(".smiley");
+        let login = document.querySelector(".login");
         smiley.style.display = 'none';
+        login.style.display = 'none';
         bot.style.display = 'none';
         stopBtn.innerText = 'Почати нову гру';
         buttons.style.bottom = '350px';
@@ -61,8 +63,8 @@ getElement('.smiley').ondblclick = function () {
     let buttons = document.querySelector(".buttons");
     let smiley = document.querySelector(".smiley");
     smiley.style.display = 'none';
-    buttons.style.bottom = '320px';
-    buttons.style.left = '830px';
+    // buttons.style.bottom = '320px';
+    // buttons.style.left = '830px';
     stopBtn.innerText = 'Почати нову гру';
 };
 
@@ -136,8 +138,8 @@ function testTimer(startTime) {
         let buttons = document.querySelector(".buttons");
         let smiley = document.querySelector(".smiley");
         smiley.style.display = 'none';
-        buttons.style.bottom = '320px';
-        buttons.style.left = '830px';
+        // buttons.style.bottom = '320px';
+        // buttons.style.left = '830px';
         stopBtn.innerText = 'Почати нову гру';
     }
 
