@@ -15,10 +15,10 @@ let alert = function (message) {
     div.style.display = 'block';
     div.style.fontSize = '15px';
     div.style.marginLeft = 'auto';
-    div.style.position = 'absolute';
     div.style.marginRight = 'auto';
     div.style.textAlign = 'center';
     div.style.padding = '10px';
+    div.style.border = '20px solid brown';
 };
 
 var buttons = document.querySelector('.buttons');
@@ -35,7 +35,9 @@ function login(name, age) {
     } else {
         alert('Ви не досягли відповідного віку!');
         let smiley = document.querySelector(".smiley");
+        let login = document.querySelector(".login");
         smiley.style.display = 'none';
+        login.style.display = 'none';
         bot.style.display = 'none';
         stopBtn.innerText = 'Почати нову гру';
         buttons.style.bottom = '350px';
