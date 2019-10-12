@@ -1,0 +1,68 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: url("https://miro.medium.com/max/1056/1*kUI-7R4PhglX9mA44VPNpA.png") no-repeat top center / cover;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding-left: 150px;
+}
+
+#container {
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+#container h1 {
+    margin-top: 100px;
+    color: red;
+}
+
+#container h1 span {
+    color: black;
+}
+
+.area-wrapper {
+    margin-top: 55px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#area {
+    width: 300px;
+    height: 300px;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+
