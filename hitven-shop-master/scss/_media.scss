@@ -340,6 +340,7 @@
     .bike-3 {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, 1fr);
+      margin-bottom: 250px;
 
       .work-item {
 
@@ -357,13 +358,16 @@
 
         &:nth-child(3) {
           grid-column: 1;
-          grid-row: 3
+          grid-row: 3;
+          height: 140px !important;
+
         }
 
         &:nth-child(4) {
           grid-column: 1;
           grid-row: 4;
-          padding: 0;
+          //padding: 0;
+          height: 140px !important;
 
           &:after {
             content: '';
