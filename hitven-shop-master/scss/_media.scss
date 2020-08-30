@@ -60,6 +60,10 @@
 /* iPad’ы (книжная ориентация) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 
+  header {
+    height: 50vh;
+  }
+
 }
 
 /* Medium Devices, Desktops */
@@ -260,6 +264,7 @@
 
   .work {
 
+
     .work-item {
       min-height: auto;
       margin: 5px;
@@ -295,7 +300,8 @@
       }
 
       .work-item-line_3 {
-        margin: 210px auto 10px auto;
+        //margin: 210px auto 10px auto;
+        display: none;
       }
 
     }
@@ -326,26 +332,6 @@
       }
 
     }
-
-    //.work-item_3 {
-    //
-    //  &:nth-child(1) {
-    //    grid-column: 1;
-    //    grid-row: 1
-    //  }
-    //
-    //  &:nth-child(2) {
-    //    grid-column: 1;
-    //    grid-row: 2;
-    //    margin-top: 0;
-    //    margin-bottom: 20px;
-    //  }
-    //
-    //  &:nth-child(3) {
-    //    display: none;
-    //  }
-    //
-    //}
 
     .bike-3 {
       grid-template-columns: 1fr;
@@ -388,6 +374,10 @@
         }
       }
 
+    }
+
+    .work-item-line, .logo-small_icon {
+      display: none;
     }
 
   }
@@ -462,6 +452,22 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+
+  .work-item {
+
+    &:nth-child(1) {
+      grid-column: 1;
+      grid-row: 1
+    }
+
+    &:nth-child(2) {
+      margin-top: 0;
+      margin-bottom: 50px;
+      grid-column: 2;
+      grid-row: 2
+    }
+  }
+
   .shop {
 
     .shop-item-list {
