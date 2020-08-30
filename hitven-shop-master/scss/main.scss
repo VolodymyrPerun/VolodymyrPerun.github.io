@@ -142,7 +142,7 @@ header {
       margin-top: 180px;
     }
 
-    .bike-title {
+    .product-title {
       color: #353738;
       font-size: 18px;
       font-weight: 700;
@@ -193,7 +193,7 @@ header {
       z-index: 1;
     }
 
-    .bike-subtitle {
+    .product-subtitle {
       text-align: justify;
       color: #848789;
       font-size: 12px;
@@ -222,14 +222,14 @@ header {
     margin-bottom: -260px;
   }
 
-  .bike-1 {
+  .product-1 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     max-height: 100vh;
 
     .work-item {
 
-      .bike1-logo {
+      .product1-logo {
         background: url(../img/Logo_1.png) no-repeat center / cover;
         width: 302px;
         height: 152px;
@@ -258,14 +258,14 @@ header {
 
   }
 
-  .bike-2 {
+  .product-2 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     max-height: 100vh;
 
     .work-item {
 
-      .bike2-logo {
+      .product2-logo {
         background: url(../img/Logo_1.png) no-repeat center / cover;
         width: 302px;
         height: 152px;
@@ -295,25 +295,25 @@ header {
 
   }
 
-  .bike-3 {
+  .product-3 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     max-height: 100vh;
 
     .work-item {
 
-      .bike3-logo {
+      .product3-logo {
         background: url(../img/Logo_1.png) center / cover;
         width: 302px;
         height: 152px;
       }
 
-      .bike-title {
+      .product-title {
         margin-bottom: 10px;
         margin-top: 10px;
       }
 
-      .bike-subtitle {
+      .product-subtitle {
         margin-bottom: -10px;
         //margin-top: -10px;
       }
@@ -377,8 +377,8 @@ header {
 
 
     .shop-title {
-      color: #ffffff;
-      font-family: Lato;
+      color: #1E4B9E;
+      font-family: Lato, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
       font-size: 14px;
       font-weight: 700;
       text-transform: uppercase;
@@ -389,8 +389,8 @@ header {
     }
 
     .shop-logo {
-      background: url(../img/shop_logo.png) no-repeat center / cover;
-      width: 51px;
+      background: url(../img/logo_1.png) no-repeat center / cover;
+      width: 65px;
       height: 30px;
       margin-left: auto;
       margin-right: auto;
@@ -626,6 +626,7 @@ header {
   .mailing-form {
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 105px;
+    visibility: hidden;
 
     input {
       grid-column: 1 /3;

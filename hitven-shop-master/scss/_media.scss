@@ -33,7 +33,7 @@
     .work-item {
       margin: 5px;
 
-      .bike-subtitle {
+      .product-subtitle {
         font-size: 12px;
       }
     }
@@ -97,7 +97,7 @@
 
     }
 
-    .bike-1 {
+    .product-1 {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
 
@@ -123,7 +123,7 @@
 
     }
 
-    .bike-2 {
+    .product-2 {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
 
@@ -149,7 +149,7 @@
 
     }
 
-    .bike-3 {
+    .product-3 {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
 
@@ -334,7 +334,7 @@
       }
     }
 
-    .bike-1 {
+    .product-1 {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, 1fr);
 
@@ -368,7 +368,7 @@
     }
 
 
-    .bike-2 {
+    .product-2 {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, 1fr);
 
@@ -394,7 +394,7 @@
 
     }
 
-    .bike-3 {
+    .product-3 {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, 1fr);
       margin-bottom: 250px;
