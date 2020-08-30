@@ -497,10 +497,9 @@
   }
 
   .about {
-    //margin-top: 0;
-    //min-height: auto;
-    //padding-bottom: -200px;
-    //padding-top: 50px !important;
+    .logo-small_icon {
+      display: none;
+    }
   }
 }
 
