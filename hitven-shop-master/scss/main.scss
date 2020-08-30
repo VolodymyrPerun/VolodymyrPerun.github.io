@@ -305,7 +305,15 @@ header {
         width: 302px;
         height: 152px;
       }
+      .bike-title {
+        margin-bottom: -10px;
+        margin-top: -10px;
+      }
 
+      .bike-subtitle {
+        margin-bottom: -10px;
+        //margin-top: -10px;
+      }
 
       &:nth-child(1) {
         grid-column: 1;
