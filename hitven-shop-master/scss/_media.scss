@@ -3,7 +3,8 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media screen and (max-width: 1200px) {
+/* Десктопы и лэптопы ----------- */
+@media only screen and (min-width: 1224px) {
 
   header {
     grid-template-columns: 1fr 4fr 1fr;
@@ -56,6 +57,10 @@
 
 }
 
+/* iPad’ы (книжная ориентация) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+}
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -249,10 +254,10 @@
 }
 
 
-
-
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+
+
   .work {
 
     .work-item {
@@ -279,13 +284,18 @@
           grid-column: 1;
           grid-row: 2;
           margin-top: 0;
-          margin-bottom: 20px;
+          padding: 0 10px;
+
         }
 
         &:nth-child(3) {
           grid-column: 1;
           grid-row: 3
         }
+      }
+
+      .work-item-line_3 {
+        margin: 210px auto 10px auto;
       }
 
     }
@@ -442,8 +452,10 @@
   }
 
   .about {
-    padding-bottom: 20px;
-    padding-top: 40px;
+    //margin-top: 0;
+    //min-height: auto;
+    //padding-bottom: -200px;
+    //padding-top: 50px !important;
   }
 }
 
@@ -523,6 +535,41 @@
   }
 }
 
+/* Смартфоны (книжная и альбомная ориентация) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { /* Стили */
+}
+
+/* Смартфоны (альбомная ориентация) ----------- */
+@media only screen and (min-width: 321px) { /* Стили */
+}
+
+/* Смартфоны (книжная ориентация) ----------- */
+@media only screen and (max-width: 320px) { /* Стили */
+}
+
+/* iPad’ы (книжная и альбомная ориентация) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) { /* Стили */
+}
+
+/* iPad’ы (альбомная ориентация) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) { /* Стили */
+}
+
+/* iPad’ы (книжная ориентация) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) { /* Стили */
+}
+
+/* Десктопы и лэптопы ----------- */
+@media only screen and (min-width: 1224px) { /* Стили */
+}
+
+/* Большие экраны ----------- */
+@media only screen and (min-width: 1824px) { /* Стили */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { /* Стили */
+}
 
 /* Custom, iPhone Retina */
 // @media only screen and (max-width : 320px) {}
