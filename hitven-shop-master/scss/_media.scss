@@ -336,7 +336,7 @@
 
 
   .about {
-    grid-template-columns: 6 / 6;
+    grid-template-columns: 6fr;
     padding: 0 15px;
 
     .item_3 {
@@ -345,7 +345,7 @@
     }
 
   }
-  
+
   .work {
 
     .work-item {
@@ -534,6 +534,15 @@
     .logo-small_icon {
       display: none;
     }
+  }
+
+  .about_contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+
   }
 
   .i-frame {
