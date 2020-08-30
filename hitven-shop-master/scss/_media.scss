@@ -336,16 +336,17 @@
 
 
   .about {
-    grid-template-columns: 6fr;
+    grid-template-columns: 6 / 6;
     padding: 0 15px;
 
     .item_3 {
       width: 360px;
       height: 144px;
     }
-  }
-  .work {
 
+  }
+  
+  .work {
 
     .work-item {
       min-height: auto;
@@ -389,7 +390,6 @@
       }
 
       .work-item-line_3 {
-        //margin: 210px auto 10px auto;
         display: none;
       }
 
@@ -620,6 +620,7 @@
       }
 
     }
+
   }
 
   .discover {
