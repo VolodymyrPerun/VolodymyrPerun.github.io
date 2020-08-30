@@ -327,6 +327,7 @@
     .work-item {
       min-height: auto;
       margin: 5px;
+      padding: 15px !important;
 
       .small-icon {
         margin-top: 50px;
@@ -339,6 +340,7 @@
 
       .work-item {
 
+
         &:nth-child(1) {
           grid-column: 1;
           grid-row: 1
@@ -347,7 +349,7 @@
         &:nth-child(2) {
           grid-column: 1;
           grid-row: 2;
-          margin-top: 0;
+          margin: 0;
           padding: 0 10px;
 
         }
