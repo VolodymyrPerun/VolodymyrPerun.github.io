@@ -11,9 +11,14 @@
     padding: 10px;
 
     .menu {
+
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: 1fr;
       grid-column: 1 / 5;
+
+      .menu-link {
+        margin: 0 40px !important;
+      }
 
       .logo img {
         width: 15vh;
@@ -21,9 +26,6 @@
         margin: 0 auto;
       }
 
-      .dot {
-        display: none;
-      }
     }
   }
 
@@ -62,6 +64,8 @@
 
   header {
     height: 50vh;
+
+
   }
 
 }
@@ -70,6 +74,10 @@
 @media only screen and (max-width: 992px) {
   header {
     .menu {
+
+      .menu-link {
+        margin: 0 20px !important;
+      }
 
       .logo img {
         width: 10vh;
@@ -261,6 +269,49 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
 
+
+  .menu {
+
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    height: 400px;
+    border: 2px solid #1E4B9E;
+    border-radius: 10px;
+    opacity: 0.7;
+
+    .menu-link {
+      border-bottom: 2px solid #1E4B9E;
+      border-radius: 10px;
+      position: relative;
+      padding-top: 40px !important;
+      font-size: 15px !important;
+      right: -100px !important;
+
+      &:nth-child(2){
+        right: -115px !important;
+      }
+
+      &:nth-child(4){
+        right: -105px !important;
+      }
+    }
+
+
+
+
+    .logo img {
+      position: relative;
+      width: 25vh !important;
+      height: auto;
+      top: -27.5px;
+      right: 0;
+      border: 2px solid #1E4B9E;
+      border-radius: 5px;
+      margin: 0 auto;
+    }
+  }
 
   .work {
 
