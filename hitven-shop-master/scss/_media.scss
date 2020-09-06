@@ -638,6 +638,9 @@
   footer {
     padding: 10px;
 
+    .address {
+      font-size: 11px;
+    }
 
     .social {
       display: grid;
@@ -648,7 +651,12 @@
     .credits {
       display: flex;
       flex-direction: column;
+
+      .credits_title {
+        font-size: 11px;
+      }
     }
+
   }
 }
 
