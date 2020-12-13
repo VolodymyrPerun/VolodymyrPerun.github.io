@@ -115,7 +115,7 @@
 
     /*==========First banner=========*/
     &_first {
-      background: url("../img/bg-1.jpg") center no-repeat;
+      background: url("../img/bg-1.png") center no-repeat;
       -webkit-background-size: cover;
       background-size: cover;
       position: relative;
@@ -136,7 +136,7 @@
 
     /*==========Second banner=========*/
     &_second {
-      background: url("../img/bg2-3.jpg") center no-repeat;
+      background: url("../img/bg-2.png") center no-repeat;
       -webkit-background-size: cover;
       background-size: cover;
       position: relative;
@@ -157,7 +157,7 @@
 
     /*==========Third banner=========*/
     &_third {
-      background: url("../img/bg-2.jpg") center no-repeat;
+      background: url("../img/bg-3.png") center no-repeat;
       -webkit-background-size: cover;
       background-size: cover;
       position: relative;
@@ -326,9 +326,14 @@
 
 
   /*==========Carousel==========*/
+
+  button {
+    border: 1px solid $yellowText !important;
+  }
+
   button.owl-prev {
-    background-image: url("../img/left_arrow.png") !important;
-    background-size: cover;
+    background-image: url("../img/wood-left-arrow-sign-png.png") !important;
+    background-size: cover !important;
     width: 60px;
     height: 60px;
     position: absolute;
@@ -336,11 +341,13 @@
     right: 93.5%;
     margin: 0;
     padding: 0;
+    outline: none !important;
+    transition: 1s ease;
   }
 
   button.owl-next {
-    background-image: url("../img/right_arrow.png") !important;
-    background-size: cover;
+    background-image: url("../img/wood-right-arrow-sign-png.png") !important;
+    background-size: cover !important;
     width: 60px;
     height: 60px;
     position: absolute;
@@ -348,6 +355,14 @@
     left: 93.5%;
     margin: 0;
     padding: 0;
+    outline: 0 !important;
+    transition: 1s ease;
+  }
+
+  button.owl-next:hover, button.owl-next:active,
+  button.owl-prev:hover, button.owl-prev:active {
+    background-color: $yellowText !important;
+    border: 1px solid $whiteText !important;
   }
 
   .carousel.owl-loaded {
@@ -357,6 +372,19 @@
   .owl-carousel button.owl-dot {
     padding: 0 !important;
     margin: 7px !important;
+  }
+
+  .owl-dots {
+    visibility: hidden;
+  }
+
+  .owl-dot span {
+    visibility: visible;
+  }
+
+  .owl-dot.active span {
+    color: $yellowText !important;
+    background-color: $yellowText !important;
   }
 
   .owl-theme .owl-dots .owl-dot span {
@@ -370,7 +398,6 @@
   .owl-carousel {
     padding-bottom: 5px;
   }
-
 }
 
 /****************************Why Choose Us Section************************/
