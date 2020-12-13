@@ -284,7 +284,46 @@
       padding: 0;
       margin: 0;
     }
+
+    /*==========Page Counter==========*/
+    &_page_counter {
+      position: relative;
+      left: -50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      z-index: 3;
+
+      &_line {
+        margin-top: -30px;
+        margin-bottom: 5px;
+        background-color: $yellowText;
+        height: 40px;
+        width: 3.5px !important;
+      }
+
+      &_text {
+        font-family: Ubuntu Bold, sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        color: $yellowText;
+        font-weight: bold;
+        font-size: 27px;
+        letter-spacing: 1.5px;
+        transform: rotate(90deg);
+      }
+
+      &_dot {
+        border-radius: 50%;
+        background-color: $yellowText;
+        margin-top: 22px;
+        width: 10px;
+        height: 10px;
+      }
+    }
   }
+
 
   /*==========Carousel==========*/
   button.owl-prev {

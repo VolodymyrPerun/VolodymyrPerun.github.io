@@ -10,6 +10,7 @@ $blueText: #ffffff;
 $yellowText: #bea67c;
 $whiteText: #ffffff;
 $greyText: #7e7e7e;
+$paragraphText: rgb(70, 70, 70);
 
 html,
 body {
@@ -28,12 +29,12 @@ ul {
   margin-right: auto;
 }
 
-.white_color {
-  color: $whiteText
-}
-
 .yellow_color {
   color: $yellowText;
+}
+
+.not_active_dot {
+  background-color: $paragraphText !important;
 }
 
 
