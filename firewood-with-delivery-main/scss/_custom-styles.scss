@@ -1,5 +1,5 @@
-// Your custom styles
 @charset "UTF-8";
+// Your custom styles
 @import "settings";
 @import "fonts";
 
@@ -16,7 +16,7 @@
   //background: linear-gradient(315deg, #2d3436 0%, #000000 74%) !important;
 
   .navbar-collapse {
-    height: 100%;
+    min-height: 100%;
   }
 
   .line {
@@ -400,27 +400,211 @@
   }
 }
 
-/****************************Why Choose Us Section************************/
-h2.text-center-title {
-  color: #232323;
-  font-family: Lato Regular;
-  font-size: 35px;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: uppercase;
-  letter-spacing: 1.4px;
-  margin: 70px auto 30px auto;
+/****************************Firewood Section************************/
+
+#firewood {
+  min-height: 150vh;
+  max-height: 200vh;
+
+  .firewood {
+    //margin: 0 auto 0 auto;
+
+    /*==========Firewood Section Title And Subtitles ==========*/
+    &_line {
+      background: url("../img/firewoods_lines.png") no-repeat center top /cover !important;
+      position: relative;
+      top: 70px;
+      width: 152px;
+      height: 59px;
+      z-index: 5;
+    }
+
+    &_title {
+      font-family: Ubuntu, sans-serif;
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #373737;
+      letter-spacing: 1.4px;
+      margin-bottom: 30px;
+      z-index: 5;
+    }
+
+    &_subtitle_first {
+      color: $greyText;
+      font-family: Ubuntu, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.56px;
+      margin-bottom: 0;
+      z-index: 5;
+    }
+
+    &_subtitle_second {
+      position: relative;
+      left: 190px;
+      max-width: 300px !important;
+      color: $greyText;
+      font-family: Ubuntu, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.56px;
+      margin-top: 0;
+      margin-bottom: 0;
+      z-index: 5;
+    }
+
+    &_button_contacts {
+      width: 157px;
+      height: 21px;
+      padding: 2px;
+      margin: 0;
+      position: relative;
+      font-size: 14px;
+      font-family: Ubuntu, sans-serif;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      text-transform: uppercase;
+      line-height: 5;
+      text-align: left;
+      border-bottom: 2px solid $yellowText;
+      z-index: 5;
+      right: -200px;
+      top: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      outline: hidden;
+      transition: .3s;
+
+      &:hover, &:active {
+        border-bottom: none;
+        border-left: 2px solid $yellowText;
+        padding-left: 7px;
+      }
+
+      &_line {
+        background: url("../img/button_contacts.png") no-repeat center center / cover !important;
+        position: relative;
+        width: 35px;
+        height: 7px;
+        z-index: 5;
+        right: -305px;
+        top: -32.5px;
+      }
+    }
+
+    &_counter {
+      position: relative;
+      color: rgb(0, 0, 0);
+      font-family: Ubuntu Bold, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      right: -45px;
+      letter-spacing: 1.56px;
+      margin-bottom: 0;
+      z-index: 5;
+
+      span {
+        color: $yellowText;
+      }
+
+      &_line {
+        margin-top: 50px;
+        margin-bottom: 65px;
+        background-color: $yellowText;
+        height: 40px;
+        width: 3.5px !important;
+        position: relative;
+        left: 55px;
+        //top: 15px;
+      }
+    }
+  }
+
+  /*==========Firewood Section Carousel ==========*/
+  .ipads {
+
+    .ipads-demo {
+
+      .slider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 574px;
+        height: 310px;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 40px;
+        transition: 0.7s ease;
+        z-index: 1;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          z-index: 2;
+          background: $whiteText !important;
+          opacity: 0.2;
+        }
+      }
+
+      /*==========First banner=========*/
+      .slider_first {
+        background: url("../img/bg-3.png") no-repeat center center /cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+      }
+
+      /*==========Second banner=========*/
+      .slider_second {
+        background: url("../img/firewoods_slider-2.png") no-repeat center center /cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+      }
+
+      /*==========Third banner=========*/
+      .slider_third {
+        background: url("../img/firewoods_slider-3.png") no-repeat center center /cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+      }
+
+      /*==========Fought banner=========*/
+      .slider_fought {
+        background: url("../img/bg-2.png") no-repeat center center /cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+      }
+
+      /*==========Fifth banner=========*/
+      .slider_fifth {
+        background: url("../img/slider-5.png") no-repeat center center /cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+      }
+
+      /*==========Six banner=========*/
+      .slider_six {
+        background: url("../img/slider-6.png") no-repeat center center /cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+      }
+
+    }
+  }
 }
 
-p.text-center-subtitle {
-  color: #999999;
-  font-family: Lato Regular;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  margin: 0 auto;
-  margin-bottom: 90px;
-}
+/*==========Firewood Section Blocks==========*/
+
 
 /*==========Your Propose Blocks==========*/
 .rewives {
@@ -477,6 +661,7 @@ p.text-center-subtitle {
 
 }
 
+
 /*==========Your Propose Hover Blocks==========*/
 .rewives .after {
   margin: -130px auto 0 auto;
@@ -521,8 +706,6 @@ p.text-center-subtitle {
   display: block;
   color: #DDD;
   background: url('../img/gears.png') no-repeat center center;
-  width: 36px;
-  height: 36px;
   font-size: 48px;
   position: absolute;
   top: 68px;
@@ -639,169 +822,6 @@ p.text-center-subtitle {
 
 }
 
-
-/****************************About Section************************/
-
-
-.about_content {
-  margin: 85px auto 0 auto;
-
-  /*==========About Section Title And Subtitles ==========*/
-  .about_title {
-    font-family: Lato Regular;
-    font-size: 35px;
-    font-weight: 700;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #373737;
-    letter-spacing: 1.4px;
-    margin-bottom: 30px;
-  }
-
-  .about_subtitle_first {
-    color: #999999;
-    font-family: Lato Bold;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.56px;
-    margin-bottom: 45px;
-  }
-
-  .about_subtitle_second {
-    color: #373737;
-    font-family: Lato Bold;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.56px;
-    margin-bottom: 20px;
-  }
-
-
-  /*==========Skill Bar==========*/
-  .skill-bar {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-  }
-
-  .skill-bar:last-child {
-    margin-bottom: 200px;
-  }
-
-  .skill-bar .line {
-    height: 9px;
-    width: 95%;
-    background: transparent;
-    border-radius: 1px;
-    position: relative;
-    border: 1px solid #dddddd;
-
-  }
-
-  .skill-bar .label {
-    position: relative;
-    right: 20px;
-    color: #444444;
-    font-family: Lato Regular;
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 0.65px;
-    text-align: right !important;
-    z-index: 4;
-  }
-
-  .skill-bar > .line > span {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: #009dda;
-    border-radius: 10px;
-    height: 3px;
-    margin: 2px 1px;
-  }
-
-  #skills p.skill-title {
-    position: relative;
-    left: 0;
-    top: 45px;
-    color: #444444;
-    font-family: Lato Regular;
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.65px;
-  }
-
-  @keyframes animationLoaded {
-    0% {
-      width: 0%;
-    }
-
-    100% {
-      width: 100%;
-    }
-  }
-
-  @-webkit-keyframes animate-positive {
-    0% {
-      width: 0%;
-    }
-  }
-
-  @keyframes animate-positive {
-    0% {
-      width: 0%;
-    }
-  }
-
-}
-
-/*==========IPads Block==========*/
-.ipads {
-
-  .ipads-demo {
-
-    .slider {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: max-content;
-      width: 334px;
-      height: 557px;
-      margin-top: 150px;
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      z-index: 1;
-    }
-
-    /*==========First banner=========*/
-    .slider_first {
-      background: url("../img/ipad_silver_cover.png") center no-repeat;
-      -webkit-background-size: cover;
-      background-size: cover;
-    }
-
-    // /*==========Second banner=========*/
-    .slider_second {
-      background: url("../img/ipad_black_cover.png") center no-repeat;
-      -webkit-background-size: cover;
-      background-size: cover;
-    }
-
-    /*==========Third banner=========*/
-    .slider_third {
-      background: url("../img/ipad_gold_cover.png") center no-repeat;
-      -webkit-background-size: cover;
-      background-size: cover;
-    }
-
-  }
-}
-
 /****************************Contact Section************************/
 /*==========Contact Section==========*/
 #contact {
@@ -838,7 +858,6 @@ p.text-center-subtitle {
     z-index: 2;
     background: #000000;
     opacity: 0.65;
-    z-index: 2;
   }
 
   .map-container:hover:after,

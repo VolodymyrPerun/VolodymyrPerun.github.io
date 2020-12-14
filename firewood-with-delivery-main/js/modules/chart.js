@@ -8087,7 +8087,7 @@ module.exports = {
 		 * @param tickValue {Number} the value to be formatted
 		 * @param index {Number} the position of the tickValue parameter in the ticks array
 		 * @param ticks {Array<Number>} the list of ticks being converted
-		 * @return {String} string representation of the tickValue parameter
+		 * @return {String} string reipads of the tickValue parameter
 		 */
 		linear: function(tickValue, index, ticks) {
 			// If we have lots of ticks, don't use the ones

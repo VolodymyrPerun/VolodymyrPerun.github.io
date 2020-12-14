@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
-// owlCarousel iPads
+// owlCarousel Firewood
 
 
 $(function () {
@@ -130,7 +130,7 @@ $(function () {
 	owl.owlCarousel({
 		items: 1,
 		nav: false,
-		autoplay: true,
+		// autoplay: true,
 		loop: true,
 		margin: 10,
 		dots: false,
