@@ -18,7 +18,7 @@ $('a[href*="#"]')
 				event.preventDefault();
 				$('html, body').animate({
 					scrollTop: target.offset().top
-				}, 2000, function () {
+				}, 1000, function () {
 					// Callback after animation
 					// Must change focus!
 					var $target = $(target);
@@ -51,7 +51,7 @@ $('a[href*="#"]')
 
 		return false;
 	});
-})(jQuery)
+})(jQuery);
 
 
 /*==========Owl Carousel Banners Main Section=========*/
@@ -84,43 +84,6 @@ function setDelay() {
 	}, carouselTiming);
 }
 
-//Skill Barr Animation
-$(document).ready(function () {
-	$('.level').waypoint(function () {
-		$('.level').css({
-			animation: "animate-positive 7s",
-			opacity: "1"
-		});
-	}, {
-		offset: '75%'
-	});
-
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-
-	var progressBar = document.querySelectorAll(".skill-bar");
-	var time = 7000;
-
-	progressBar.forEach(function (i) {
-		let label = i.children[0];
-		let line = i.children[1];
-		let count = 0;
-		let dataCount = label.getAttribute("data-count");
-		let lineCount = line.children[0];
-
-		let runTime = time / dataCount;
-
-		let animationLineCount = setInterval(function () {
-			if (count < dataCount) {
-				count++;
-				label.innerHTML = count + '%';
-				lineCount.style.width = count + '%';
-			}
-		}, runTime);
-	});
-});
-
 // owlCarousel Firewood
 
 
@@ -148,7 +111,7 @@ $(function () {
 		// переместиться в верхнюю часть страницы
 		$("html, body").animate({
 			scrollTop: 0
-		}, 2000);
+		}, 1000);
 	})
 })
 // при прокрутке окна (window)

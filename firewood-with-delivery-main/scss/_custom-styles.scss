@@ -5,6 +5,11 @@
 
 /*******************Here You Can Change Your Cite Main Styles***********/
 
+.line {
+  background-color: $yellowText;
+  width: 40px;
+  height: 3.5px !important;
+}
 
 /*******************Here You Can Change Your Navbar, Logo And Search Panel Styles***********/
 .navbar {
@@ -22,9 +27,6 @@
   .line {
     margin-left: -55px;
     margin-bottom: -15px;
-    background-color: $yellowText;
-    width: 40px;
-    height: 3.5px !important;
   }
 
   /*==========Logo===========*/
@@ -246,7 +248,7 @@
         border-top: 1.5px solid $whiteText;
         border-bottom: 1.5px solid $whiteText;
         top: 50px;
-        left: -20px;
+        left: -15px;
 
         &:hover, &:active {
           background: url("../img/button_more_hover.png") no-repeat center center/cover !important;
@@ -261,7 +263,7 @@
         border-top: 1.5px solid $whiteText;
         border-bottom: 1.5px solid $whiteText;
         top: 80px;
-        left: -40px;
+        left: -45px;
 
         &:hover, &:active {
           background: url("../img/button_purchase_hover.png") no-repeat center center/cover !important;
@@ -408,7 +410,6 @@
   max-height: 200vh;
 
   .firewood {
-    //margin: 0 auto 0 auto;
 
     /*==========Firewood Section Title And Subtitles ==========*/
     &_line {
@@ -623,154 +624,36 @@
     }
   }
 }
+
 /*==========Firewood Section Blocks==========*/
 
-
-/*==========Your Propose Blocks==========*/
-.rewives {
-  text-align: center;
-  width: 180px;
-  height: 270px;
-  border: 1px solid #ebebeb;
-  margin: 0 auto 10px auto;
-
-  .rewives_icon {
-    width: 60px;
-    height: 55px;
-    margin: 30px auto 55px auto;
-  }
-
-  .rewives_icon_heart {
-    background: url('../img/heart.png') no-repeat center center;
-  }
-
-  .rewives_icon_question {
-    background: url('../img/question.png') no-repeat center center;
-  }
-
-  .rewives_icon_laptop {
-    background: url('../img/laptop.png') no-repeat center center;
-  }
-
-  .rewives_icon_star {
-    background: url('../img/star.png') no-repeat center center;
-  }
-
-  .rewives_icon_flag {
-    background: url('../img/flag.png') no-repeat center center;
-  }
-
-
-  h3.rewives_title {
-    color: #232323;
-    font-family: Lato Heavy;
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.7px;
-    margin-bottom: 20px;
-  }
-
-  p.rewives_text {
-    color: #373737;
-    font-family: Lato Regular;
-    font-size: 13px;
-    font-weight: 300;
-    letter-spacing: 0.56px;
-  }
-
-}
-
-
-/*==========Your Propose Hover Blocks==========*/
-.rewives .after {
-  margin: -130px auto 0 auto;
-  width: 180px;
-  height: 149px;
-  background-color: #503392;
-  display: none;
-  position: relative;
-}
-
-.rewives:hover .after {
-  display: block;
-}
-
-.rewives .after .content {
-  width: 74px;
-  height: 12px;
-  color: #ffffff;
-  font-family: Lato Semibold;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 60px;
-  text-transform: uppercase;
-  letter-spacing: 0.7px;
-  margin: 25px auto 30px auto;
-}
-
-.rewives .after .zoom {
-  display: block;
-  color: #DDD;
-  background: url('../img/zoom.png') no-repeat center center;
-  width: 36px;
-  height: 36px;
-  position: absolute;
-  top: 75px;
-  left: 95px;
-  cursor: pointer;
-  z-index: 5;
-}
-
-.rewives .after .gears {
-  display: block;
-  color: #DDD;
-  background: url('../img/gears.png') no-repeat center center;
-  font-size: 48px;
-  position: absolute;
-  top: 68px;
-  right: 95px;
-  height: 50px;
-  width: 45px;
-  cursor: pointer;
-  z-index: 5;
-}
-
-.gears:hover,
-.zoom:hover {
-  transform: scale(1.1);
-}
 
 /****************************Products Section************************/
 
 #products {
-  margin-top: 100px;
-  background: url("../img/products_bg.png") no-repeat center/cover;
+  margin-top: 10px;
   padding-bottom: 80px;
 
-
-  h2.products_text-center-title {
-    color: #ffffff;
-    font-family: Lato Regular;
+  .products_text-center-title {
+    color: rgb(0, 0, 0);
+    font-family: Ubuntu, sans-serif;
     font-size: 35px;
     font-weight: 700;
-    line-height: 24px;
+    text-align: center;
+    line-height: 2.083;
     text-transform: uppercase;
     letter-spacing: 1.4px;
-    margin: 50px auto 88px auto;
+    margin: 5px auto;
     z-index: 2;
   }
 
-  .products_title-top {
-    background: url("../img/products_title_bg.png") center no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    position: relative;
+  .products_subtitle {
+    color: $paragraphText;
+    font-family: Ubuntu, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.21px;
     z-index: 1;
-  }
-
-  #carousel-with-lb {
-    margin-top: 130px !important;
   }
 
   .darken-1 {
@@ -784,7 +667,6 @@
   .carousel-indicators li {
     width: 0.425rem;
     height: 0.425rem;
-
   }
 
   .carousel-inner figure {
@@ -797,12 +679,14 @@
     margin-right: auto;
     margin-left: auto;
     box-shadow: inset 0 -5px 9px rgba(1, 1, 1, 0.06);
+    padding: 5px;
+    border: 1px solid rgb(225, 225, 225);
     z-index: 2;
   }
 
   h3.products_layer_title {
     color: #232323;
-    font-family: Lato Heavy;
+    font-family: Ubuntu, sans-serif;
     font-size: 24px;
     font-weight: 400;
     text-transform: uppercase;
@@ -810,26 +694,18 @@
     z-index: 1;
   }
 
-  p.products_layer_subtitle {
-    color: $violetText;
-    font-family: Lato Regular;
+  p.products_layer_subtitle:hover {
+    color: $yellowText;
+  }
+
+  p.products_layer_subtitle{
+    color: rgb(0, 0, 0);
+    font-family: Ubuntu, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24.21px;
-    z-index: 1;
-  }
-
-  p.products_layer_subtitle:hover {
-    color: $blueText;
-  }
-
-  p.products_layer_subtitle-second {
-    color: #373737;
-    font-family: Lato Regular;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24.21px;
     letter-spacing: 0.46px;
+    transition: 0.3s ease;
     z-index: 1;
   }
 
@@ -839,7 +715,6 @@
     height: 145px !important;
     width: 165px !important;
   }
-
 }
 
 /****************************Contact Section************************/
