@@ -628,92 +628,199 @@
 /*==========Firewood Section Blocks==========*/
 
 
-/****************************Products Section************************/
+/****************************info Section************************/
 
-#products {
+#info {
+  height: 100vh;
   margin-top: 10px;
   padding-bottom: 80px;
 
-  .products_text-center-title {
-    color: rgb(0, 0, 0);
-    font-family: Ubuntu, sans-serif;
-    font-size: 35px;
-    font-weight: 700;
-    text-align: center;
-    line-height: 2.083;
-    text-transform: uppercase;
-    letter-spacing: 1.4px;
-    margin: 5px auto;
-    z-index: 2;
-  }
+  .info {
 
-  .products_subtitle {
-    color: $paragraphText;
-    font-family: Ubuntu, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24.21px;
-    z-index: 1;
-  }
+    &_text-center-title {
+      color: rgb(0, 0, 0);
+      font-family: Ubuntu, sans-serif;
+      font-size: 35px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 2.083;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      margin: 5px auto;
+      z-index: 2;
+    }
 
-  .darken-1 {
-    background-color: #d7d7d7 !important;
-  }
+    &_subtitle {
+      color: $paragraphText;
+      font-family: Ubuntu, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24.21px;
+      z-index: 1;
+    }
 
-  .darken-1.active {
-    background-color: #503392 !important;
-  }
+    .darken-1 {
+      background-color: #d7d7d7 !important;
+    }
 
-  .carousel-indicators li {
-    width: 0.425rem;
-    height: 0.425rem;
-  }
+    .darken-1.active {
+      background-color: #503392 !important;
+    }
 
-  .carousel-inner figure {
-    margin-bottom: 80px;
-  }
+    .carousel-indicators li {
+      width: 0.425rem;
+      height: 0.425rem;
+    }
 
-  img.img-fluid {
-    height: 135px !important;
-    width: 135px !important;
-    margin-right: auto;
-    margin-left: auto;
-    box-shadow: inset 0 -5px 9px rgba(1, 1, 1, 0.06);
-    padding: 5px;
-    border: 1px solid rgb(225, 225, 225);
-    z-index: 2;
-  }
+    .carousel-inner figure {
+      margin-bottom: 80px;
+    }
 
-  h3.products_layer_title {
-    color: #232323;
-    font-family: Ubuntu, sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.74px;
-    z-index: 1;
-  }
+    img.img-fluid {
+      height: 135px !important;
+      width: 135px !important;
+      margin-right: auto;
+      margin-left: auto;
+      box-shadow: inset 0 -5px 9px rgba(1, 1, 1, 0.06);
+      padding: 5px;
+      border: 1px solid rgb(225, 225, 225);
+      z-index: 2;
+    }
 
-  p.products_layer_subtitle:hover {
-    color: $yellowText;
-  }
+    &_layer_title {
+      color: #232323;
+      font-family: Ubuntu, sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.74px;
+      z-index: 1;
+    }
 
-  p.products_layer_subtitle{
-    color: rgb(0, 0, 0);
-    font-family: Ubuntu, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24.21px;
-    letter-spacing: 0.46px;
-    transition: 0.3s ease;
-    z-index: 1;
-  }
+    &_layer_subtitle:hover {
+      color: $yellowText;
+    }
 
-  .rgba-white-slight {
-    z-index: 3;
-    box-shadow: inset 0 -5px 9px rgba(1, 1, 1, 0.06);
-    height: 145px !important;
-    width: 165px !important;
+    &_layer_subtitle {
+      color: rgb(0, 0, 0);
+      font-family: Ubuntu, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24.21px;
+      letter-spacing: 0.46px;
+      transition: 0.3s ease;
+      z-index: 1;
+    }
+
+    .rgba-white-slight {
+      z-index: 3;
+      box-shadow: inset 0 -5px 9px rgba(1, 1, 1, 0.06);
+      height: 145px !important;
+      width: 165px !important;
+    }
+
+    &_counter {
+      position: relative;
+      color: rgb(0, 0, 0);
+      font-family: Ubuntu Bold, sans-serif;
+      font-size: 24px !important;
+      font-weight: bold !important;
+      text-transform: uppercase;
+      right: -45px;
+      letter-spacing: 1.56px;
+      margin-bottom: 0;
+      z-index: 5;
+      left: -15px;
+
+      span {
+        color: $yellowText;
+      }
+    }
+
+    &_counter_line {
+      margin-top: 50px;
+      margin-bottom: 65px;
+      background-color: $yellowText;
+      height: 40px;
+      width: 3.5px !important;
+      position: relative;
+      right: -155px;
+    }
+  }
+}
+
+/****************************About Section************************/
+
+#about {
+  background: url("../img/about_bg.png") center /cover !important;
+  width: 100%;
+  height: 100vh;
+  max-height: 916px;
+  margin-top: 160px;
+  z-index: 1;
+
+  .about {
+    width: 80% !important;
+    height: 60% !important;
+
+    &_content {
+      margin-top: 190px !important;
+      font-family: Ubuntu, sans-serif;
+
+      &_title {
+        font-size: 40px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.25;
+        position: relative;
+        left: 75px;
+        z-index: 2;
+      }
+
+      &_subtitle {
+        font-size: 27px;
+        color: $whiteText;
+        text-transform: uppercase;
+        line-height: 2;
+        position: relative;
+        left: 75px;
+        top: -34px;
+        z-index: 2;
+      }
+
+      &_text {
+        margin: 0 auto;
+        padding: 0 auto;
+        font-size: 12px;
+        font-family: Ubuntu Light, sans-serif;
+        color: rgb(255, 255, 255);
+        position: relative;
+        left: 75px;
+        top: -34px;
+        z-index: 2;
+      }
+
+      &_button {
+        padding-left: 140px !important;
+        background: url("../img/button_purchase.png") no-repeat center center /cover !important;
+        width: 264px !important;
+        height: 47px !important;
+        text-decoration: none !important;
+        outline: hidden !important;
+        border-top: 1.5px solid $whiteText;
+        border-bottom: 1.5px solid $whiteText;
+        position: relative;
+        left: 45px;
+        z-index: 2;
+
+        &:hover, &:active {
+          background: url("../img/button_purchase_hover.png") no-repeat center center /cover !important;
+          border-top: 2px solid $whiteText;
+          border-bottom: 2px solid $whiteText;
+          transform: scale(1.1);
+        }
+      }
+    }
   }
 }
 

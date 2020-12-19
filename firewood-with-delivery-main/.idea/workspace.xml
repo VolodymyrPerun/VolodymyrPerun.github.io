@@ -5,11 +5,73 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/products_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/3976.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/BEYNO/BEYNO.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/BEYNO/BEYNO.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Lato2OFL/Lato-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Lato2OFL/Lato-BlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Lato2OFL/Lato-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Lato2OFL/Lato-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Lato2OFL/Lato-Hairline.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Lato2OFL/Lato-HairlineItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Lato2OFL/Lato-Heavy.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Lato2OFL/Lato-HeavyItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Lato2OFL/Lato-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Lato2OFL/Lato-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Lato2OFL/Lato-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Lato2OFL/Lato-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Lato2OFL/Lato-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Lato2OFL/Lato-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Lato2OFL/Lato-Semibold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Lato2OFL/Lato-SemiboldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Lato2OFL/Lato-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Lato2OFL/Lato-ThinItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Lato2OFL/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Lato2OFL/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/roboto/Roboto-Bold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/roboto/Roboto-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/roboto/Roboto-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/roboto/Roboto-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/roboto/Roboto-Light.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/roboto/Roboto-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/roboto/Roboto-Light.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/roboto/Roboto-Light.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/roboto/Roboto-Medium.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/roboto/Roboto-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/roboto/Roboto-Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/roboto/Roboto-Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/roboto/Roboto-Regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/roboto/Roboto-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/roboto/Roboto-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/roboto/Roboto-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/roboto/Roboto-Thin.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/roboto/Roboto-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/roboto/Roboto-Thin.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/roboto/Roboto-Thin.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ubuntu.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ubuntu/ubuntu-font-family-0.80/CONTRIBUTING.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ubuntu/ubuntu-font-family-0.80/FONTLOG.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ubuntu/ubuntu-font-family-0.80/LICENCE-FAQ.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ubuntu/ubuntu-font-family-0.80/LICENCE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ubuntu/ubuntu-font-family-0.80/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ubuntu/ubuntu-font-family-0.80/TRADEMARKS.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-B.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-BI.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-C.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-L.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-LI.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-M.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-MI.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-R.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-RI.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ubuntu/ubuntu-font-family-0.80/UbuntuMono-B.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ubuntu/ubuntu-font-family-0.80/UbuntuMono-BI.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ubuntu/ubuntu-font-family-0.80/UbuntuMono-R.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ubuntu/ubuntu-font-family-0.80/UbuntuMono-RI.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ubuntu/ubuntu-font-family-0.80/copyright.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/_custom-styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_custom-styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_settings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_fonts.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +100,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607782902591</updated>
-      <workItem from="1607782903897" duration="105163000" />
+      <workItem from="1607782903897" duration="118064000" />
     </task>
     <servers />
   </component>
