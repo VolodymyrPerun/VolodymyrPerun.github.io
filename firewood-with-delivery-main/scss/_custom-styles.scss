@@ -892,38 +892,28 @@
 
 footer {
   margin-bottom: -99999px;
-  background-color: #1a1a1a;
+  background: url("../img/footer_bg.png") no-repeat center /cover !important;
   max-height: 100%;
+  min-height: 10vh;
   padding-bottom: 0;
   z-index: 100;
 
   .copyright_text {
-    color: #7a7a7a;
-    font-family: Lato Regular;
-    font-size: 16px;
-    font-weight: 400;
+    color: $greyText;
+    font-family: Ubuntu Light, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
     margin-bottom: 0;
-  }
 
-  .social-media_links-item a {
-    padding: 0 15px;
-    font-size: 18px;
-    z-index: 11;
+    a {
+      margin-left: 5px;
+      color: $yellowText;
+    }
   }
-
-  .fa-facebook-f {
-    color: #6782b8 !important;
-  }
-
-  .fa-google-plus {
-    color: #cc5f4b !important;
-  }
-
-  .fa-twitter {
-    color: #71d6fa !important;
-  }
-
-  .fa-dribbble {
-    color: #e9779d !important;
+  .logo_footer {
+    background: url("../img/logo_footer.png") no-repeat center /cover !important;
+    min-width: 55px;
+    min-height: 27px;
+    z-index: 101;
   }
 }
