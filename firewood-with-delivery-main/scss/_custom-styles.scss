@@ -825,146 +825,65 @@
 }
 
 /****************************Contact Section************************/
-/*==========Contact Section==========*/
+
 #contact {
+  //padding: 0 5px;
+  width: 100%;
+  height: 70vh;
+  max-width: 1920px;
+  margin-top: 160px;
+  z-index: 1;
 
-  h2.text-center-title {
-    margin: 0 auto 20px auto;
-  }
+  .contact {
 
-  .map-container {
-    overflow: hidden;
-    position: relative;
-    min-height: 40rem;
-    z-index: 1;
-    margin-top: -420px;
-    max-height: 100%;
-  }
-
-  .map-container iframe {
-    left: 0;
-    top: 0;
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-    min-height: 40rem;
-  }
-
-  .map-container:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 2;
-    background: #000000;
-    opacity: 0.65;
-  }
-
-  .map-container:hover:after,
-  .map-container:focus:after,
-  .map-container:active:after {
-    display: none;
-    z-index: 1;
-  }
-
-  .forms-container {
-    position: relative;
-    top: 110px;
-    background: #1a1a1a;
-    opacity: 0.85;
-    z-index: 10;
-    padding-top: 45px;
-    padding-bottom: 25px;
-
-    label {
-      color: #b7b7b7;
-      font-family: Lato Regular;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
-      left: 1.2rem;
-      bottom: 1.2rem;
+    &_img {
+      background: url("../img/contact_bg.png") no-repeat center /cover !important;
+      width: 615px !important;
+      height: 327px !important;
+      z-index: 2;
     }
 
-    input {
-      color: #4ab5e3;
-      font-family: Lato Regular;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 30px;
-    }
+    &_content {
+      font-family: Ubuntu, sans-serif;
 
-    input.form-control {
-      height: 30px !important;
-      border: 1px solid #999998;
-      margin: 0 0 -10px 0 !important;
-    }
+      &_title {
+        font-size: 35px;
+        font-weight: 800;
+        color: rgb(1, 1, 1);
+        text-transform: uppercase;
+        z-index: 2;
+      }
 
-    input:active,
-    input:focus,
-    textarea:active,
-    textarea:focus {
-      background-color: #ffffff;
-    }
+      &_item {
 
-    textarea {
-      border: 1px solid #999998;
-      color: #4ab5e3;
-      height: 100px;
-      margin: 0 !important;
-      font-family: Lato Regular;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 30px;
-    }
+        &_icon {
+          max-width: 17px;
+          max-height: 17px;
+          z-index: 2;
+        }
 
-    p.contact_information {
-      color: #f3f3f3;
-      font-family: Lato Regular;
-      font-size: 14px;
-      margin-left: -30px;
-      margin-bottom: 35px;
-    }
+        a {
+          position: relative;
+          left: 5px;
+          font-size: 20px;
+          font-weight: 600;
+          text-decoration: none;
+          color: rgb(70, 70, 70);
+          z-index: 2;
+        }
 
-    .text-center {
-      padding-bottom: 20px;
-      margin-top: -50px;
-      margin-right: 5px;
-    }
+        &:nth-child(3) {
+          a {
+            left: 27px;
+          }
+        }
 
-    input[type=submit] {
-      width: 120px !important;
-      height: 50px !important;
-      background-color: #ffff00;
-      color: #373737;
-      font-family: Lato Regular;
-      font-size: 16px;
-      font-weight: 400;
-    }
-
-    .custom-checkbox > label {
-      margin-left: -10px;
-    }
-
-    input[type=checkbox] + label:before {
-      content: "\2713";
-      color: transparent;
-      display: inline-block;
-      left: -1.5rem;
-      border: 1px solid #999998 !important;
-      font-size: 20px;
-      margin: 0 8px 0 0;
-      width: 1.3rem;
-      height: auto;
-      text-align: center;
-      vertical-align: middle;
-      transition: color ease .3s;
-    }
-
-    input[type=checkbox]:checked + label:before {
-      color: #4ab5e3;
+        &:nth-child(4) {
+          a {
+            left: 32px;
+          }
+        }
+      }
     }
   }
 }
