@@ -274,11 +274,13 @@
       &_button {
 
         &_more {
-          left: 10px !important;
+          top: 50px !important;
+          left: -30px !important;
         }
 
         &_purchase {
-          left: -30px !important;
+          top: 0 !important;
+          left: 30px !important;
         }
       }
     }
@@ -330,14 +332,6 @@
       &_button {
         width: 185px !important;
         height: 30px !important;
-
-        &_more {
-          left: -5px !important;
-        }
-
-        &_purchase {
-          left: -15px !important;
-        }
       }
 
       &_mouse_scroll {
@@ -437,25 +431,7 @@
   .line {
     margin-bottom: -2px !important;
   }
-
-  .main-demo {
-    .slider {
-
-      &_button {
-        width: 144px !important;
-        height: 30px !important;
-
-        &_more {
-          left: 15px !important;
-        }
-
-        &_purchase {
-          left: -5px !important;
-        }
-      }
-    }
-  }
-
+  
   .firewood {
 
     &_title {
