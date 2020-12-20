@@ -350,6 +350,7 @@
   .firewood {
 
     &_title {
+      font-size: 25px !important;
       margin-top: 50px !important;
     }
 
@@ -382,7 +383,45 @@
       }
     }
   }
+
+
+  .info {
+
+   .line {
+     margin-bottom: 10px !important;
+    }
+
+    &_text-center-title {
+      font-size: 25px !important;
+      line-height: 1.5 !important;
+      margin-top: 40px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    &_subtitle {
+      font-size: 14px;
+      line-height: 1 !important;
+    }
+
+    .carousel-inner figure {
+      margin-bottom: 20px !important;
+    }
+
+    &_counter {
+      display: none !important;
+    }
+
+    &_counter_line {
+      display: none !important;
+    }
+  }
+
+  .info_layer_subtitle {
+    margin-top: 15px !important;
+  }
 }
+
 
 @media screen and (max-width: 400px) {
   .logo {
@@ -422,7 +461,6 @@
   .firewood {
 
     &_title {
-      font-size: 25px !important;
       margin-top: 50px !important;
     }
 
