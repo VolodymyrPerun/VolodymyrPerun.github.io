@@ -1,15 +1,66 @@
 @charset "UTF-8";
-@import "settings";
-@import "fonts";
+/*******************Here You Can Change Your Settings Styles***********/
+html,
+body {
+  font-family: Ubuntu, sans-serif;
+  background: url("../img/main_bg.png") center/cover !important;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  z-index: -2;
+}
 
+.row {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.yellow_color {
+  color: #bea67c;
+}
+
+.not_active_dot {
+  background-color: #464646 !important;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+}
+
+figure .col,
+figure .col-lg-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/ubuntu/Ubuntu-L.ttf") format("ttf"), url("../fonts/ubuntu/Ubuntu-L.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Ubuntu Bold";
+  src: url("../fonts/ubuntu/Ubuntu-B.ttf") format("ttf"), url("../fonts/ubuntu/Ubuntu-B.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Ubuntu Light";
+  src: url("../fonts/ubuntu/Ubuntu-R.ttf") format("ttf"), url("../fonts/ubuntu/Ubuntu-R.ttf") format("truetype");
+}
 /*******************Here You Can Change Your Adaptive Styles***********/
-
 @media screen and (max-width: 1366px) {
   .navbar-nav {
     margin-left: 312px !important;
   }
 }
-
 @media screen and (max-width: 1240px) {
   .navbar-nav {
     margin-left: 112px !important;
@@ -18,7 +69,6 @@
   button.owl-prev {
     top: 43.5% !important;
     right: 87.5% !important;
-
   }
 
   button.owl-next {
@@ -54,63 +104,53 @@
     top: 78.5% !important;
   }
 }
-
 @media screen and (max-width: 1199px) {
-
   #about {
     margin-bottom: 70px;
-
-    .ipads {
-      margin-top: -70px;
-
-      .ipads-demo {
-
-        .slider {
-          margin: 0 auto !important;
-        }
-      }
-
-      .slider_first,
-      .slider_second,
-      .slider_third {
-        width: 310px;
-        height: 515px;
-        margin-top: 0;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
+  }
+  #about .ipads {
+    margin-top: -70px;
+  }
+  #about .ipads .ipads-demo .slider {
+    margin: 0 auto !important;
+  }
+  #about .ipads .slider_first,
+#about .ipads .slider_second,
+#about .ipads .slider_third {
+    width: 310px;
+    height: 515px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
-
-@media screen and (max-width: 1200px) {
-  .logo {
-    margin-left: 350px !important;
-  }
-}
-
-@media screen and (max-width: 991px) {
-
+@media screen and (max-width: 1120px) {
   .navbar {
     background: rgba(255, 255, 255, 0.774) !important;
-
-    .navbar-nav {
-      margin-left: 0 !important;
-      background: linear-gradient(315deg, #bea67c 0%, #000000 74%) !important;
-    }
-
-    .logo {
-      margin-left: auto !important;
-    }
-
-    .navbar-collapse {
-      height: 100%;
-    }
-
+  }
+  .navbar .navbar-nav {
+    margin-left: 0 !important;
+    background: linear-gradient(-71deg, #503392 0%, #673ab7 49%, #00bff3 100%);
+  }
+  .navbar .logo {
+    margin: 4px 0 27px 0;
+  }
+  .navbar .navbar-collapse {
+    height: 100%;
+  }
+  .navbar .header_search form {
+    background: linear-gradient(-71deg, #503392 0%, #673ab7 49%, #00bff3 100%);
+    color: white;
+  }
+  .navbar .header_search input {
+    color: white;
+  }
+  .navbar .header_search button:before {
+    color: white;
   }
 
   .mainmenu .collapse ul ul,
-  .mainmenu .collapse ul ul.dropdown-menu {
+.mainmenu .collapse ul ul.dropdown-menu {
     width: 15%;
     margin-top: -130px;
     padding: 0;
@@ -119,7 +159,7 @@
   }
 
   .mainmenu .collapse ul ul ul,
-  .mainmenu .collapse ul ul ul.dropdown-menu {
+.mainmenu .collapse ul ul ul.dropdown-menu {
     width: 15%;
     margin-top: 10px;
     padding: 0;
@@ -162,12 +202,17 @@
     display: none;
   }
 
+  .map-container {
+    margin-top: -580px !important;
+  }
+
+  .forms-container {
+    top: 50px !important;
+  }
 }
-
 @media screen and (min-width: 993px) {
-
   .mainmenu .collapse ul li:hover > ul {
-    display: block
+    display: block;
   }
 
   .mainmenu .collapse ul ul {
@@ -180,11 +225,11 @@
 
   /*******/
   .mainmenu .collapse ul ul li {
-    position: relative
+    position: relative;
   }
 
   .mainmenu .collapse ul ul li:hover > ul {
-    display: block
+    display: block;
   }
 
   .mainmenu .collapse ul ul ul {
@@ -194,20 +239,16 @@
     display: none;
   }
 
-  .ipads {
-    .slider {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      &:hover {
-        width: 884px !important;
-
-        &:after {
-          display: none;
-        }
-      }
-    }
+  .ipads .slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ipads .slider:hover {
+    width: 884px !important;
+  }
+  .ipads .slider:hover:after {
+    display: none;
   }
 
   div.scrollup {
@@ -219,9 +260,9 @@
     /* цвет текста */
     background-image: url("../img/wooden_arrow_up.png") !important;
     background-size: cover !important;
-    background-color: $yellowText !important;
-    border: 1px solid $whiteText !important;
-    transition: .75s ease;
+    background-color: #bea67c !important;
+    border: 1px solid #ffffff !important;
+    transition: 0.75s ease;
     /* цвет заднего фона */
     right: 60px;
     /* расстояние от правого края */
@@ -248,88 +289,73 @@
 
   div.scrollup:hover, div.scrollup:active {
     transform: scale(1.2);
-    background-color: $whiteText !important;
-    border: 1px solid $yellowText !important;
+    background-color: #ffffff !important;
+    border: 1px solid #bea67c !important;
   }
 
+  i.fa-chevron-up {
+    display: none;
+  }
 }
-
 @media only screen and (max-width: 767px) {
-  .main-demo {
-    .slider {
+  .slider h1.main_title {
+    max-width: 500px !important;
+    font-size: 54px !important;
+    top: 180px !important;
+  }
 
-      &_title {
-        max-width: 500px !important;
-        font-size: 54px !important;
-        top: 180px !important;
-      }
+  .carousel-inner figure {
+    margin-bottom: 50px !important;
+    padding-bottom: 0 !important;
+  }
 
-      &_page_counter {
-        display: none !important;
-      }
+  .map-container {
+    margin-top: -650px !important;
+    min-height: 47rem !important;
+  }
 
-      &_button {
+  .map-container iframe {
+    min-height: 47rem !important;
+  }
 
-        &_more {
-          left: 10px !important;
-        }
-
-        &_purchase {
-          left: -30px !important;
-        }
-      }
-    }
-
-    .carousel-inner figure {
-      margin-bottom: 50px !important;
-      padding-bottom: 0 !important;
-    }
+  .forms-container {
+    top: 40px !important;
   }
 
   #contact .forms-container p.contact_information {
     margin-left: 0;
   }
 }
-
 @media screen and (max-width: 576px) {
-  .logo {
-    margin-top: -75px !important;
-    padding-bottom: 15px !important;
+  .rewives {
+    max-height: 100%;
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    margin-bottom: 80px;
   }
 
-  .line {
-    margin-bottom: -5px !important;
+  .social-media_links-item a {
+    margin: 30px auto;
+    font-size: 25px !important;
   }
 
-  .main-demo {
-    .slider {
-      &_title {
-        font-size: 47px !important;
-        letter-spacing: 5px !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-      }
+  .map-container {
+    margin-top: -750px !important;
+    min-height: 50rem !important;
+  }
 
-      &_subtitle {
-        font-size: 35px !important;
-        margin-left: auto !important;
-        letter-spacing: 2.5px !important;
-        margin-right: auto !important;
-      }
+  .map-container iframe {
+    min-height: 50rem !important;
+  }
 
-      &_button {
-        width: 185px !important;
-        height: 30px !important;
-
-        &_more {
-          left: -5px !important;
-        }
-
-        &_purchase {
-          //top: 10px !important;
-          left: -15px !important;
-        }
-      }
-    }
+  .forms-container {
+    top: 30px !important;
+  }
+  .forms-container .text-center {
+    padding-bottom: 0 !important;
+    margin: 0 auto 0 !important;
   }
 }
+
+/*# sourceMappingURL=responsive.css.map */
