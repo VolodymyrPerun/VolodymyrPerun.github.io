@@ -106,7 +106,6 @@
     .navbar-collapse {
       height: 100%;
     }
-
   }
 
   .mainmenu .collapse ul ul,
@@ -163,6 +162,7 @@
   }
 
   #about {
+    min-height: 916px !important;
 
     .about {
 
@@ -193,6 +193,19 @@
 
     .logo_footer {
       left: -70px !important;
+    }
+  }
+
+  #contact {
+
+    .contact {
+
+      &_content {
+
+        &_title {
+          margin-top: 15px !important;
+        }
+      }
     }
   }
 }
@@ -490,7 +503,6 @@
   }
 
   #contact {
-    width: 100%;
     margin-top: 60px !important;
     margin-bottom: 60px !important;
 

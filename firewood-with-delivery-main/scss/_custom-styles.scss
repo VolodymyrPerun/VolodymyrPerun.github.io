@@ -123,6 +123,7 @@
 .main-demo {
 
   .slider {
+    min-height: 853px;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -420,6 +421,7 @@
 #firewood {
 
   .firewood {
+    min-height: 425px;
     /*==========Firewood Section Title And Subtitles ==========*/
     &_line {
       background: url("../img/firewoods_lines.png") no-repeat center top /cover !important;
@@ -558,6 +560,7 @@
 
   /*==========Firewood Section Carousel ==========*/
   .ipads {
+    min-height: 425px;
 
     .ipads-demo {
 
@@ -637,6 +640,7 @@
 
 /****************************info Section************************/
 #info {
+  min-height: 540px;
   margin-top: 10px;
 
   .info {
@@ -742,8 +746,7 @@
 #about {
   background: url("../img/about_bg.png") center /cover;
   width: 100%;
-  height: 100vh;
-  max-height: 916px;
+  min-height: 100vh;
   margin-top: 160px;
   z-index: 1;
 
@@ -818,6 +821,7 @@
 #contact {
   width: 100%;
   height: auto !important;
+  min-height: 300px;
   max-width: 1920px;
   margin-top: 160px;
   margin-bottom: 160px;
