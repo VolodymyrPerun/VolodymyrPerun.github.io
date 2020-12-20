@@ -58,10 +58,10 @@
 @media screen and (max-width: 1199px) {
 
   #about {
-    margin-bottom: 70px;
+    background: url("../img/about_bg_aptive.png") center /cover !important;
 
     .ipads {
-      margin-top: -70px;
+      margin-top: -70px !important;
 
       .ipads-demo {
 
@@ -73,11 +73,11 @@
       .slider_first,
       .slider_second,
       .slider_third {
-        width: 310px;
-        height: 515px;
-        margin-top: 0;
-        margin-left: auto;
-        margin-right: auto;
+        width: 310px !important;
+        height: 515px !important;
+        margin-top: 0 !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
       }
     }
   }
@@ -162,6 +162,23 @@
     display: none;
   }
 
+  #about {
+
+    .about {
+
+      &_content {
+
+        &_title {
+          font-size: 35px !important;
+        }
+
+        &_subtitle {
+          top: -25px !important;
+          font-size: 20px !important;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 993px) {
@@ -301,6 +318,26 @@
       }
     }
   }
+
+  #about {
+    margin-top: 20px !important;
+    margin-bottom: 40px !important;
+    width: 100% !important;
+
+    .about {
+      width: 100% !important;
+      height: 100% !important;
+
+      &_content {
+        margin-top: -200px !important;
+        left: -75px !important;
+
+        &_text {
+          font-size: 16px !important;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -348,6 +385,7 @@
     }
 
     &_subtitle_first, &_subtitle_second {
+      font-weight: 800 !important;
       left: 57px !important;
     }
 
@@ -379,8 +417,8 @@
 
   .info {
 
-   .line {
-     margin-bottom: 10px !important;
+    .line {
+      margin-bottom: 10px !important;
     }
 
     &_text-center-title {
@@ -392,7 +430,7 @@
     }
 
     &_subtitle {
-      font-size: 14px;
+      font-weight: 800 !important;
       line-height: 1 !important;
     }
 
@@ -410,31 +448,53 @@
   }
 
   .info_layer_subtitle {
+    font-size: 16px !important;
+    font-weight: 800 !important;
     margin-top: 15px !important;
   }
 
   #about {
-    margin-top: 20px !important;
 
     .about {
-      width: 100% !important;
-      height: 100% !important;
 
       &_content {
-        margin-top: 0 !important;
-        left: -75px !important;
 
-        //&_text {
-        //  margin: 0 auto;
-        //  padding: 0 15px;
-        //  font-size: 12px;
-        //  font-family: Ubuntu Light, sans-serif;
-        //  color: rgb(255, 255, 255);
-        //  position: relative;
-        //  left: 75px;
-        //  top: -34px;
-        //  z-index: 2;
-        //}
+        &_title {
+          font-size: 30px !important;
+        }
+
+        &_subtitle {
+          font-weight: bold;
+          top: -20px !important;
+          font-size: 16px !important;
+          margin-bottom: 15px !important;
+        }
+      }
+    }
+  }
+
+  #contact {
+    width: 100%;
+    margin-top: 60px !important;
+    margin-bottom: 60px !important;
+
+    .contact {
+
+      &_img {
+        max-width: 615px !important;
+        max-height: 327px !important;
+      }
+
+      &_content {
+
+        &_title {
+          margin-top: 30px !important;
+          font-size: 30px !important;
+        }
+
+        &_item {
+          padding: 0 30px !important;
+        }
       }
     }
   }

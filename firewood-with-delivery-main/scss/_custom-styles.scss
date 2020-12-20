@@ -740,7 +740,7 @@
 
 /****************************About Section************************/
 #about {
-  background: url("../img/about_bg.png") center /cover !important;
+  background: url("../img/about_bg.png") center /cover;
   width: 100%;
   height: 100vh;
   max-height: 916px;
@@ -748,8 +748,8 @@
   z-index: 1;
 
   .about {
-    width: 80% !important;
-    height: 60% !important;
+    width: 80%;
+    height: 60%;
 
     &_content {
       margin-top: 190px !important;
@@ -817,9 +817,10 @@
 /****************************Contact Section************************/
 #contact {
   width: 100%;
-  height: 70vh;
+  height: auto !important;
   max-width: 1920px;
   margin-top: 160px;
+  margin-bottom: 160px;
   z-index: 1;
 
   .contact {
@@ -917,6 +918,7 @@ footer {
     & > a {
       font-family: Ubuntu, sans-serif;
       text-transform: uppercase;
+      text-decoration: none;
       text-align: left;
       color: $whiteText;
     }
