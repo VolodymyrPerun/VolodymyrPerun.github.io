@@ -412,6 +412,43 @@
   .info_layer_subtitle {
     margin-top: 15px !important;
   }
+
+  #about {
+    margin-top: 20px !important;
+
+    .about {
+      width: 100% !important;
+      height: 100% !important;
+
+      &_content {
+        margin-top: 0 !important;
+        left: -75px !important;
+
+
+        &_title {
+          font-size: 40px;
+          left: 75px;
+        }
+
+        &_subtitle {
+          //left: 0 !important;
+
+        }
+
+        &_text {
+          margin: 0 auto;
+          padding: 0 15px;
+          font-size: 12px;
+          font-family: Ubuntu Light, sans-serif;
+          color: rgb(255, 255, 255);
+          position: relative;
+          left: 75px;
+          top: -34px;
+          z-index: 2;
+        }
+      }
+    }
+  }
 }
 
 
@@ -431,7 +468,7 @@
   .line {
     margin-bottom: -2px !important;
   }
-  
+
   .firewood {
 
     &_title {
