@@ -179,6 +179,22 @@
       }
     }
   }
+
+  footer {
+
+    .copyright_text {
+
+      font-size: 12px !important;
+
+      & > p {
+        width: 320px !important;
+      }
+    }
+
+    .logo_footer {
+      left: -70px !important;
+    }
+  }
 }
 
 @media screen and (min-width: 993px) {
@@ -498,6 +514,13 @@
       }
     }
   }
+
+  footer {
+
+    .logo_footer {
+      left: 0 !important;
+    }
+  }
 }
 
 
@@ -567,6 +590,13 @@
     &_slider {
       width: 300px !important;
       height: 230px !important;
+    }
+  }
+
+  footer {
+
+    .logo_footer {
+      display: none !important;
     }
   }
 }
