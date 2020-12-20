@@ -252,6 +252,9 @@
     border: 1px solid $yellowText !important;
   }
 
+  .fa-chevron-up:before {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -286,8 +289,15 @@
     }
   }
 
-  #contact .forms-container p.contact_information {
-    margin-left: 0;
+  .firewood {
+
+    &_subtitle_second {
+      left: 180px !important;
+
+      &_purchase {
+        left: 80px !important;
+      }
+    }
   }
 }
 
@@ -312,8 +322,8 @@
 
       &_subtitle {
         font-size: 35px !important;
-        margin-left: auto !important;
         letter-spacing: 2.5px !important;
+        margin-left: auto !important;
         margin-right: auto !important;
       }
 
@@ -326,9 +336,143 @@
         }
 
         &_purchase {
-          //top: 10px !important;
           left: -15px !important;
         }
+      }
+
+      &_mouse_scroll {
+        display: none !important;
+      }
+    }
+  }
+
+  .firewood {
+
+    &_title {
+      margin-top: 50px !important;
+    }
+
+    &_subtitle_first, &_subtitle_second {
+      left: 57px !important;
+    }
+
+    &_line {
+      display: none !important;
+
+      &_second {
+        display: none !important;
+      }
+    }
+
+    &_button_contacts {
+      right: -170px !important;
+      top: 5px;
+
+      &_line {
+        right: -275px !important;
+      }
+    }
+
+    &_counter {
+      display: none !important;
+
+      &_line {
+        display: none !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo {
+
+    &_title {
+      font-size: 20px !important;
+    }
+
+    &_subtitle {
+      font-size: 10px !important;
+      margin-top: -40px !important;
+    }
+  }
+
+  .line {
+    margin-bottom: -2px !important;
+  }
+
+  .main-demo {
+    .slider {
+      &_title {
+        font-size: 42px !important;
+        letter-spacing: 4.5px !important;
+      }
+
+      &_subtitle {
+        font-size: 30px !important;
+        letter-spacing: 2.0px !important;
+      }
+
+      &_button {
+        width: 144px !important;
+        height: 30px !important;
+
+        &_more {
+          left: 5px !important;
+        }
+
+        &_purchase {
+          left: -5px !important;
+        }
+      }
+    }
+  }
+
+  .firewood {
+
+    &_title {
+      margin-top: 50px !important;
+    }
+
+    &_subtitle_first, &_subtitle_second {
+      max-width: 277px !important;
+      left: 0 !important;
+
+      &_purchase {
+        left: 10px !important;
+      }
+    }
+
+    &_line {
+      display: none !important;
+
+      &_second {
+        display: none !important;
+      }
+    }
+
+    &_button_contacts {
+      right: -170px !important;
+      top: 5px;
+
+      &_line {
+        right: -275px !important;
+      }
+    }
+
+    &_counter {
+      display: none !important;
+
+      &_line {
+        display: none !important;
+      }
+    }
+
+    &_slider {
+      width: 300px !important;
+      height: 230px !important;
+
+      &:hover, &:active {
+        display: none;
       }
     }
   }
