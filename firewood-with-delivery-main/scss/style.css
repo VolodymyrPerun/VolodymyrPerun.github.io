@@ -8488,6 +8488,7 @@ figure .col-lg-6 {
   height: 3.5px !important;
 }
 
+/*******************Header***************************/
 /*******************Here You Can Change Your Navbar, Logo And Search Panel Styles***********/
 .navbar {
   max-height: 100%;
@@ -8566,6 +8567,8 @@ figure .col-lg-6 {
   outline: 0;
 }
 
+/*******************Header***************************/
+/*******************Main Section With Carousel Banners And Titles***************************/
 /****************************Owl Carousel Banners************************/
 .main-section {
   position: relative;
@@ -8834,10 +8837,9 @@ figure .col-lg-6 {
   padding-bottom: 5px;
 }
 
+/*******************Main Section With Carousel Banners And Titles***************************/
 /****************************Firewood Section************************/
 #firewood {
-  min-height: 150vh;
-  max-height: 200vh;
   /*==========Firewood Section Carousel ==========*/
 }
 #firewood .firewood {
@@ -9031,9 +9033,7 @@ figure .col-lg-6 {
 /*==========Firewood Section Blocks==========*/
 /****************************info Section************************/
 #info {
-  height: 100vh;
   margin-top: 10px;
-  padding-bottom: 80px;
 }
 #info .info_text-center-title {
   color: black;
@@ -9078,28 +9078,6 @@ figure .col-lg-6 {
   border: 1px solid #e1e1e1;
   z-index: 2;
 }
-#info .info_layer_title {
-  color: #232323;
-  font-family: Ubuntu, sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.74px;
-  z-index: 1;
-}
-#info .info_layer_subtitle:hover {
-  color: #bea67c;
-}
-#info .info_layer_subtitle {
-  color: black;
-  font-family: Ubuntu, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24.21px;
-  letter-spacing: 0.46px;
-  transition: 0.3s ease;
-  z-index: 1;
-}
 #info .info .rgba-white-slight {
   z-index: 3;
   box-shadow: inset 0 -5px 9px rgba(1, 1, 1, 0.06);
@@ -9131,7 +9109,30 @@ figure .col-lg-6 {
   position: relative;
   right: -155px;
 }
+#info .info_layer_title {
+  color: #232323;
+  font-family: Ubuntu, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.74px;
+  z-index: 1;
+}
+#info .info_layer_subtitle {
+  color: black;
+  font-family: Ubuntu Bold, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24.21px;
+  letter-spacing: 0.46px;
+  transition: 0.3s ease;
+  z-index: 1;
+}
+#info .info_layer_subtitle:hover {
+  color: #bea67c;
+}
 
+/****************************info Section************************/
 /****************************About Section************************/
 #about {
   background: url("../img/about_bg.png") center/cover !important;
@@ -9199,6 +9200,7 @@ figure .col-lg-6 {
   transform: scale(1.1);
 }
 
+/****************************About Section************************/
 /****************************Contact Section************************/
 #contact {
   width: 100%;
@@ -9244,6 +9246,7 @@ figure .col-lg-6 {
   left: 32px;
 }
 
+/****************************Contact Section************************/
 /****************************Footer************************/
 /*==========Content===========*/
 footer {
@@ -9296,6 +9299,7 @@ footer .logo_footer_line {
   right: -52px;
 }
 
+/****************************Footer************************/
 /*******************Here You Can Change Your Settings Styles***********/
 html,
 body {

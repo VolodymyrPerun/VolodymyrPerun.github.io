@@ -10,7 +10,7 @@
   width: 40px;
   height: 3.5px !important;
 }
-
+/*******************Header***************************/
 /*******************Here You Can Change Your Navbar, Logo And Search Panel Styles***********/
 .navbar {
   max-height: 100%;
@@ -98,7 +98,9 @@
   font-weight: 700;
   outline: 0;
 }
+/*******************Header***************************/
 
+/*******************Main Section With Carousel Banners And Titles***************************/
 /****************************Owl Carousel Banners************************/
 .main-section {
   position: relative;
@@ -327,9 +329,7 @@
     }
   }
 
-
   /*==========Carousel==========*/
-
   button {
     border: 1px solid $yellowText !important;
   }
@@ -402,15 +402,12 @@
     padding-bottom: 5px;
   }
 }
+/*******************Main Section With Carousel Banners And Titles***************************/
 
 /****************************Firewood Section************************/
-
 #firewood {
-  min-height: 150vh;
-  max-height: 200vh;
 
   .firewood {
-
     /*==========Firewood Section Title And Subtitles ==========*/
     &_line {
       background: url("../img/firewoods_lines.png") no-repeat center top /cover !important;
@@ -620,20 +617,14 @@
         -webkit-background-size: cover;
         background-size: cover;
       }
-
     }
   }
 }
-
 /*==========Firewood Section Blocks==========*/
 
-
 /****************************info Section************************/
-
 #info {
-  height: 100vh;
   margin-top: 10px;
-  padding-bottom: 80px;
 
   .info {
 
@@ -687,31 +678,6 @@
       z-index: 2;
     }
 
-    &_layer_title {
-      color: #232323;
-      font-family: Ubuntu, sans-serif;
-      font-size: 24px;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 0.74px;
-      z-index: 1;
-    }
-
-    &_layer_subtitle:hover {
-      color: $yellowText;
-    }
-
-    &_layer_subtitle {
-      color: rgb(0, 0, 0);
-      font-family: Ubuntu, sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24.21px;
-      letter-spacing: 0.46px;
-      transition: 0.3s ease;
-      z-index: 1;
-    }
-
     .rgba-white-slight {
       z-index: 3;
       box-shadow: inset 0 -5px 9px rgba(1, 1, 1, 0.06);
@@ -747,10 +713,35 @@
       right: -155px;
     }
   }
+
+  .info_layer_title {
+    color: #232323;
+    font-family: Ubuntu, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.74px;
+    z-index: 1;
+  }
+
+  .info_layer_subtitle {
+    color: rgb(0, 0, 0);
+    font-family: Ubuntu Bold, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24.21px;
+    letter-spacing: 0.46px;
+    transition: 0.3s ease;
+    z-index: 1;
+
+    &:hover {
+      color: $yellowText;
+    }
+  }
 }
+/****************************info Section************************/
 
 /****************************About Section************************/
-
 #about {
   background: url("../img/about_bg.png") center /cover !important;
   width: 100%;
@@ -823,11 +814,10 @@
     }
   }
 }
+/****************************About Section************************/
 
 /****************************Contact Section************************/
-
 #contact {
-  //padding: 0 5px;
   width: 100%;
   height: 70vh;
   max-width: 1920px;
@@ -887,6 +877,7 @@
     }
   }
 }
+/****************************Contact Section************************/
 
 /****************************Footer************************/
 /*==========Content===========*/
@@ -945,3 +936,4 @@ footer {
     }
   }
 }
+/****************************Footer************************/

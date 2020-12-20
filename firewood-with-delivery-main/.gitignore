@@ -1,0 +1,13 @@
+# Created by .ignore support plugin (hsz.mobi)
+/node_modules/
+/.idea/
+.idea
+*.iml
+out
+gen
+.env
+*node_modules/*
+*logs/*
+/logs/
+/public/
+*public/*
