@@ -314,15 +314,15 @@
   .main-demo {
     .slider {
       &_title {
-        font-size: 47px !important;
-        letter-spacing: 5px !important;
+        font-size: 42px !important;
+        letter-spacing: 4.5px !important;
         margin-left: auto !important;
         margin-right: auto !important;
       }
 
       &_subtitle {
-        font-size: 35px !important;
-        letter-spacing: 2.5px !important;
+        font-size: 30px !important;
+        letter-spacing: 2.0px !important;
         margin-left: auto !important;
         margin-right: auto !important;
       }
@@ -403,15 +403,6 @@
 
   .main-demo {
     .slider {
-      &_title {
-        font-size: 42px !important;
-        letter-spacing: 4.5px !important;
-      }
-
-      &_subtitle {
-        font-size: 30px !important;
-        letter-spacing: 2.0px !important;
-      }
 
       &_button {
         width: 144px !important;
