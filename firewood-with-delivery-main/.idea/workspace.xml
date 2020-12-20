@@ -7,6 +7,8 @@
       <change beforePath="$PROJECT_DIR$/css/style.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.min.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/_custom-styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_custom-styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_settings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/responsive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/responsive.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +37,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607782902591</updated>
-      <workItem from="1607782903897" duration="127215000" />
+      <workItem from="1607782903897" duration="131793000" />
     </task>
     <servers />
   </component>
@@ -47,6 +49,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="371" y="108" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.720@0.0.1280.720" timestamp="1607975707349" />
+    <state x="308" y="139" key="EditFileWatcherDialog" timestamp="1608457728296">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="308" y="139" key="EditFileWatcherDialog/0.0.1280.720@0.0.1280.720" timestamp="1608457728296" />
     <state x="353" y="161" key="run.anything.popup" timestamp="1608384043609">
       <screen x="73" y="0" width="1207" height="720" />
     </state>

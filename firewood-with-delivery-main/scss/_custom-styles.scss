@@ -790,7 +790,7 @@
 
       &_text {
         margin: 0 auto;
-        padding: 0 auto;
+        padding: 0 15px;
         font-size: 12px;
         font-family: Ubuntu Light, sans-serif;
         color: rgb(255, 255, 255);
@@ -889,7 +889,7 @@
 }
 
 /****************************Footer************************/
-
+/*==========Content===========*/
 footer {
   margin-bottom: -99999px;
   background: url("../img/footer_bg.png") no-repeat center /cover !important;
@@ -910,10 +910,38 @@ footer {
       color: $yellowText;
     }
   }
+  /*==========Logo===========*/
   .logo_footer {
-    background: url("../img/logo_footer.png") no-repeat center /cover !important;
-    min-width: 55px;
-    min-height: 27px;
-    z-index: 101;
+    position: relative;
+    width: 90px;
+    left: -170px;
+    top: -19px;
+    z-index: 3;
+
+    & > a {
+      font-family: Ubuntu, sans-serif;
+      text-transform: uppercase;
+      text-align: left;
+      color: $whiteText;
+    }
+
+    &_title {
+      font-weight: bold;
+      font-size: 17px;
+      letter-spacing: 8.5px;
+    }
+
+    &_subtitle {
+      position: relative;
+      top: -10px;
+      font-size: 10px;
+      margin-top: 45px;
+    }
+
+    &_line {
+      position: relative;
+      top: -32px;
+      right: -52px;
+    }
   }
 }
