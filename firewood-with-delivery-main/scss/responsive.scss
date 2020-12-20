@@ -332,6 +332,7 @@
         height: 30px !important;
 
         &_more {
+          top: 52px !important;
           left: -5px !important;
         }
 
@@ -430,6 +431,7 @@
   .firewood {
 
     &_title {
+      font-size: 25px !important;
       margin-top: 50px !important;
     }
 
@@ -454,6 +456,12 @@
       right: -170px !important;
       top: 5px;
 
+      &:hover, &:active {
+        border-bottom: 2px solid $yellowText !important;
+        border-left: none !important;
+        padding-left: 0 !important;
+      }
+
       &_line {
         right: -275px !important;
       }
@@ -470,10 +478,6 @@
     &_slider {
       width: 300px !important;
       height: 230px !important;
-
-      &:hover, &:active {
-        display: none;
-      }
     }
   }
 }
