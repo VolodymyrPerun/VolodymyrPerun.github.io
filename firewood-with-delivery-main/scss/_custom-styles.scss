@@ -42,6 +42,7 @@
       line-height: -1.2;
       text-align: left;
       color: $whiteText;
+      text-decoration: none;
     }
 
     &_title {
@@ -256,13 +257,14 @@
       text-decoration: none !important;
       outline: hidden !important;
       position: relative;
+      transition: 0.3s ease;
       z-index: 3;
 
       &_more {
         background: url("../img/button_more.png") no-repeat center center/cover !important;
         border-top: 1.5px solid $whiteText;
         border-bottom: 1.5px solid $whiteText;
-        top: 50px;
+        top: 5px;
         left: -15px;
 
         &:hover, &:active {
@@ -277,7 +279,7 @@
         background: url("../img/button_purchase.png") no-repeat center center/cover !important;
         border-top: 1.5px solid $whiteText;
         border-bottom: 1.5px solid $whiteText;
-        top: 80px;
+        top: 100px;
         left: -45px;
 
         &:hover, &:active {
@@ -415,6 +417,7 @@
     padding-bottom: 5px;
   }
 }
+
 /*******************Main Section With Carousel Banners And Titles***************************/
 
 /****************************Firewood Section************************/
@@ -503,7 +506,7 @@
       cursor: pointer;
       text-decoration: none;
       outline: hidden;
-      transition: .3s;
+      transition: 0.3s border ease;
 
       &:hover, &:active {
         border-bottom: none;
@@ -660,8 +663,8 @@
 
     &_subtitle {
       color: $paragraphText;
-      font-family: Ubuntu, sans-serif;
-      font-size: 16px;
+      font-family: Ubuntu Bold, sans-serif;
+      font-size: 14px;
       font-weight: 400;
       line-height: 24.21px;
       z-index: 1;
@@ -727,9 +730,9 @@
   .info_layer_subtitle {
     color: rgb(0, 0, 0);
     font-family: Ubuntu Bold, sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 24.21px;
+    line-height: 4.21px;
     letter-spacing: 0.46px;
     transition: 0.3s ease;
     z-index: 1;
@@ -802,6 +805,7 @@
         border-bottom: 1.5px solid $whiteText;
         position: relative;
         left: 45px;
+        transition: 0.3s border ease;
         z-index: 2;
 
         &:hover, &:active {
@@ -891,7 +895,7 @@ footer {
   max-height: 100%;
   min-height: 10vh;
   padding-bottom: 0;
-  z-index: 100;
+  z-index: 1;
 
   .copyright_text {
     color: $greyText;
@@ -942,7 +946,7 @@ footer {
 
     &_line {
       position: relative;
-      top: -32px;
+      top: -31px;
       right: -52px;
     }
   }
