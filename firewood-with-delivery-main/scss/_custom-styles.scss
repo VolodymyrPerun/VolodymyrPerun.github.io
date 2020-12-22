@@ -742,14 +742,13 @@
     }
   }
 }
-
 /****************************info Section************************/
 
 /****************************About Section************************/
 #about {
   background: url("../img/about_bg.png") center /cover;
   width: 100%;
-  min-height: 100vh;
+  min-height: 853px;
   margin-top: 160px;
   z-index: 1;
 
@@ -951,5 +950,4 @@ footer {
     }
   }
 }
-
 /****************************Footer************************/
