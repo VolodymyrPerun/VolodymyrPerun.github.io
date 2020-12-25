@@ -11,3 +11,10 @@ gen
 /logs/
 /public/
 *public/*
+/.vscode
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
