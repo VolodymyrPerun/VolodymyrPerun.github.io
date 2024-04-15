@@ -1,0 +1,11 @@
+/.idea
+/.vscode
+/node_modules
+/.pnp
+.pnp.js
+
+# IntelliJ
+.idea/**
+.idea/*
+/out/
+.idea_modules/
